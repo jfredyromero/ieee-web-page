@@ -32,8 +32,8 @@ p {
 
 .header {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(#123F72), color-stop(transparent), to(transparent)), url("../assets/img/header.png");
-  background-image: linear-gradient(90deg, #123F72, transparent, transparent), url("../assets/img/header.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(#123F72), color-stop(transparent), to(transparent)), url("/assets/img/header.png");
+  background-image: linear-gradient(90deg, #123F72, transparent, transparent), url("/assets/img/header.png");
   background-size: cover;
 }
 .header__nav {

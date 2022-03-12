@@ -1,15 +1,14 @@
 :root {
   /* Tipografías */
-  --tipo_principal: 'Josefin Sans';
-  --tipo_secundaria: 'DM Sans';
+  $tipo_principal: 'Josefin Sans';
+  $tipo_secundaria: 'DM Sans';
 
   /* Colores */
-  --azul_1: #302F4A
-  --azul_2: #3D3D6A
-  --blanco: #FCFAF3
-  --hueso: #F7F4E4
-  --rojo: #E02020
-
+  $azul_1: #302F4A;
+  $azul_2: #3D3D6A;
+  $blanco: #FCFAF3;
+  $hueso: #F7F4E4;
+  $rojo: #E02020;
 }
 
 * {
@@ -19,11 +18,11 @@
 }
 
 h1{
-  font-family: var(--tipo_principal);
+  font-family: $tipo_principal;
 }
 
 p{
-  font-family: var(--tipo_secundaria);
+  font-family: $tipo_secundaria;
 }
 
 .container {
@@ -37,12 +36,12 @@ p{
       #123F72,
       transparent, transparent
     ),
-    url("../assets/img/header.png");
+    url("/assets/img/header.png");
   background-size: cover;
 
   &__nav {
     padding: 1.5em 5em;
-    color: white;
+    color: $blanco;
   }
 
   &__nav-logo{
@@ -61,9 +60,9 @@ p{
     justify-content: center;
 
     &-a {
-      color: var(--blanco);
+      color: $blanco;
       text-decoration: none;
-      font-family: var(--tipo_principal);
+      font-family: $tipo_principal;
       font-weight: 600;
       font-size: .9rem;
     }
@@ -87,20 +86,20 @@ p{
   }
   &__name {
     margin: 0;
-    color: #FCFAF3;
+    color: $blanco;
     margin: 2em 0;
   }
   &__h1 {
     font-size: 3.35rem;
     font-weight: lighter;
-    color: #FCFAF3;
+    color: $blanco;
   }
 
   &__description {
   }
   &__p {
     text-align: justify;
-    color: #FCFAF3;
+    color: $blanco;
     margin-bottom: 1.5em;
     font-style: italic;
   }
@@ -108,7 +107,7 @@ p{
   &__unete {
     :hover{
       background-color: white;
-      color: #123f72;
+      color: $azul_1;
       transform: scale(1.1)
     }
   }
@@ -117,7 +116,7 @@ p{
     padding: 1em 2em;
     font-size: 1.2rem;
     border-radius: 1.8em;
-    color: #FCFAF3;
+    color: $blanco;
     cursor: pointer;
     border: none;
 
@@ -138,7 +137,7 @@ p{
 
   
   &__i {
-    color: white;
+    color: $blanco;
     font-size: 1.5rem;
     transition: all 0.5s ease;
   }
