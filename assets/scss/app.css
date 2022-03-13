@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+    
+  Con este reset vamos a resolver:
+    👉 Unificar el uso de Custom Properties
+    👉 Problemas de box-model más generales
+    👉 Problemas con imagenes, vídeos e iconos svg
+    👉 Problemas con tipografías y etiquetas input en formularios
+    👉 Unificar la tipografía de todas las etiquetas de una web
+*/
+/* Aquí definimos las Custom properties */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --blanco: #fcfaf3;
+  --hueso: #f7f4e4;
+  --azul-1: #302f4a;
+  --azul-2: #3d3d6a;
+  --rojo: #e02020;
+  /* Tipografía */
+  --tipo-principal: 'Montserrat';
+  --tipo-secundaria: 'lato';
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+/* Opcional */
+/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* Opcional */
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  object-fit: cover;
+  /* opcional */
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  /* opcional */
+  appearance: none;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* opcional */
+  line-height: 1.4em;
+  /* opcional */
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* GENERICOS */
+h1 {
+  font-family: var(--tipo-principal);
+}
+
+h2,
+h3,
+p,
+a,
+span {
+  font-family: var(--tipo-secundaria);
+}
+
+/* PROPIOS */
+.container {
+  width: 80%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.principal {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, var(--azul-1), transparent, transparent), url("../img/header.png");
+  background-size: cover;
+}
+
+/* ==========HEADER========== */
+.header {
+  padding: 0.5em 3.5em;
+}
+.header__ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.header__a {
+  padding: 0.5em;
+  color: var(--hueso);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.header__a:hover {
+  border-bottom: solid var(--blanco) 1px;
+}
+.header__img {
+  width: 50px;
+}
+
+/* ==========BANNER========== */
+.banner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  /* ==========RRSS========== */
+}
+.banner .banner__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 9em 0;
+}
+.banner .banner__name {
+  position: relative;
+  margin-bottom: 4em;
+}
+.banner .banner__h1-ramaieee {
+  color: var(--blanco);
+  font-family: var(--tipo-secundaria);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.4);
+}
+.banner .banner__h1-unicauca {
+  position: absolute;
+  top: 0.25em;
+  left: 0.6em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 77px;
+}
+.banner .banner__description {
+  width: 58%;
+}
+.banner .banner__action {
+  margin-top: 4em;
+}
+.banner .banner__button {
+  width: 8em;
+  padding: 0.8em 1em;
+  border: solid var(--hueso) 1px;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--azul-1);
+  background-color: var(--hueso);
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.banner .banner__button:hover {
+  transform: scale(1.1);
+}
+.banner__li {
+  margin: 2em 0;
+}
+.banner__a {
+  font-size: 1.7rem;
+}
+.banner__i {
+  transition: all 0.5s ease;
+}
+.banner__i:hover {
+  transform: scale(1.3);
+}

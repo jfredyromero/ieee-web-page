@@ -1,154 +1,149 @@
-:root {
-  /* Tipografías */
-  $tipo_principal: 'Josefin Sans';
-  $tipo_secundaria: 'DM Sans';
+@import "./reset/reset";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-  /* Colores */
-  $azul_1: #302F4A;
-  $azul_2: #3D3D6A;
-  $blanco: #FCFAF3;
-  $hueso: #F7F4E4;
-  $rojo: #E02020;
+/* GENERICOS */
+h1 {
+  font-family: var(--tipo-principal);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+h2,
+h3,
+p,
+a,
+span {
+  font-family: var(--tipo-secundaria);
 }
 
-h1{
-  font-family: $tipo_principal;
-}
-
-p{
-  font-family: $tipo_secundaria;
-}
+/* PROPIOS */
 
 .container {
-  margin: 0 9em;
+  width: 80%;
+  max-width: 1300px;
+  margin: auto;
 }
 
-.header {
-  height: 100vh;
+.principal {
+  width: 100%;
+  min-height: 100vh;
   background-image: linear-gradient(
       90deg,
-      #123F72,
-      transparent, transparent
+      var(--azul-1),
+      transparent,
+      transparent
     ),
-    url("/assets/img/header.png");
+    url("../img/header.png");
   background-size: cover;
+}
+
+/* ==========HEADER========== */
+
+.header {
+  padding: 0.5em 3.5em;
 
   &__nav {
-    padding: 1.5em 5em;
-    color: $blanco;
   }
-
-  &__nav-logo{
-    width: 3em;
-    
-  }
-
   &__ul {
-    list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
   }
   &__li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  }
+  &__a {
+    padding: 0.5em;
+    color: var(--hueso);
+    cursor: pointer;
+    transition: all 0.5s ease;
 
-    &-a {
-      color: $blanco;
-      text-decoration: none;
-      font-family: $tipo_principal;
-      font-weight: 600;
-      font-size: .9rem;
+    &:hover {
+      border-bottom: solid var(--blanco) 1px;
     }
-  }
-
-  &__datos-rama {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__info {
-    width: 18.5rem;
-    text-align: center;
-  }
-
-  &__logo {
-    margin-bottom: 0em;
   }
   &__img {
-    width: 6em;
+    width: 50px;
   }
-  &__name {
-    margin: 0;
-    color: $blanco;
-    margin: 2em 0;
-  }
-  &__h1 {
-    font-size: 3.35rem;
-    font-weight: lighter;
-    color: $blanco;
-  }
+}
 
-  &__description {
-  }
-  &__p {
-    text-align: justify;
-    color: $blanco;
-    margin-bottom: 1.5em;
-    font-style: italic;
-  }
-
-  &__unete {
-    :hover{
-      background-color: white;
-      color: $azul_1;
-      transform: scale(1.1)
-    }
-  }
-  &__button {
-    background-color: #123f72;
-    padding: 1em 2em;
-    font-size: 1.2rem;
-    border-radius: 1.8em;
-    color: $blanco;
-    cursor: pointer;
-    border: none;
-
-    transition: all .7s ease;
-  }
-
-  &__rrss {
+/* ==========BANNER========== */
+.banner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  .banner__info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 9em 0;
   }
+  .banner__name {
+    position: relative;
+    margin-bottom: 4em;
+  }
+  .banner__h1-ramaieee {
+    color: var(--blanco);
+    font-family: var(--tipo-secundaria);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .banner__h1-unicauca {
+    position: absolute;
+    top: 0.25em;
+    left: 0.6em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 77px;
+  }
+  .banner__description {
+    width: 58%;
+  }
+  .banner__p {
+  }
+  .banner__action {
+    margin-top: 4em;
+  }
+  .banner__button {
+    width: 8em;
+    padding: 0.8em 1em;
+    border: solid var(--hueso) 1px;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--azul-1);
+    background-color: var(--hueso);
+    font-weight: bold;
+    transition: all 0.5s ease;
 
-  &__a {
-    :hover{
-      transform: scale(1.3);
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
-  
-  &__i {
-    color: $blanco;
-    font-size: 1.5rem;
-    transition: all 0.5s ease;
+  /* ==========RRSS========== */
+  &__rrss {
   }
-
-  &__li-rs {
-    margin: 1.5em 0;
+  &__ul {
   }
-
+  &__li {
+    margin: 2em 0;
+  }
   &__span {
   }
-  &__ul-rrss {
-    list-style: none;
+  &__a {
+    font-size: 1.7rem;
+  }
+  &__i {
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }
