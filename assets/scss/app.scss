@@ -25,12 +25,7 @@ span {
 .principal {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(
-      90deg,
-      var(--azul-1),
-      transparent,
-      transparent
-    ),
+  background-image: linear-gradient(90deg, rgba(41, 41, 41, 1), transparent),
     url("../img/header.png");
   background-size: cover;
 }
@@ -83,7 +78,6 @@ span {
     margin-bottom: 4em;
   }
   .banner__h1-ramaieee {
-    color: var(--blanco);
     font-family: var(--tipo-secundaria);
     font-style: normal;
     font-weight: 900;
@@ -145,5 +139,124 @@ span {
     &:hover {
       transform: scale(1.3);
     }
+  }
+}
+
+/* ==========VALORES========== */
+.valores {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0;
+
+  &__h2 {
+    font-size: 2.375rem;
+    color: var(--azul-1);
+  }
+  &__cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5em;
+
+    @media (max-width: 815px){
+      &{
+        justify-content: center;
+      }
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 19em;
+    padding: 2em;
+    margin: 1.5em 0.3em;
+    background-color: var(--hueso);
+    border-radius: 0.7em;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.55);
+  }
+  &__icons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  &__li {
+    margin: 0 1em;
+  }
+  &__span {
+  }
+  &__i {
+    padding: 0.1em 0.3em;
+    border: solid #dadada 3px;
+    border-radius: 0.2em;
+    color: var(--azul-1);
+  }
+  &__logo-card {
+  }
+  &__img {
+    width: 120px;
+  }
+  &__card-title {
+  }
+  &__h3 {
+    font-size: 1.8rem;
+    color: var(--azul-1);
+    margin: 1em 0;
+  }
+
+  &__card-description {
+  }
+
+  &__p {
+    text-align: justify;
+    color: var(--gris);
+  }
+}
+
+/* ==========INFORMACIÓN========== */
+.important {
+  background-color: var(--azul-2);
+}
+
+.information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0;
+
+  .information__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1.5em;
+  }
+  .information__h2 {
+    font-size: 2.375rem;
+    margin-bottom: 1.5em;
+  }
+  .information__p {
+    text-align: justify;
+  }
+  .information__graphic {
+    width: 50%;
+  }
+  .information__img {
   }
 }
