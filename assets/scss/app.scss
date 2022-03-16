@@ -60,6 +60,9 @@ span {
   }
   &__li {
     z-index: 1;
+    width: 20%;
+    display: flex;
+    justify-content: center;
   }
   &__a {
     padding: 0.5em;

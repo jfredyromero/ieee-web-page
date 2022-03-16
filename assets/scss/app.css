@@ -205,6 +205,9 @@ span {
 }
 .header__li {
   z-index: 1;
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 .header__a {
   padding: 0.5em;
