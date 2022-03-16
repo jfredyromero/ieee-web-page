@@ -20,6 +20,9 @@
   --azul-2-difuminado: rgba(18, 63, 114, .5);
   --rojo: #e02020;
   --gris: #4E4E4E;
+  --negro: #000000;
+  --plata: #C0C0C0;
+  --dorado: #EEE8AA;
 
   /* Tipografía */
   --tipo-principal: 'Montserrat';
@@ -30,7 +33,7 @@
   /* Las adaptamos al modo oscuro */
   @media (prefers-color-scheme: dark) {
     :root{
-        --negro         : #ececec;
+        /* --negro         : #ececec; */
     }
   }
   
@@ -108,7 +111,7 @@
   
   /* Configuramos el texto que seleccionamos */
   ::selection {
-    background-color: var(--negro);
+    background-color: var(--rojo);
     color: var(--blanco);
   }
   

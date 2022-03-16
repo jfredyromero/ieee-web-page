@@ -20,6 +20,9 @@
   --azul-2-difuminado: rgba(18, 63, 114, .5);
   --rojo: #e02020;
   --gris: #4E4E4E;
+  --negro: #000000;
+  --plata: #C0C0C0;
+  --dorado: #EEE8AA;
   /* Tipografía */
   --tipo-principal: 'Montserrat';
   --tipo-secundaria: 'lato';
@@ -28,7 +31,7 @@
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --negro: #ececec;
+    /* --negro         : #ececec; */
   }
 }
 /* Opcional */
@@ -102,7 +105,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 /* Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: var(--negro);
+  background-color: var(--rojo);
   color: var(--blanco);
 }
 
@@ -173,21 +176,35 @@ span {
 }
 
 .principal {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(90deg, #292929, transparent), url("../img/header.png");
   background-size: cover;
 }
 
+/* ==========PARTICLES-JS========== */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+}
+
 /* ==========HEADER========== */
 .header {
-  padding: 0.5em 3.5em;
+  padding: 2em 3.5em .5em 3.5em;
+  z-index: 2;
 }
 .header__ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
+}
+.header__li {
+  z-index: 1;
 }
 .header__a {
   padding: 0.5em;
@@ -208,6 +225,7 @@ span {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
   /* ==========RRSS========== */
 }
 .banner .banner__info {
@@ -220,6 +238,7 @@ span {
 .banner .banner__name {
   position: relative;
   margin-bottom: 4em;
+  z-index: 1;
 }
 .banner .banner__h1-ramaieee {
   font-family: var(--tipo-secundaria);
@@ -237,9 +256,14 @@ span {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 77px;
+  color: var(--blanco);
 }
 .banner .banner__description {
   width: 58%;
+  z-index: 1;
+}
+.banner .banner__p {
+  color: var(--blanco);
 }
 .banner .banner__action {
   margin-top: 4em;
@@ -288,6 +312,7 @@ span {
 }
 .banner__a {
   font-size: 1.7rem;
+  color: var(--blanco);
 }
 .banner__i {
   transition: all 0.5s ease;
@@ -396,9 +421,11 @@ span {
 .information .information__h2 {
   font-size: 2.375rem;
   margin-bottom: 1.5em;
+  color: var(--hueso);
 }
 .information .information__p {
   text-align: justify;
+  color: var(--hueso);
 }
 .information .information__graphic {
   width: 50%;
@@ -435,15 +462,18 @@ span {
 /* ==========FOOTER========== */
 .footer {
   position: relative;
+  /* ==========FOOTER TOP========== */
+  /* ==========FOOTER MIDDLE========== */
+  /* ==========FOOTER BOTTOM========== */
 }
 .footer__img {
   width: 30%;
   position: absolute;
-  top: 20%;
+  top: 8rem;
 }
 .footer__information {
   background-color: var(--azul-2);
-  padding: 5em 0;
+  padding: 5em 0 1em 0;
 }
 .footer__top {
   padding-top: 1em;
@@ -473,7 +503,7 @@ span {
   cursor: pointer;
 }
 .footer__join-us {
-  background-color: var(--blanco);
+  background-color: var(--hueso);
   color: var(--azul-2);
   position: relative;
   overflow: hidden;
@@ -488,12 +518,12 @@ span {
   display: block;
   position: absolute;
   border-radius: 0.5em;
-  background-image: linear-gradient(45deg, transparent, transparent, transparent, var(--azul-2-difuminado), transparent, transparent, transparent);
   left: -400%;
   right: 0%;
   top: 0;
   bottom: 0;
   z-index: -1;
+  background-image: linear-gradient(45deg, transparent, transparent, transparent, var(--plata), transparent, transparent, transparent);
 }
 .footer__join-us:hover::after {
   right: -1500%;
@@ -514,16 +544,48 @@ span {
   display: block;
   position: absolute;
   border-radius: 0.5em;
-  background-image: linear-gradient(45deg, transparent, transparent, transparent, var(--blanco-difuminado), transparent, transparent, transparent);
   left: -400%;
   right: 0%;
   top: 0;
   bottom: 0;
   z-index: -1;
+  background-image: linear-gradient(45deg, transparent, transparent, transparent, var(--blanco), transparent, transparent, transparent);
 }
 .footer__contact-us:hover::after {
   right: -1500%;
   transition: all 1s ease-in;
+}
+.footer__ieee-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.5em 0;
+}
+@media (max-width: 720px) {
+  .footer__ieee-sections {
+    flex-direction: column;
+  }
+}
+.footer__links {
+  width: 20%;
+  margin: .5em 0;
+  padding-top: 1em;
+  border-top: solid var(--blanco-difuminado) 2px;
+  top: 0;
+}
+@media (max-width: 720px) {
+  .footer__links {
+    width: 100%;
+  }
+}
+.footer__h3 {
+  color: var(--hueso);
+  font-weight: 700;
+}
+.footer__link {
+  font-size: 1rem;
+  color: var(--hueso);
+  font-weight: 300;
 }
 .footer__bottom {
   display: flex;
@@ -534,6 +596,7 @@ span {
 .footer__copy {
   font-size: 1rem;
   align-items: center;
+  color: var(--hueso);
 }
 .footer__ul {
   display: flex;
@@ -544,6 +607,7 @@ span {
 }
 .footer__a {
   font-size: 1.7rem;
+  color: var(--hueso);
 }
 .footer__i {
   transition: all 0.5s ease;

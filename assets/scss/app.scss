@@ -27,6 +27,7 @@ span {
 }
 
 .principal {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(90deg, rgba(41, 41, 41, 1), transparent),
@@ -34,10 +35,20 @@ span {
   background-size: cover;
 }
 
+/* ==========PARTICLES-JS========== */
+#particles-js{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+}
+
 /* ==========HEADER========== */
 
 .header {
-  padding: 0.5em 3.5em;
+  padding: 2em 3.5em .5em 3.5em;
+  z-index: 2;
 
   &__nav {
   }
@@ -48,6 +59,7 @@ span {
     align-items: center;
   }
   &__li {
+    z-index: 1;
   }
   &__a {
     padding: 0.5em;
@@ -70,6 +82,8 @@ span {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
+
   .banner__info {
     display: flex;
     flex-direction: column;
@@ -80,6 +94,7 @@ span {
   .banner__name {
     position: relative;
     margin-bottom: 4em;
+    z-index: 1;
   }
   .banner__h1-ramaieee {
     font-family: var(--tipo-secundaria);
@@ -97,11 +112,14 @@ span {
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 77px;
+    color: var(--blanco);
   }
   .banner__description {
     width: 58%;
+    z-index: 1;
   }
   .banner__p {
+    color: var(--blanco);
   }
   .banner__action {
     margin-top: 4em;
@@ -161,6 +179,7 @@ span {
   }
   &__a {
     font-size: 1.7rem;
+    color: var(--blanco);
   }
   &__i {
     transition: all 0.5s ease;
@@ -284,9 +303,11 @@ span {
   .information__h2 {
     font-size: 2.375rem;
     margin-bottom: 1.5em;
+    color: var(--hueso);
   }
   .information__p {
     text-align: justify;
+    color: var(--hueso);
   }
   .information__graphic {
     width: 50%;
@@ -327,14 +348,16 @@ span {
 /* ==========FOOTER========== */
 .footer {
   position: relative;
+
+  /* ==========FOOTER TOP========== */
   &__img {
     width: 30%;
     position: absolute;
-    top: 20%;
+    top: 8rem;
   }
   &__information {
     background-color: var(--azul-2);
-    padding: 5em 0;
+    padding: 5em 0 1em 0;
   }
   &__top {
     padding-top: 1em;
@@ -369,7 +392,7 @@ span {
   &__i {
   }
   &__join-us {
-    background-color: var(--blanco);
+    background-color: var(--hueso);
     color: var(--azul-2);
     position: relative;
     overflow: hidden;
@@ -385,21 +408,21 @@ span {
       display: block;
       position: absolute;
       border-radius: 0.5em;
-      background-image: linear-gradient(
-        45deg,
-        transparent,
-        transparent,
-        transparent,
-        var(--azul-2-difuminado),
-        transparent,
-        transparent,
-        transparent
-      );
       left: -400%;
       right: 0%;
       top: 0;
       bottom: 0;
       z-index: -1;
+      background-image: linear-gradient(
+        45deg,
+        transparent,
+        transparent,
+        transparent,
+        var(--plata),
+        transparent,
+        transparent,
+        transparent
+      );
     }
 
     &:hover::after {
@@ -424,21 +447,21 @@ span {
       display: block;
       position: absolute;
       border-radius: 0.5em;
-      background-image: linear-gradient(
-        45deg,
-        transparent,
-        transparent,
-        transparent,
-        var(--blanco-difuminado),
-        transparent,
-        transparent,
-        transparent
-      );
       left: -400%;
       right: 0%;
       top: 0;
       bottom: 0;
       z-index: -1;
+      background-image: linear-gradient(
+        45deg,
+        transparent,
+        transparent,
+        transparent,
+        var(--blanco),
+        transparent,
+        transparent,
+        transparent
+      );
     }
 
     &:hover::after {
@@ -446,6 +469,48 @@ span {
       transition: all 1s ease-in;
     }
   }
+
+  /* ==========FOOTER MIDDLE========== */
+  &__middle {
+  }
+  &__ieee-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.5em 0;
+
+    @media (max-width: 720px) {
+      & {
+        flex-direction: column;
+      }
+    }
+  }
+  &__links {
+    width: 20%;
+    margin: .5em 0;
+    padding-top: 1em;
+    border-top: solid var(--blanco-difuminado) 2px;
+    top: 0;
+
+    @media (max-width: 720px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+  &__h3 {
+    color: var(--hueso);
+    font-weight: 700;
+  }
+  &__item{
+  }
+  &__link {
+    font-size: 1rem;
+    color: var(--hueso);
+    font-weight: 300;
+  }  
+
+  /* ==========FOOTER BOTTOM========== */
   &__bottom {
     display: flex;
     flex-wrap: nowrap;
@@ -455,6 +520,7 @@ span {
   &__copy {
     font-size: 1rem;
     align-items: center;
+    color: var(--hueso);
   }
   &__ul {
     display: flex;
@@ -465,6 +531,7 @@ span {
   }
   &__a {
     font-size: 1.7rem;
+    color: var(--hueso);
   }
   &__i {
     transition: all 0.5s ease;
