@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rama IEEE Unicauca</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./assets/scss/app.css" />
     <script
       src="https://kit.fontawesome.com/8e13114fca.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <div class="principal">
       <header class="header">
@@ -26,7 +31,7 @@
               <a href="" class="header__a"> OPCIÓN </a>
             </li>
             <li class="header__li">
-              <img class="header__img" src="./assets/img/logo.png" alt="" />
+              <img class="header__img" src="./assets/img/logo_IEEE.svg" alt="" />
             </li>
             <li class="header__li">
               <a href="" class="header__a"> OPCIÓN </a>
@@ -120,14 +125,17 @@
         </section>
       </main>
 
-      <web-particles id="particles-js" options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":false,"mode":"push"},"onHover":{"enable":false,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff"},"links":{"color":"#ffffff","distance":150,"enable":true,"opacity":0.4,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'></web-particles>
+      <web-particles
+        id="particles-js"
+        options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":false,"mode":"push"},"onHover":{"enable":false,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff", "opacity":1},"links":{"color":"#ffffff","distance":150,"enable":true,"opacity":0.1,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'
+      ></web-particles>
     </div>
 
     <div class="container">
       <section id="QuienesSomos" class="valores">
         <h2 class="valores__h2">¿Quienes Somos?</h2>
         <div class="valores__cards">
-          <div class="valores__card">
+          <div class="valores__card valores-1">
             <div class="valores__icons">
               <ul class="valores__ul">
                 <li class="valores__li">
@@ -164,7 +172,7 @@
             </div>
           </div>
 
-          <div class="valores__card">
+          <div class="valores__card valores-2">
             <div class="valores__icons">
               <ul class="valores__ul">
                 <li class="valores__li">
@@ -201,7 +209,7 @@
             </div>
           </div>
 
-          <div class="valores__card">
+          <div class="valores__card valores-3">
             <div class="valores__icons">
               <ul class="valores__ul">
                 <li class="valores__li">
@@ -254,7 +262,7 @@
             </p>
           </div>
 
-          <div class="information__graphic">
+          <div class="information__graphic animate__animated animate__slideInRight">
             <img
               class="information__img"
               src="./assets/img/Ensenar.png"
@@ -279,9 +287,39 @@
       <div class="container">
         <h2 class="informe-anual__h2">Informe Anual</h2>
         <div class="informe-anual__graphics">
-          <div class="informe-anual__graphic">aaa</div>
-          <div class="informe-anual__graphic">aaa</div>
-          <div class="informe-anual__graphic">aaa</div>
+
+          <div class="informe-anual__graphic ocultar graphic-1 animar">
+            <div class="informe-anual__counter">
+              <div class="counter__circulo-ext">
+                <div class="counter__circulo-int">
+                  <span class="counter__count" data-cantidadtotal="56">0</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="informe-anual__title">Eventos</h3>
+          </div>
+
+          <div class="informe-anual__graphic ocultar graphic-2">
+            <div class="informe-anual__counter">
+              <div class="counter__circulo-ext">
+                <div class="counter__circulo-int">
+                  <span class="counter__count" data-cantidadtotal="230">0</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="informe-anual__title">Miembros</h3>
+          </div>
+
+          <div class="informe-anual__graphic ocultar graphic-3">
+            <div class="informe-anual__counter">
+              <div class="counter__circulo-ext">
+                <div class="counter__circulo-int">
+                  <span class="counter__count" data-cantidadtotal="36">0</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="informe-anual__title">IEEE Awards</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -305,7 +343,6 @@
 
       <div class="footer__information">
         <div class="container">
-
           <div class="footer__top">
             <h2 class="footer__h2">Ready to get started?</h2>
 
@@ -325,41 +362,93 @@
             <div class="footer__ieee-sections">
               <ul class="footer__links">
                 <h3 class="footer__h3">PRODUCTS</h3>
-                <li class="footer__item"><a class="footer__link" href="">Overview</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Transactions</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Auth</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Indentify</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Balance</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Assets</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Income</a></li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Overview</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Transactions</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Auth</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Indentify</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Balance</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Assets</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Income</a>
+                </li>
               </ul>
               <ul class="footer__links">
                 <h3 class="footer__h3">USE CASES</h3>
-                <li class="footer__item"><a class="footer__link" href="">Personal finances</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Consumer payments</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Lending</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Banking and brokerage</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Business finances</a></li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Personal finances</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Consumer payments</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Lending</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Banking and brokerage</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Business finances</a>
+                </li>
               </ul>
               <ul class="footer__links">
                 <h3 class="footer__h3">DOCS</h3>
-                <li class="footer__item"><a class="footer__link" href="">Quickstart</a></li>
-                <li class="footer__item"><a class="footer__link" href="">API documentation</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Libreries</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Help center</a></li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Quickstart</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">API documentation</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Libreries</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Help center</a>
+                </li>
               </ul>
               <ul class="footer__links">
                 <h3 class="footer__h3">ABOUT US</h3>
-                <li class="footer__item"><a class="footer__link" href="">Company</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Careers</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Blog</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Contact</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Press</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Fin</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Privacy statement</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Security</a></li>
-                <li class="footer__item"><a class="footer__link" href="">Legal</a></li>
-                <li class="footer__item"><a class="footer__link" href="">For financial institutions</a></li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Company</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Careers</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Contact</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Press</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Fin</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Privacy statement</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Security</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">Legal</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">For financial institutions</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -370,7 +459,7 @@
             </p>
             <ul class="footer__ul">
               <li class="footer__li">
-                <span class="footer__span">
+                <p class="footer__span">
                   <a
                     href="https://www.linkedin.com/in/ieeeunicauca/"
                     target="_blank"
@@ -378,7 +467,7 @@
                   >
                     <i class="footer__i fa-brands fa-linkedin-in"></i>
                   </a>
-                </span>
+                </p>
               </li>
               <li class="footer__li">
                 <span class="footer__span">
@@ -427,10 +516,27 @@
     </footer>
 
     <!-- ==========SCRIPTS========== -->
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"></script>
-  </body>
 
+    <!-- CONTADORES -->
+    <script src="./assets/js/counters.js"></script>
+
+    <!-- PARTICLES -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"
+    ></script>
+
+    <!-- SCROLL-REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/scroll-reveal.js"></script>
+
+    <!-- GSAP - SCROLL-TRIGGER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="./assets/js/gsap.js"></script>
+  </body>
 </html>
