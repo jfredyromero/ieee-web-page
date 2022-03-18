@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rama IEEE Unicauca</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./assets/scss/app.css" />
     <script
       src="https://kit.fontawesome.com/8e13114fca.js"
@@ -17,12 +17,39 @@
   </head>
 
   <body>
+    <div class="sidebar">
+      <div class="container">
+        <nav class="sidebar__nav">
+          <ul class="sidebar__ul">
+            <li class="sidebar__li">
+              <a href="#QuienesSomos" class="sidebar__a">NOSOTROS</a>
+            </li>
+            <li class="sidebar__li">
+              <a href="#informacion" class="sidebar__a">INFORMACIÓN</a>
+            </li>
+            <li class="sidebar__li">
+              <a href="#" class="sidebar__a">OPCIÓN</a>
+            </li>
+            <li class="sidebar__li">
+              <a href="#" class="sidebar__a">OPCIÓN</a>
+            </li>
+            <li class="sidebar__li">
+              <a href="#" class="sidebar__a">OPCIÓN</a>
+            </li>
+            <li class="sidebar__li">
+              <a href="#" class="sidebar__a">OPCIÓN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <div class="principal">
       <header class="header">
         <nav class="header__nav">
           <ul class="header__ul">
             <li class="header__li">
-              <a href="#QuienesSomos" class="header__a"> QUIENES SOMOS </a>
+              <a href="#QuienesSomos" class="header__a"> NOSOTROS </a>
             </li>
             <li class="header__li">
               <a href="#informacion" class="header__a"> INFORMACIÓN </a>
@@ -31,7 +58,11 @@
               <a href="" class="header__a"> OPCIÓN </a>
             </li>
             <li class="header__li">
-              <img class="header__img" src="./assets/img/logo_IEEE.svg" alt="" />
+              <img
+                class="header__img"
+                src="./assets/img/logo_IEEE.svg"
+                alt=""
+              />
             </li>
             <li class="header__li">
               <a href="" class="header__a"> OPCIÓN </a>
@@ -41,6 +72,20 @@
             </li>
             <li class="header__li">
               <a href="" class="header__a"> OPCIÓN </a>
+            </li>
+
+            <li class="header__li-mobile">
+              <img
+                src="./assets/img/logo_IEEE.svg"
+                alt=""
+                class="header__img-mobile"
+              />
+            </li>
+
+            <li class="header__li-mobile">
+              <button class="header__button">
+                <i class="fa-solid fa-bars"></i>
+              </button>
             </li>
           </ul>
         </nav>
@@ -262,7 +307,9 @@
             </p>
           </div>
 
-          <div class="information__graphic animate__animated animate__slideInRight">
+          <div
+            class="information__graphic animate__animated animate__slideInRight"
+          >
             <img
               class="information__img"
               src="./assets/img/Ensenar.png"
@@ -287,7 +334,6 @@
       <div class="container">
         <h2 class="informe-anual__h2">Informe Anual</h2>
         <div class="informe-anual__graphics">
-
           <div class="informe-anual__graphic ocultar graphic-1 animar">
             <div class="informe-anual__counter">
               <div class="counter__circulo-ext">
@@ -516,6 +562,9 @@
     </footer>
 
     <!-- ==========SCRIPTS========== -->
+
+    <!-- MENU BAR -->
+    <script src="./assets/js/menu-bar.js"></script>
 
     <!-- CONTADORES -->
     <script src="./assets/js/counters.js"></script>
