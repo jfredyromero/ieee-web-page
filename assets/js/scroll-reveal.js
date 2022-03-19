@@ -5,7 +5,7 @@ ScrollReveal().reveal('.valores-1', {delay: 300, interval: 32, reset: true, dura
 ScrollReveal().reveal('.valores-2', {delay: 300, interval: 32, reset: true, duration: 2000 });
 ScrollReveal().reveal('.valores-3', {delay: 300, interval: 32, reset: true, duration: 2000 });
 
-ScrollReveal().reveal('.informe-anual__h2', {delay: 300, interval: 32, reset: true, duration: 3000 });
+/* ScrollReveal().reveal('.informe-anual__h2', {delay: 300, interval: 32, reset: true, duration: 3000 }); */
 ScrollReveal().reveal('.informe-anual__graphics', {delay: 300, interval: 32, reset: true, duration: 2000 });
 
 /* ScrollReveal().reveal('.graphic-1', {delay: 100, interval: 32, reset: true, duration: 2000 });
