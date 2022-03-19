@@ -413,6 +413,11 @@ span {
 .important {
   background-color: var(--azul-2);
   min-height: 76.5vh;
+  @media (max-width: 768px) {
+    & {
+      min-height: fit-content;
+    }
+  }
 }
 
 .information {
@@ -779,6 +784,7 @@ span {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1em;
+    padding-top: 2em;
     background-color: var(--azul-2);
 
     @media (max-width: 720px) {
