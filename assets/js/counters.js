@@ -1,47 +1,52 @@
 
-const circles = document.querySelectorAll('.informe-anual__counter')
-const contadores = document.querySelectorAll('.counter__count')
-const velocidad = 1000
+/* INTERSECTION OBSERVER */
 
-const animarContadores = () => {
-    for (const contador of contadores) {
+window.addEventListener('DOMContentLoaded', () => {
 
-        console.log('circles', circles)
+    const globalConfig = {
 
-        const actualizar_contador = () => {
-            let cantidad_maxima = +contador.dataset.cantidadtotal,
-                valor_actual = +contador.innerText,
-                incremento = cantidad_maxima / velocidad
-
-            if (valor_actual < cantidad_maxima) {
-                contador.innerText = Math.ceil(valor_actual + incremento)
-                setTimeout(actualizar_contador, 20)
-            } else {
-                contador.innerText = cantidad_maxima
-            }
-        }
-        actualizar_contador()
+        "colorSlice": "#123f72",
+        "colorCircle": "#c5c5c5",
+        "strokeWidth": 15
+        /* e.t.c */
     }
-}
 
-/* Interserction observer */
+    // get all progress bar
+    const elements = document.querySelectorAll('.pie');
+    // call to function
+    const circle = new CircularProgressBar('pie', globalConfig);
 
-const mostrarContadores = (elementos) => {
-    elementos.forEach(element => {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+    // if IntersectionObserver is supported by the browser
+    if ('IntersectionObserver' in window) {
+        const config = {
+            threshold: 0.75,
+        };
 
-        if (element.isIntersecting) {
-            element.target.classList.add('animar')
-            element.target.classList.remove('ocultar')
-            setTimeout(animarContadores, 300)
-        }
-    });
-}
+        const ovserver = new IntersectionObserver((entries, ovserver) => {
 
-const observer = new IntersectionObserver(mostrarContadores, {
-    threshold: 0.75
-})
+            entries.map((entry) => {
 
-const elementosHTML = document.querySelectorAll('.informe-anual__graphic')
-elementosHTML.forEach(elementoHTML => {
-    observer.observe(elementoHTML)
+              if (entry.isIntersecting && entry.intersectionRatio >= 0.75) {
+                circle.initial(entry.target);
+                ovserver.unobserve(entry.target);
+              }
+            });
+          }, config);
+
+        elements.forEach(item => {
+            ovserver.observe(item)
+        })
+
+    } else {
+        // if the browser does not support IntersectionObserver
+        // we run all progress bars at once
+
+        elements.forEach(item => {
+            circle.observe(item)
+        })
+
+
+    }
+
 })

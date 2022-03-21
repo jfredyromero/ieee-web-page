@@ -179,7 +179,7 @@ span {
     margin-bottom: 4em;
     z-index: 1;
 
-    @media (max-width: 768px) {      
+    @media (max-width: 768px) {
       & {
         display: flex;
         flex-wrap: nowrap;
@@ -196,7 +196,7 @@ span {
     letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 0.4);
 
-    @media (max-width: 768px) {    
+    @media (max-width: 768px) {
       & {
         color: var(--hueso);
         font-weight: 300;
@@ -262,6 +262,7 @@ span {
     font-weight: bold;
     z-index: 1;
     overflow: hidden;
+    cursor: pointer;
     transition: all 0.5s ease;
 
     &:hover {
@@ -509,7 +510,7 @@ span {
   }
 
   &__counter {
-    background-color: #c5c5c5;
+    
     border-radius: 50%;
     .counter__circulo-ext {
       width: 200px;
@@ -560,6 +561,7 @@ span {
     font-weight: 400;
   }
 }
+
 
 /* ==========FOOTER========== */
 .footer {
@@ -833,7 +835,6 @@ span {
 
     @media (max-width: 425px) {
       & {
-        
         text-align: center;
         color: var(--azul-2);
         order: 2;
