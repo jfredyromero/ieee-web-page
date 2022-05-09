@@ -214,6 +214,10 @@ span {
   background-attachment: fixed;
 }
 
+.banner__organizacion {
+  background-image: linear-gradient(90deg, var(--gris-t), transparent), url("../img/banner.png");
+}
+
 /* ==========SIDEBAR========== */
 .sidebar {
   position: fixed;
@@ -950,3 +954,5 @@ span {
     color: var(--azul-2);
   }
 }
+
+/*# sourceMappingURL=app.css.map */
