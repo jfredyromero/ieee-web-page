@@ -335,7 +335,7 @@ span {
 }
 
 /* ==========VALORES========== */
-.juntadirectiva {
+.nosotros {
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: nowrap;
@@ -351,9 +351,8 @@ span {
 	}
 
 	&__img {
-		width: 300px;
-		height: auto;
-		margin-bottom: 2rem;
+
+		width: 50%;
 	}
 
 	&__buttons {
@@ -394,7 +393,6 @@ span {
 		display: flex;
 		align-items: center;
 		text-align: center;
-		width: 320px;
 	}
 
 	&__cards {
@@ -453,6 +451,8 @@ span {
 		color: var(--azul-1);
 	}
 	&__logo-card {
+		display: flex;
+		justify-content: center;
 	}
 
 	&__card-title {

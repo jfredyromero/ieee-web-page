@@ -600,7 +600,7 @@ span {
 }
 
 /* ==========VALORES========== */
-.juntadirectiva {
+.nosotros {
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,19 +620,17 @@ span {
   padding: 4em 0;
 }
 
-.juntadirectiva__h2 {
+.nosotros__h2 {
   font-size: 2.375rem;
   color: var(--azul-2);
   margin-bottom: 2rem;
 }
 
-.juntadirectiva__img {
-  width: 300px;
-  height: auto;
-  margin-bottom: 2rem;
+.nosotros__img {
+  width: 50%;
 }
 
-.juntadirectiva__buttons {
+.nosotros__buttons {
   width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,12 +645,12 @@ span {
           justify-content: center;
 }
 
-.juntadirectiva__buttons .active {
+.nosotros__buttons .active {
   background-color: var(--azul-2);
   color: #ffffff;
 }
 
-.juntadirectiva__button {
+.nosotros__button {
   padding: 0.8rem 1rem;
   background-color: #bbcbdd;
   border-radius: 5rem;
@@ -662,7 +660,7 @@ span {
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.juntadirectiva__button:hover {
+.nosotros__button:hover {
   background-color: var(--azul-2);
   color: #ffffff;
   -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -670,12 +668,12 @@ span {
   cursor: pointer;
 }
 
-.juntadirectiva__h3 {
+.nosotros__h3 {
   color: #4e4e4e;
   margin-bottom: 0;
 }
 
-.juntadirectiva__p {
+.nosotros__p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,10 +681,9 @@ span {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 320px;
 }
 
-.juntadirectiva__cards {
+.nosotros__cards {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -703,14 +700,14 @@ span {
 }
 
 @media (max-width: 816px) {
-  .juntadirectiva__cards {
+  .nosotros__cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.juntadirectiva__card {
+.nosotros__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,12 +734,12 @@ span {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.juntadirectiva__card:hover {
+.nosotros__card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.juntadirectiva__icons {
+.nosotros__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,7 +753,7 @@ span {
           align-items: center;
 }
 
-.juntadirectiva__ul {
+.nosotros__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,24 +767,33 @@ span {
   margin-bottom: 1em;
 }
 
-.juntadirectiva__li {
+.nosotros__li {
   margin: 0 1em;
 }
 
-.juntadirectiva__i {
+.nosotros__i {
   padding: 0.1em 0.3em;
   border: solid #dadada 3px;
   border-radius: 0.2em;
   color: var(--azul-1);
 }
 
-.juntadirectiva__h3 {
+.nosotros__logo-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nosotros__h3 {
   font-size: 1.8rem;
   color: var(--azul-1);
   margin: 1em 0;
 }
 
-.juntadirectiva__p {
+.nosotros__p {
   text-align: justify;
   color: var(--gris);
 }
