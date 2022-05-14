@@ -340,7 +340,7 @@ span {
 }
 
 /* ==========VALORES========== */
-.nosotros {
+.juntadirectiva {
   min-height: 100vh;
   display: flex;
   flex-wrap: nowrap;
@@ -348,11 +348,20 @@ span {
   justify-content: center;
   align-items: center;
   padding: 4em 0;
-
+  
   &__h2 {
     font-size: 2.375rem;
-    color: var(--azul-1);
+    color: var(--azul-2);
+    margin-bottom: 2rem;
   }
+
+  &__img{
+    width: 300px;
+    height: auto;
+  }
+
+  
+
   &__cards {
     width: 100%;
     display: flex;
@@ -410,9 +419,7 @@ span {
   }
   &__logo-card {
   }
-  &__img {
-    width: 120px;
-  }
+
   &__card-title {
   }
   &__h3 {
