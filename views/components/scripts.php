@@ -1,5 +1,9 @@
 <div class="scripts">
-    <!-- ==========SCRIPTS========== -->        
+    <!-- ==========SCRIPTS========== --> 
+
+    <!-- VIEWS -->
+    <script src="../../assets/js/organization.js"></script>    
+
     <!-- MENU BAR -->
     <script src="./assets/js/menu-bar.js"></script>    
     <!-- CONTADORES -->
