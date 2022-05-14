@@ -1,7 +1,6 @@
 <?php
 
 //? Importamos los modelos requeridos
-require_once('./models/HomeModel.php');
 
 //? Importamos los controladores
 require_once('./controllers/HomeController.php');

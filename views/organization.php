@@ -19,6 +19,11 @@
 		<?php
 		include_once "components/header.php";
 		?>
+
+		<?php
+			var_dump($juntaDirectiva);
+		?>
+
 		<main class="container">
 			<section class="banner">
 				<div class="banner__info">

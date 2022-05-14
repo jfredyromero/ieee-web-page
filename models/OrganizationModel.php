@@ -1,13 +1,22 @@
 <?php
 
+require_once('./db/db.php');
+
 class OrganizationModel{
+
+    private $db;
     
     public function __construct(){
-
+        $this->db = new DBConnection();
     }
-
-    public function getJuntaDirectiva(){
-        $query = "SELECT * FROM miembros WHERE (estado = 1 AND junta = true) ORDER BY id ASC";
-    } 
     
+    public function getJuntaDirectiva(){
+        $this->db->getConnection();
+        $query = "SELECT * FROM miembros";
+        $result = $this->db->getData($query);
+        $this->db->closeConnection();
+        return $result;
+    }   
 }
+
+?>

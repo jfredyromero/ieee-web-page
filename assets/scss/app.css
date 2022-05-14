@@ -620,18 +620,13 @@ span {
   padding: 4em 0;
 }
 
-.juntadirectiva__h2 {
+.nosotros__h2 {
   font-size: 2.375rem;
   color: var(--azul-2);
   margin-bottom: 2rem;
 }
 
-.juntadirectiva__img {
-  width: 300px;
-  height: auto;
-}
-
-.juntadirectiva__cards {
+.nosotros__cards {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -648,14 +643,14 @@ span {
 }
 
 @media (max-width: 816px) {
-  .juntadirectiva__cards {
+  .nosotros__cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.juntadirectiva__card {
+.nosotros__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,12 +677,12 @@ span {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.juntadirectiva__card:hover {
+.nosotros__card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.juntadirectiva__icons {
+.nosotros__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,7 +696,7 @@ span {
           align-items: center;
 }
 
-.juntadirectiva__ul {
+.nosotros__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,24 +710,28 @@ span {
   margin-bottom: 1em;
 }
 
-.juntadirectiva__li {
+.nosotros__li {
   margin: 0 1em;
 }
 
-.juntadirectiva__i {
+.nosotros__i {
   padding: 0.1em 0.3em;
   border: solid #dadada 3px;
   border-radius: 0.2em;
   color: var(--azul-1);
 }
 
-.juntadirectiva__h3 {
+.nosotros__img {
+  width: 120px;
+}
+
+.nosotros__h3 {
   font-size: 1.8rem;
   color: var(--azul-1);
   margin: 1em 0;
 }
 
-.juntadirectiva__p {
+.nosotros__p {
   text-align: justify;
   color: var(--gris);
 }
