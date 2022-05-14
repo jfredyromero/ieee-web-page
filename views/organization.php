@@ -22,6 +22,7 @@
 
 		<?php
 			var_dump($juntaDirectiva);
+			echo 'HOLA';
 		?>
 
 		<main class="container">
