@@ -12,33 +12,9 @@
 </head>
 
 <body>
-	<aside class="sidebar">
-		<div class="container">
-			<nav class="sidebar__nav">
-				<ul class="sidebar__ul">
-					<li class="sidebar__li">
-						<a href="#QuienesSomos" class="sidebar__a">NOSOTROS</a>
-					</li>
-					<li class="sidebar__li">
-						<a href="#informacion" class="sidebar__a">EVENTOS</a>
-					</li>
-					<li class="sidebar__li">
-						<a href="#" class="sidebar__a">NOTICIAS</a>
-					</li>
-					<li class="sidebar__li">
-						<a href="#" class="sidebar__a">ANUARIO</a>
-					</li>
-					<li class="sidebar__li">
-						<a href="#" class="sidebar__a">GALERIA</a>
-					</li>
-					<li class="sidebar__li">
-						<a href="#" class="sidebar__a">ORGANIZACIÓN</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</aside>
-
+	<?php
+		include_once "components/sidebar.php";
+	?>
 	<div class="principal banner__organizacion">
 		<?php
 		include_once "components/header.php";
@@ -72,118 +48,9 @@
 	</div>
 
 	<div class="container">
-		<section id="QuienesSomos" class="nosotros">
-			<h2 class="nosotros__h2">¿Quienes Somos?</h2>
-			<div class="nosotros__cards">
-				<div class="nosotros__card nosotros-1">
-					<div class="nosotros__icons">
-						<ul class="nosotros__ul">
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-users"></i>
-								</span>
-							</li>
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-users"></i>
-								</span>
-							</li>
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-mars-and-venus"></i>
-								</span>
-							</li>
-						</ul>
-					</div>
-
-					<div class="nosotros__logo-card">
-						<img src="./assets/img/mision.png" alt="" class="nosotros__img" />
-					</div>
-
-					<div class="nosotros__card-title">
-						<h3 class="nosotros__h3">Misión</h3>
-					</div>
-
-					<div class="nosotros__card-description">
-						<p class="nosotros__p">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Distinctio quisquam soluta, non iure nihil explicabo.
-						</p>
-					</div>
-				</div>
-				<div class="nosotros__card nosotros-2">
-					<div class="nosotros__icons">
-						<ul class="nosotros__ul">
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-users"></i>
-								</span>
-							</li>
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-users"></i>
-								</span>
-							</li>
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-mars-and-venus"></i>
-								</span>
-							</li>
-						</ul>
-					</div>
-
-					<div class="nosotros__logo-card">
-						<img src="./assets/img/mision.png" alt="" class="nosotros__img" />
-					</div>
-
-					<div class="nosotros__card-title">
-						<h3 class="nosotros__h3">Misión</h3>
-					</div>
-
-					<div class="nosotros__card-description">
-						<p class="nosotros__p">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Distinctio quisquam soluta, non iure nihil explicabo.
-						</p>
-					</div>
-				</div>
-				<div class="nosotros__card nosotros-3">
-					<div class="nosotros__icons">
-						<ul class="nosotros__ul">
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-users"></i>
-								</span>
-							</li>
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-users"></i>
-								</span>
-							</li>
-							<li class="nosotros__li">
-								<span class="nosotros__span">
-									<i class="nosotros__i fa-solid fa-mars-and-venus"></i>
-								</span>
-							</li>
-						</ul>
-					</div>
-
-					<div class="nosotros__logo-card">
-						<img src="./assets/img/mision.png" alt="" class="nosotros__img" />
-					</div>
-
-					<div class="nosotros__card-title">
-						<h3 class="nosotros__h3">Misión</h3>
-					</div>
-
-					<div class="nosotros__card-description">
-						<p class="nosotros__p">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Distinctio quisquam soluta, non iure nihil explicabo.
-						</p>
-					</div>
-				</div>
-			</div>
+		<section id="QuienesSomos" class="juntadirectiva">
+			<h2 class="juntadirectiva__h2">Junta Directiva</h2>
+			<img class="juntadirectiva__img" src="./assets/img/juntadirectiva.svg" alt="juntadirectiva">
 		</section>
 	</div>
 
@@ -199,7 +66,6 @@
 						delectus, adipisci perspiciatis nostrum ad!
 					</p>
 				</div>
-
 				<div class="information__graphic animate__animated animate__slideInRight">
 					<img class="information__img" src="./assets/img/Ensenar.png" alt="" />
 				</div>
