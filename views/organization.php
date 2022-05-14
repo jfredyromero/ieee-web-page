@@ -125,6 +125,15 @@
 	include_once "components/footer.php";
 	include_once "components/scripts.php";
 	?>
+	<script>
+		fetch('https://jsonplaceholder.typicode.com/todos/1')
+		.then(response => response.json())
+		.then(json => console.log(json))
+
+		fetch('https://localhost/ieee-web-page/get-junta-directiva.php')
+		.then(response => response.json())
+		.then(json => console.log(json))
+	</script>
 </body>
 
 </html>
