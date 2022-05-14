@@ -5,3 +5,5 @@ class NoPageFoundController {
         require_once('./views/404.php');
     }
 }
+
+?>

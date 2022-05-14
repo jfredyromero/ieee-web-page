@@ -5,3 +5,5 @@ class NewsController {
         require_once('./views/news.php');
     }
 }
+
+?>

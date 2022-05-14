@@ -5,3 +5,5 @@ class YearbookController {
         require_once('./views/yearbook.php');
     }
 }
+
+?>
