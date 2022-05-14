@@ -620,13 +620,73 @@ span {
   padding: 4em 0;
 }
 
-.nosotros__h2 {
+.juntadirectiva__h2 {
   font-size: 2.375rem;
   color: var(--azul-2);
   margin-bottom: 2rem;
 }
 
-.nosotros__cards {
+.juntadirectiva__img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.juntadirectiva__buttons {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.juntadirectiva__buttons .active {
+  background-color: var(--azul-2);
+  color: #ffffff;
+}
+
+.juntadirectiva__button {
+  padding: 0.8rem 1rem;
+  background-color: #bbcbdd;
+  border-radius: 5rem;
+  margin: 0.3rem;
+  color: #002b4c;
+  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.juntadirectiva__button:hover {
+  background-color: var(--azul-2);
+  color: #ffffff;
+  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+.juntadirectiva__h3 {
+  color: #4e4e4e;
+  margin-bottom: 0;
+}
+
+.juntadirectiva__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 320px;
+}
+
+.juntadirectiva__cards {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,14 +703,14 @@ span {
 }
 
 @media (max-width: 816px) {
-  .nosotros__cards {
+  .juntadirectiva__cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.nosotros__card {
+.juntadirectiva__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,12 +737,12 @@ span {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.nosotros__card:hover {
+.juntadirectiva__card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.nosotros__icons {
+.juntadirectiva__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,7 +756,7 @@ span {
           align-items: center;
 }
 
-.nosotros__ul {
+.juntadirectiva__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,28 +770,24 @@ span {
   margin-bottom: 1em;
 }
 
-.nosotros__li {
+.juntadirectiva__li {
   margin: 0 1em;
 }
 
-.nosotros__i {
+.juntadirectiva__i {
   padding: 0.1em 0.3em;
   border: solid #dadada 3px;
   border-radius: 0.2em;
   color: var(--azul-1);
 }
 
-.nosotros__img {
-  width: 120px;
-}
-
-.nosotros__h3 {
+.juntadirectiva__h3 {
   font-size: 1.8rem;
   color: var(--azul-1);
   margin: 1em 0;
 }
 
-.nosotros__p {
+.juntadirectiva__p {
   text-align: justify;
   color: var(--gris);
 }

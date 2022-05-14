@@ -56,6 +56,20 @@
 		<section id="QuienesSomos" class="juntadirectiva">
 			<h2 class="juntadirectiva__h2">Junta Directiva</h2>
 			<img class="juntadirectiva__img" src="./assets/img/juntadirectiva.svg" alt="juntadirectiva">
+
+			<div class="juntadirectiva__buttons">
+				<button class="juntadirectiva__button active">Presidente</button>
+				<button class="juntadirectiva__button">Vice-presidente</button>
+				<button class="juntadirectiva__button">Secretario</button>
+				<button class="juntadirectiva__button">Tesorero</button>
+				<button class="juntadirectiva__button">Fiscal</button>
+			</div>
+
+			<h3 class="juntadirectiva__h3">Lina Virginia Muñoz Garcés</h3>
+			<h4 class="juntadirectiva__h4">Presidente</h4>
+			<p class="juntadirectiva__p">“This is an example web page design section to see your shape divider live in action on a beautiful design.”</p>
+			<img src="./assets/img/lina.png" alt="imagen presidente" class="juntadirectiva__img">
+
 		</section>
 	</div>
 
