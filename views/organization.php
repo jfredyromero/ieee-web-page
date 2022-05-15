@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Rama IEEE Unicauca</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="./assets/scss/organization.css" />
+	<link rel="stylesheet" href="./assets/css/organization.css" />
 	<script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,18 +15,17 @@
 	<?php
 	include_once "components/sidebar.php";
 	?>
-	<div class="principal banner__organizacion">
 
+	<div class="principal banner__noticias">
 		<?php
 		include_once "components/header.php";
 		?>
-
 		<main class="container">
 			<section class="banner">
 				<div class="banner__info">
 					<div class="banner__name">
-						<h1 class="banner__h1-ramaieee">Organización</h1>
-						<h1 class="banner__h1-unicauca">Junta y comités</h1>
+						<h1 class="banner__titulo">Organización</h1>
+						<h1 class="banner__subtitulo">Junta y comités</h1>
 					</div>
 					<div class="banner__description">
 						<p class="banner__p">
@@ -72,6 +71,7 @@
 
 	<?php
 	include_once "components/footer.php";
+	include_once "components/scripts.php";
 	?>
 
 
