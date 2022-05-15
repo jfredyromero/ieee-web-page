@@ -57,7 +57,7 @@
 
 			<div class="juntadirectiva__buttons">
 				<button class="juntadirectiva__button active">Presidente</button>
-				<button class="juntadirectiva__button">Vice-presidente</button>
+				<button class="juntadirectiva__button">Vicepresidente</button>
 				<button class="juntadirectiva__button">Secretario</button>
 				<button class="juntadirectiva__button">Tesorero</button>
 				<button class="juntadirectiva__button">Fiscal</button>
@@ -74,7 +74,8 @@
 	<?php
 	include_once "components/footer.php";
 	?>
+
+	<script src="assets/js/organization.js"></script>
 </body>
-<!-- <script src="../assets/js/organization.js"></script> -->
 
 </html>

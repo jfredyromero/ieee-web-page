@@ -1481,7 +1481,7 @@ span {
   cursor: pointer;
 }
 
-.juntadirectiva__button:focus {
+.juntadirectiva__button:hover {
   background-color: var(--azul-2);
   color: var(--blanco);
 }
