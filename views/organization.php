@@ -11,10 +11,6 @@
 	<script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
-<?php
-var_dump($juntaDirectiva);
-?>
-
 <body>
 	<?php
 	include_once "components/sidebar.php";
@@ -77,6 +73,11 @@ var_dump($juntaDirectiva);
 	<?php
 	include_once "components/footer.php";
 	?>
+
+
+	<script>
+		const juntaDirectiva = <?php echo json_encode($juntaDirectiva); ?>
+	</script>
 
 	<script src="assets/js/organization.js"></script>
 </body>

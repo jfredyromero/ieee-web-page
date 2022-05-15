@@ -1509,4 +1509,10 @@ span {
   background-color: var(--azul-2);
   color: var(--blanco);
 }
+
+.juntadirectiva .disabled {
+  background-color: rgba(129, 129, 129, 0.3);
+  color: var(--blanco);
+  cursor: not-allowed;
+}
 /*# sourceMappingURL=organization.css.map */
