@@ -11,16 +11,19 @@
 	<script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
+<?php
+var_dump($juntaDirectiva);
+?>
+
 <body>
 	<?php
 	include_once "components/sidebar.php";
 	?>
 	<div class="principal banner__organizacion">
+
 		<?php
 		include_once "components/header.php";
 		?>
-
-
 
 		<main class="container">
 			<section class="banner">
