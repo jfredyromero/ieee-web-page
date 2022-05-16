@@ -217,7 +217,6 @@ span {
 /* PROPIOS */
 .container {
   width: 80%;
-  max-width: 1300px;
   margin: auto;
 }
 
@@ -1012,16 +1011,66 @@ span {
   padding: 4em 0 0 0;
 }
 
+@media (min-width: 768px) {
+  .juntadirectiva {
+    position: relative;
+  }
+}
+
 .juntadirectiva__h2 {
   font-size: 2.375rem;
   color: var(--azul-2);
   margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .juntadirectiva__h2 {
+    position: absolute;
+    width: 500px;
+    line-height: normal;
+    letter-spacing: 0.3em;
+    text-align: right;
+    top: 25%;
+    right: 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    color: rgba(61, 61, 106, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .juntadirectiva__h2 {
+    width: 700px;
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .juntadirectiva__h2 {
+    width: 800px;
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .juntadirectiva__h2 {
+    top: 20%;
+    font-size: 12rem;
+    width: 100%;
+  }
+}
+
 .juntadirectiva__img {
   width: 60%;
   height: auto;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 426px) {
+  .juntadirectiva__img {
+    display: none;
+  }
 }
 
 .juntadirectiva__buttons {
@@ -1037,6 +1086,12 @@ span {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .juntadirectiva__buttons {
+    display: none;
+  }
 }
 
 .juntadirectiva__button {
@@ -1055,6 +1110,12 @@ span {
   color: var(--blanco);
 }
 
+@media (min-width: 768px) {
+  .juntadirectiva__button {
+    display: none;
+  }
+}
+
 .juntadirectiva__h3 {
   font-size: 1.125rem;
   font-weight: bold;
@@ -1062,26 +1123,229 @@ span {
   margin-bottom: .5rem;
 }
 
+@media (min-width: 768px) {
+  .juntadirectiva__h3 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    font-size: 1.5rem;
+    color: #4e4e4e;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .juntadirectiva__h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .juntadirectiva__h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .juntadirectiva__h3 {
+    font-size: 3.5rem;
+  }
+}
+
 .juntadirectiva__h4 {
   font-weight: 500;
 }
 
+@media (min-width: 768px) {
+  .juntadirectiva__h4 {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    font-size: 1.125rem;
+    color: #4e4e4e;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1024px) {
+  .juntadirectiva__h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .juntadirectiva__h4 {
+    font-size: 3rem;
+  }
+}
+
 .juntadirectiva__p {
   margin: 1em 0;
+  line-height: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .juntadirectiva__p {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 50%;
+    color: #4e4e4e;
+  }
+}
+
+@media (min-width: 1024px) {
+  .juntadirectiva__p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .juntadirectiva__p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .juntadirectiva__p {
+    font-size: 2.5rem;
+  }
 }
 
 .juntadirectiva__persona {
-  width: 90%;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/juntaDirectiva/presidente.jpg");
+  background-clip: content-box;
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 10px var(--gris);
+          box-shadow: 0 3px 10px var(--gris);
 }
 
-.juntadirectiva .active {
+@media (min-width: 375px) {
+  .juntadirectiva__persona {
+    width: 80%;
+  }
+}
+
+@media (min-width: 425px) {
+  .juntadirectiva__persona {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .juntadirectiva__persona {
+    display: none;
+  }
+}
+
+.juntadirectiva__cards {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.juntadirectiva__card {
+  margin: 0 10px;
+}
+
+@media (min-width: 2560px) {
+  .juntadirectiva__card {
+    margin: 0 30px;
+  }
+}
+
+.juntadirectiva__card:last-child {
+  margin-right: 0;
+}
+
+.juntadirectiva__card-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+@media (min-width: 1024px) {
+  .juntadirectiva__card-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .juntadirectiva__card-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .juntadirectiva__card-image {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .juntadirectiva__card-image {
+    border-radius: 40px;
+  }
+}
+
+.juntadirectiva .active-button {
   background-color: var(--azul-2);
   color: var(--blanco);
 }
 
-.juntadirectiva .disabled {
+.juntadirectiva .disabled-button {
   background-color: rgba(129, 129, 129, 0.3);
   color: var(--blanco);
+  cursor: not-allowed;
+}
+
+.juntadirectiva .active-card {
+  width: 140px;
+  height: 160px;
+}
+
+@media (min-width: 1024px) {
+  .juntadirectiva .active-card {
+    width: 180px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .juntadirectiva .active-card {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .juntadirectiva .active-card {
+    width: 22rem;
+    height: 30rem;
+  }
+}
+
+.juntadirectiva .disabled-card {
   cursor: not-allowed;
 }
 /*# sourceMappingURL=organization.css.map */

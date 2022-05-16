@@ -64,7 +64,23 @@
 			<h3 class="juntadirectiva__h3">Lina Virginia Muñoz Garcés</h3>
 			<h4 class="juntadirectiva__h4">Presidente</h4>
 			<p class="juntadirectiva__p">“This is an example web page design section to see your shape divider live in action on a beautiful design.”</p>
-			<img src="./assets/img/lina.png" alt="imagen presidente" class="juntadirectiva__persona">
+			<img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__persona">
+
+			<div class="juntadirectiva__menu">
+				<div class="juntadirectiva__menu-item"></div>
+				<div class="juntadirectiva__menu-item"></div>
+				<div class="juntadirectiva__menu-item"></div>
+				<div class="juntadirectiva__menu-item"></div>
+				<div class="juntadirectiva__menu-item"></div>
+			</div>
+
+			<div class="juntadirectiva__cards">
+				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image active-card" data-card="presidente"> </div>
+				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/vicepresidente.jpeg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="vicepresidente"> </div>
+				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/tesorero.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="tesorero"> </div>
+				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/secretario.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="secretario"> </div>
+				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/fiscal.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="fiscal"> </div>
+			</div>
 
 		</section>
 	</div>

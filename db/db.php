@@ -8,7 +8,14 @@
         private $db;
 
         public function __construct() {
-          $this->db = new PDO("mysql:host=$this->host;dbname=$this->dbname;charset=$this->charset", $this->user, $this->password);
+
+          try {
+            $this->db = new PDO("mysql:host=$this->host;dbname=$this->dbname;charset=$this->charset", $this->user, $this->password);
+
+          } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+          }
+
         }
 
         public function getConnection() {
