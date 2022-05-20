@@ -19,7 +19,12 @@
         }
 
         public function getConnection() {
-          return $this->db;
+          try {
+            return $this->db;
+
+          } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+          }
         }
 
         public function closeConnection() {

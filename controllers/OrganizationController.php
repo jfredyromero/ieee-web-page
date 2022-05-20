@@ -9,6 +9,8 @@ class OrganizationController {
 
         $organizationModel = new OrganizationModel();
         $juntaDirectiva = $organizationModel->getJuntaDirectiva();
+/*         $coordiandores = $organizationModel->getCoordiandores();
+        $comites = $organizationModel->getComites(); */
 
         require_once('./views/organization.php');
     }

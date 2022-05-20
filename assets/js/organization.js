@@ -18,9 +18,9 @@ juntadirectivaButton.forEach((button, index) => {
 juntadirectivaButton.forEach((button) => {
 	button.addEventListener('click', (e) => {
 		juntadirectivaButton.forEach((button) => {
-			button.classList.remove('active-button');
+			button.classList.remove('juntadirectiva__active-button');
 		});
-		e.target.classList.add('active-button');
+		e.target.classList.add('juntadirectiva__active-button');
 
 		if (e.target.innerText === 'Presidente') {
 			document.querySelector('.juntadirectiva__h4').innerHTML = presidente.cargo;
@@ -51,12 +51,6 @@ juntadirectivaButton.forEach((button) => {
 	});
 });
 
-//? Determinar si alguno de los cargos de junta directiva no vienen definidos en el array 'juntaDirectiva'
-//? Entonces, deshabilitar las tarjetas respectivas
-juntadirectivaCards.forEach((card, index) => {
-
-
-})
 
 //? Cuando se hace click en alguna tarjeta cambia el tamaño de la tarjeta
 juntadirectivaCards.forEach((card, index) => {
@@ -70,12 +64,12 @@ juntadirectivaCards.forEach((card, index) => {
 		card.addEventListener("click", (e) => {
 
 			juntadirectivaCards.forEach((card, index) => {
-				if (card.classList.contains('active-card')) {
-					card.classList.remove('active-card');
+				if (card.classList.contains('juntadirectiva__active-card')) {
+					card.classList.remove('juntadirectiva__active-card');
 				}
 			});
 
-			card.classList.add('active-card');
+			card.classList.add('juntadirectiva__active-card');
 
 			if (card.dataset.card === 'presidente') {
 				document.querySelector('.juntadirectiva__h4').innerHTML = presidente.cargo;
@@ -101,3 +95,22 @@ juntadirectivaCards.forEach((card, index) => {
 		});
 	}
 });
+
+//? Sección de comites
+
+const comitesButtons = document.querySelectorAll('.comites__button');
+const comitesH5 = document.querySelectorAll('.comites__h5');
+
+comitesButtons.forEach((button, index) => {
+
+	button.addEventListener("click", (e) => {
+		comitesButtons.forEach((button, index) => {
+			button.classList.remove('comites__active-button');
+			comitesH5[index].classList.remove('comites__active-h5');
+		})
+
+		button.classList.add('comites__active-button');
+		comitesH5[index].classList.add('comites__active-h5');
+
+	})
+})

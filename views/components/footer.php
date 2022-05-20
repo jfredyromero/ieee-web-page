@@ -34,31 +34,23 @@
             <div class="container footer__middle">
                 <div class="footer__ieee-sections">
                     <ul class="footer__links">
-                    <h3 class="footer__h3">PRODUCTS</h3>
+                    <h3 class="footer__h3">RAMA IEEE</h3>
                     <li class="footer__item">
-                        <a class="footer__link" href="">Overview</a>
+                        <a class="footer__link" href="">Nosotros</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="">Transactions</a>
+                        <a class="footer__link" href="">Misión</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="">Auth</a>
+                        <a class="footer__link" href="">Visión</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="">Indentify</a>
+                        <a class="footer__link" href="">Informe anual</a>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">Balance</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">Assets</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">Income</a>
-                    </li>
+                    
                     </ul>
                     <ul class="footer__links">
-                    <h3 class="footer__h3">USE CASES</h3>
+                    <h3 class="footer__h3">EVENTOS</h3>
                     <li class="footer__item">
                         <a class="footer__link" href="">Personal finances</a>
                     </li>
@@ -76,7 +68,7 @@
                     </li>
                     </ul>
                     <ul class="footer__links">
-                    <h3 class="footer__h3">DOCS</h3>
+                    <h3 class="footer__h3">NOTICIAS</h3>
                     <li class="footer__item">
                         <a class="footer__link" href="">Quickstart</a>
                     </li>
@@ -91,7 +83,7 @@
                     </li>
                     </ul>
                     <ul class="footer__links">
-                    <h3 class="footer__h3">ABOUT US</h3>
+                    <h3 class="footer__h3">ORGANIZACIÓN</h3>
                     <li class="footer__item">
                         <a class="footer__link" href="">Company</a>
                     </li>

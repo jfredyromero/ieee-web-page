@@ -54,7 +54,7 @@
 			<img class="juntadirectiva__img" src="./assets/img/juntadirectiva.svg" alt="juntadirectiva">
 
 			<div class="juntadirectiva__buttons">
-				<button class="juntadirectiva__button active">Presidente</button>
+				<button class="juntadirectiva__button juntadirectiva__active-button">Presidente</button>
 				<button class="juntadirectiva__button">Vicepresidente</button>
 				<button class="juntadirectiva__button">Secretario</button>
 				<button class="juntadirectiva__button">Tesorero</button>
@@ -75,27 +75,71 @@
 			</div>
 
 			<div class="juntadirectiva__cards">
-				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image active-card" data-card="presidente"> </div>
+				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image juntadirectiva__active-card" data-card="presidente"> </div>
 				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/vicepresidente.jpeg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="vicepresidente"> </div>
 				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/tesorero.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="tesorero"> </div>
 				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/secretario.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="secretario"> </div>
 				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/fiscal.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="fiscal"> </div>
 			</div>
-
 		</section>
 	</div>
+
+	<section class="comites-fondo">
+		<div class="container comites">
+			<h2 class="comites__titulo">Comités</h2>
+			<img src="./assets/img/comites.svg" alt="" class="comites__img">
+
+			<h3 class="comites__nombre-comite">Comité Académico</h3>
+
+			<p class="comites__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in volutpat nisi, et elementum ante. Vestibulum ullamcorper mauris vel euismod mattis. Vestibulum efficitur in nunc in eleifend</p>
+
+			<div class="comites__buttons">
+				<div class="comites__button comites__active-button" data-comite="academico"> <ion-icon name="book" class="comites__icono"></ion-icon> <h5 class="comites__h5 comites__active-h5" > Académico </h5> </div> <!-- academico -->
+				<div class="comites__button" data-comite="publicidad"> <ion-icon name="newspaper" class="comites__icono"></ion-icon> <h5 class="comites__h5" > Publicidad </h5> </div> <!-- publicidad -->
+				<div class="comites__button" data-comite="logistica"> <ion-icon name="calendar-clear" class="comites__icono"></ion-icon> <h5 class="comites__h5" > Logística </h5> </div> <!-- logistica -->
+				<div class="comites__button" data-comite="patrocinios"> <ion-icon name="wallet" class="comites__icono"></ion-icon> <h5 class="comites__h5" > Patrocinios </h5> </div> <!-- patrocinios -->
+				<div class="comites__button" data-comite="ludicas"> <ion-icon name="balloon" class="comites__icono"></ion-icon> <h5 class="comites__h5" > Lúdicas </h5> </div> <!-- ludicas -->
+			</div>
+
+			<div class="comites__coordinadores">
+				<div class="comites__coordinador">
+					<div class="comites__persona">
+						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Coordinador del comité" class="comites__persona-img">
+					</div>
+					<div class="comites__persona-info">
+						<h3 class="comites__persona-nombre">Johan Santiago Yangana</h3>
+						<h4 class="comites__persona-cargo">Coordinador</h4>
+					</div>
+				</div>
+				<div class="comites__coordinador">
+					<div class="comites__persona">
+						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Sub-coordinador del comité" class="comites__persona-img">
+					</div>
+					<div class="comites__persona-info">
+						<h3 class="comites__persona-nombre">Luis Fernando Coral Patiño</h3>
+						<h4 class="comites__persona-cargo">Sub-Coordinador</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<?php
 	include_once "components/footer.php";
 	include_once "components/scripts.php";
 	?>
 
-
 	<script>
 		const juntaDirectiva = <?php echo json_encode($juntaDirectiva); ?>
+		/* const coordinadores = <?php echo json_encode($coordiandores); ?>
+		const comites = <?php echo json_encode($comites); ?> */
 	</script>
 
 	<script src="assets/js/organization.js"></script>
+
+	<!-- ICONOS ionic-icons (sección comites) -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

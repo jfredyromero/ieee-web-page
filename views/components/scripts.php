@@ -1,5 +1,6 @@
 <div class="scripts">
     <!-- ==========SCRIPTS========== --> 
+    <script src="https://kit.fontawesome.com/0e947e6160.js" crossorigin="anonymous"></script>
 
     <!-- MENU BAR -->
     <script src="./assets/js/menu-bar.js"></script>    
