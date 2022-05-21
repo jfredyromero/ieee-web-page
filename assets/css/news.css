@@ -204,13 +204,13 @@ span {
   top: -15%;
   width: 100%;
   height: 20%;
-  background-color: green;
+  background-color: red;
 }
 
 .animated-wave {
   width: 100%;
   right: 100px;
-  background-image: url("../assets/img/blueWave.svg");
+  background-image: url("../../assets/img/blueWave.svg");
   background-repeat: repeat-x;
   background-size: 100%;
 }
