@@ -48,40 +48,47 @@
 		<web-particles id="particles-js" options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":false,"mode":"push"},"onHover":{"enable":false,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff", "opacity":1},"links":{"color":"#ffffff","distance":150,"enable":true,"opacity":0.1,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'></web-particles>
 	</div>
 
-	<div class="container">
-		<section class="juntadirectiva">
-			<h2 class="juntadirectiva__h2">Junta Directiva</h2>
-			<img class="juntadirectiva__img" src="./assets/img/juntadirectiva.svg" alt="juntadirectiva">
+	<div class="juntadirectiva-fondo">
+		<div class="waves">
+			<div class="animated-wave white-wave1"></div>
+			<div class="animated-wave white-wave2"></div>
+			<div class="animated-wave white-wave3"></div>
+		</div>
+		<div class="container">
+			<section class="juntadirectiva">
+				<h2 class="juntadirectiva__h2">Junta Directiva</h2>
+				<img class="juntadirectiva__img" src="./assets/img/juntadirectiva.svg" alt="juntadirectiva">
 
-			<div class="juntadirectiva__buttons">
-				<button class="juntadirectiva__button juntadirectiva__active-button">Presidente</button>
-				<button class="juntadirectiva__button">Vicepresidente</button>
-				<button class="juntadirectiva__button">Secretario</button>
-				<button class="juntadirectiva__button">Tesorero</button>
-				<button class="juntadirectiva__button">Fiscal</button>
-			</div>
+				<div class="juntadirectiva__buttons">
+					<button class="juntadirectiva__button juntadirectiva__active-button">Presidente</button>
+					<button class="juntadirectiva__button">Vicepresidente</button>
+					<button class="juntadirectiva__button">Secretario</button>
+					<button class="juntadirectiva__button">Tesorero</button>
+					<button class="juntadirectiva__button">Fiscal</button>
+				</div>
 
-			<h3 class="juntadirectiva__h3">Lina Virginia Muñoz Garcés</h3>
-			<h4 class="juntadirectiva__h4">Presidente</h4>
-			<p class="juntadirectiva__p">“This is an example web page design section to see your shape divider live in action on a beautiful design.”</p>
-			<img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__persona">
+				<h3 class="juntadirectiva__h3">Lina Virginia Muñoz Garcés</h3>
+				<h4 class="juntadirectiva__h4">Presidente</h4>
+				<p class="juntadirectiva__p">“This is an example web page design section to see your shape divider live in action on a beautiful design.”</p>
+				<img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__persona">
 
-			<div class="juntadirectiva__menu">
-				<div class="juntadirectiva__menu-item"></div>
-				<div class="juntadirectiva__menu-item"></div>
-				<div class="juntadirectiva__menu-item"></div>
-				<div class="juntadirectiva__menu-item"></div>
-				<div class="juntadirectiva__menu-item"></div>
-			</div>
+				<div class="juntadirectiva__menu">
+					<div class="juntadirectiva__menu-item"></div>
+					<div class="juntadirectiva__menu-item"></div>
+					<div class="juntadirectiva__menu-item"></div>
+					<div class="juntadirectiva__menu-item"></div>
+					<div class="juntadirectiva__menu-item"></div>
+				</div>
 
-			<div class="juntadirectiva__cards">
-				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image juntadirectiva__active-card" data-card="presidente"> </div>
-				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/vicepresidente.jpeg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="vicepresidente"> </div>
-				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/tesorero.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="tesorero"> </div>
-				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/secretario.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="secretario"> </div>
-				<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/fiscal.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="fiscal"> </div>
-			</div>
-		</section>
+				<div class="juntadirectiva__cards">
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image juntadirectiva__active-card" data-card="presidente"> </div>
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/vicepresidente.jpeg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="vicepresidente"> </div>
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/tesorero.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="tesorero"> </div>
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/secretario.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="secretario"> </div>
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/fiscal.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="fiscal"> </div>
+				</div>
+			</section>
+		</div>
 	</div>
 
 	<section class="comites-fondo">
@@ -94,11 +101,26 @@
 			<p class="comites__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in volutpat nisi, et elementum ante. Vestibulum ullamcorper mauris vel euismod mattis. Vestibulum efficitur in nunc in eleifend</p>
 
 			<div class="comites__buttons">
-				<div class="comites__button comites__active-button" data-comite="academico"> <ion-icon name="book" class="comites__icono"></ion-icon> <h5 class="comites__h5 comites__active-h5" > Académico </h5> </div> <!-- academico -->
-				<div class="comites__button" data-comite="publicidad"> <ion-icon name="newspaper" class="comites__icono"></ion-icon> <h5 class="comites__h5" > Publicidad </h5> </div> <!-- publicidad -->
-				<div class="comites__button" data-comite="logistica"> <ion-icon name="calendar-clear" class="comites__icono"></ion-icon> <h5 class="comites__h5" > Logística </h5> </div> <!-- logistica -->
-				<div class="comites__button" data-comite="patrocinios"> <ion-icon name="wallet" class="comites__icono"></ion-icon> <h5 class="comites__h5" > Patrocinios </h5> </div> <!-- patrocinios -->
-				<div class="comites__button" data-comite="ludicas"> <ion-icon name="balloon" class="comites__icono"></ion-icon> <h5 class="comites__h5" > Lúdicas </h5> </div> <!-- ludicas -->
+				<div class="comites__button comites__active-button" data-comite="academico">
+					<ion-icon name="book" class="comites__icono"></ion-icon>
+					<h5 class="comites__h5 comites__active-h5"> Académico </h5>
+				</div> <!-- academico -->
+				<div class="comites__button" data-comite="publicidad">
+					<ion-icon name="newspaper" class="comites__icono"></ion-icon>
+					<h5 class="comites__h5"> Publicidad </h5>
+				</div> <!-- publicidad -->
+				<div class="comites__button" data-comite="logistica">
+					<ion-icon name="calendar-clear" class="comites__icono"></ion-icon>
+					<h5 class="comites__h5"> Logística </h5>
+				</div> <!-- logistica -->
+				<div class="comites__button" data-comite="patrocinios">
+					<ion-icon name="wallet" class="comites__icono"></ion-icon>
+					<h5 class="comites__h5"> Patrocinios </h5>
+				</div> <!-- patrocinios -->
+				<div class="comites__button" data-comite="ludicas">
+					<ion-icon name="balloon" class="comites__icono"></ion-icon>
+					<h5 class="comites__h5"> Lúdicas </h5>
+				</div> <!-- ludicas -->
 			</div>
 
 			<div class="comites__coordinadores">

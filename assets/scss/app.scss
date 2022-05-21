@@ -17,6 +17,50 @@ span {
 	font-family: var(--tipo-secundaria);
 }
 
+.waves{
+	position: absolute;
+	top: -15%;
+	width: 100%;
+	height: 20%;
+	background-color: red;
+}
+
+.animated-wave{
+    width: 100%;
+    right: 100px;
+    background-image: url('../../assets/img/blueWave.svg');
+    background-repeat: repeat-x;
+    background-size: 100%;
+}
+
+.white-wave1{
+	animation: animate 30s linear infinite;
+    z-index: 999;
+}
+
+.white-wave2{
+	animation: animate1 20s linear infinite;
+    animation-delay: -5s;
+	opacity: 0.5;
+	z-index: 998;
+}
+
+.white-wave3{
+	animation: animate 10s linear infinite;
+    animation-delay: -10s;
+	opacity: 0.2;
+	z-index: 997;
+}
+
+@keyframes animate {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: 100vh;
+	}
+}
+
 /* PROPIOS */
 
 .container {
