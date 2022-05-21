@@ -100,6 +100,7 @@ juntadirectivaCards.forEach((card, index) => {
 
 const comitesButtons = document.querySelectorAll('.comites__button');
 const comitesH5 = document.querySelectorAll('.comites__h5');
+const comitesButtonClick = document.querySelectorAll('.comites__button-click');
 
 comitesButtons.forEach((button, index) => {
 
@@ -112,5 +113,16 @@ comitesButtons.forEach((button, index) => {
 		button.classList.add('comites__active-button');
 		comitesH5[index].classList.add('comites__active-h5');
 
+		if (e.target.innerText === 'Académico' || e.target.dataset.comite === 'academico') {
+			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité Académico'
+		} else if (e.target.innerText === 'Publicidad' || e.target.dataset.comite === 'publicidad') {
+			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité de publicidad'
+		} else if (e.target.innerText === 'Logística' || e.target.dataset.comite === 'logistica') {
+			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité de logística'
+		} else if (e.target.innerText === 'Patrocinios' || e.target.dataset.comite === 'patrocinios') {
+			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité de patrocinios'
+		} else if (e.target.innerText === 'Lúdicas' || e.target.dataset.comite === 'ludicas') {
+			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité de lúdicas'
+		}
 	})
 })

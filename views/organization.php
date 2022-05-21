@@ -101,24 +101,24 @@
 			<p class="comites__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in volutpat nisi, et elementum ante. Vestibulum ullamcorper mauris vel euismod mattis. Vestibulum efficitur in nunc in eleifend</p>
 
 			<div class="comites__buttons">
-				<div class="comites__button comites__active-button" data-comite="academico">
-					<ion-icon name="book" class="comites__icono"></ion-icon>
+				<div class="comites__button comites__active-button" data-comite="Académico">
+					<ion-icon name="book" class="comites__icono" data-comite="academico"></ion-icon>
 					<h5 class="comites__h5 comites__active-h5"> Académico </h5>
 				</div> <!-- academico -->
-				<div class="comites__button" data-comite="publicidad">
-					<ion-icon name="newspaper" class="comites__icono"></ion-icon>
+				<div class="comites__button" data-comite="Publicidad">
+					<ion-icon name="newspaper" class="comites__icono" data-comite="publicidad"></ion-icon>
 					<h5 class="comites__h5"> Publicidad </h5>
 				</div> <!-- publicidad -->
 				<div class="comites__button" data-comite="logistica">
-					<ion-icon name="calendar-clear" class="comites__icono"></ion-icon>
+					<ion-icon name="calendar-clear" class="comites__icono" data-comite="logistica"></ion-icon>
 					<h5 class="comites__h5"> Logística </h5>
 				</div> <!-- logistica -->
 				<div class="comites__button" data-comite="patrocinios">
-					<ion-icon name="wallet" class="comites__icono"></ion-icon>
+					<ion-icon name="wallet" class="comites__icono" data-comite="patrocinios"></ion-icon>
 					<h5 class="comites__h5"> Patrocinios </h5>
 				</div> <!-- patrocinios -->
 				<div class="comites__button" data-comite="ludicas">
-					<ion-icon name="balloon" class="comites__icono"></ion-icon>
+					<ion-icon name="balloon" class="comites__icono" data-comite="ludicas"></ion-icon>
 					<h5 class="comites__h5"> Lúdicas </h5>
 				</div> <!-- ludicas -->
 			</div>

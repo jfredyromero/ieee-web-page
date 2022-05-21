@@ -15,7 +15,6 @@
           } catch (Exception $e) {
             throw new Exception($e->getMessage());
           }
-
         }
 
         public function getConnection() {
