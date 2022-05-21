@@ -905,6 +905,12 @@ span {
   gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .juntadirectiva__timeline {
+    display: none;
+  }
+}
+
 .juntadirectiva .title {
   width: 100%;
 }

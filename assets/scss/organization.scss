@@ -23,7 +23,16 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 10px;
+
+		@media(max-width: 768px) {
+			display: none;
+		}		
 	}
+
+	
+
+	
+
     .title{
         width: 100%;
     }
