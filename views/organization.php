@@ -49,66 +49,66 @@
 	</div>
 
 	<div class="juntadirectiva-fondo">
-		<div class="waves">
+		<!-- <div class="waves">
 			<div class="animated-wave white-wave1"></div>
 			<div class="animated-wave white-wave2"></div>
 			<div class="animated-wave white-wave3"></div>
-		</div>
+		</div> -->
 		<div class="container">
 			<section class="juntadirectiva">
 				<h2 class="juntadirectiva__h2">Junta Directiva</h2>
 				<img class="juntadirectiva__img" src="./assets/img/juntadirectiva.svg" alt="juntadirectiva">
 
 				<div class="juntadirectiva__timeline">
-					<div class="title">
+					<!-- <div class="title">
 						<h4>Cargos</h4>
 						<h3>Junta Directiva</h3>
-					</div>
+					</div> -->
 					<div class="events">
 						<div class="event">
 							<div class="knob active"></div>
 							<div class="date">
 								<h2>Presidente</h2>
 							</div>
-							<div class="description">
+							<!-- <div class="description">
 								<p>Lina Virginia Muñoz</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="event">
 							<div class="knob"></div>
 							<div class="date">
 								<h2>Vice-presidente</h2>
 							</div>
-							<div class="description">
+							<!-- <div class="description">
 								<p>Juan Diego Bravo Guevara</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="event">
 							<div class="knob"></div>
 							<div class="date">
 								<h2>Tesorero</h2>
 							</div>
-							<div class="description">
+							<!-- <div class="description">
 								<p>Isabela Omen</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="event">
 							<div class="knob"></div>
 							<div class="date">
 								<h2>Secretario</h2>
 							</div>
-							<div class="description">
+							<!-- <div class="description">
 								<p>Paula Andrea Rosero</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="event">
 							<div class="knob"></div>
 							<div class="date">
 								<h2>Fiscal</h2>
 							</div>
-							<div class="description">
+							<!-- <div class="description">
 								<p>Ana Isabel Caicedo</p>
-							</div>
+							</div> -->
 						</div>
 						
 						<div class="line"></div>
@@ -127,14 +127,6 @@
 					<h4 class="juntadirectiva__h4">Presidente</h4>
 					<p class="juntadirectiva__p">“This is an example web page design section to see your shape divider live in action on a beautiful design.”</p>
 					<img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__persona">
-
-					<div class="juntadirectiva__menu">
-						<div class="juntadirectiva__menu-item"></div>
-						<div class="juntadirectiva__menu-item"></div>
-						<div class="juntadirectiva__menu-item"></div>
-						<div class="juntadirectiva__menu-item"></div>
-						<div class="juntadirectiva__menu-item"></div>
-					</div>
 
 					<div class="juntadirectiva__cards">
 						<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image juntadirectiva__active-card" data-card="presidente"> </div>
@@ -185,8 +177,8 @@
 						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Coordinador del comité" class="comites__persona-img">
 					</div>
 					<div class="comites__persona-info">
-						<h3 class="comites__persona-nombre">Johan Santiago Yangana</h3>
-						<h4 class="comites__persona-cargo">Coordinador</h4>
+						<h3 class="comites__coordinador-nombre">Johan Santiago Yangana</h3>
+						<h4 class="comites__coordinador-cargo">Coordinador</h4>
 					</div>
 				</div>
 				<div class="comites__coordinador">
@@ -194,8 +186,8 @@
 						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Sub-coordinador del comité" class="comites__persona-img">
 					</div>
 					<div class="comites__persona-info">
-						<h3 class="comites__persona-nombre">Luis Fernando Coral Patiño</h3>
-						<h4 class="comites__persona-cargo">Sub-Coordinador</h4>
+						<h3 class="comites__subcoordinador-nombre">Luis Fernando Coral Patiño</h3>
+						<h4 class="comites__subcoordinador-cargo">Sub-Coordinador</h4>
 					</div>
 				</div>
 			</div>
@@ -208,9 +200,10 @@
 	?>
 
 	<script>
-		const juntaDirectiva = <?php echo json_encode($juntaDirectiva); ?>
-		/* const coordinadores = <?php echo json_encode($coordiandores); ?>
-		const comites = <?php echo json_encode($comites); ?> */
+		const juntaDirectiva = <?php echo json_encode($juntaDirectiva) ?>;
+		const coordinadores = <?php echo json_encode($coordinadores) ?>;
+		const subcoordinadores = <?php echo json_encode($subcoordinadores) ?>;
+		const comites = <?php echo json_encode($comites) ?>;
 	</script>
 
 	<script src="assets/js/organization.js"></script>

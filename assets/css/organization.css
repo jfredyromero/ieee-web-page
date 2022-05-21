@@ -898,7 +898,7 @@ span {
 .juntadirectiva__timeline {
   position: absolute;
   right: 0;
-  top: 4rem;
+  top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1543,20 +1543,20 @@ span {
   }
 }
 
-.comites__persona-nombre {
+.comites__coordinador-nombre, .comites__subcoordinador-nombre {
   font-size: 1.125rem;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
 
-.comites__persona-cargo {
+.comites__coordinador-cargo, .comites__subcoordinador-cargo {
   text-align: center;
   font-weight: 300;
   font-size: 0.9rem;
 }
 
 @media (min-width: 720px) {
-  .comites__persona-cargo {
+  .comites__coordinador-cargo, .comites__subcoordinador-cargo {
     text-align: left;
   }
 }

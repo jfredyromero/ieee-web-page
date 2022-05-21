@@ -102,6 +102,9 @@ const comitesButtons = document.querySelectorAll('.comites__button');
 const comitesH5 = document.querySelectorAll('.comites__h5');
 const comitesButtonClick = document.querySelectorAll('.comites__button-click');
 
+const [coorAcademico, coorLogistica, coorPublicidad, coorPatrocinios, coorLudicas] = coordinadores;
+const [subAcademico, subLogistica, subPublicidad, subPatrocinios, subLudicas] = subcoordinadores;
+
 comitesButtons.forEach((button, index) => {
 
 	button.addEventListener("click", (e) => {
@@ -115,14 +118,43 @@ comitesButtons.forEach((button, index) => {
 
 		if (e.target.innerText === 'Académico' || e.target.dataset.comite === 'academico') {
 			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité Académico'
+
+			document.querySelector('.comites__coordinador-nombre').innerHTML = coorAcademico.primerNombre + ' ' + coorAcademico.primerApellido + ' ' + coorAcademico.segundoApellido;
+			document.querySelector('.comites__coordinador-cargo').innerHTML = coorAcademico.cargo;
+			document.querySelector('.comites__subcoordinador-nombre').innerHTML = subAcademico.primerNombre + ' ' + subAcademico.primerApellido + ' ' + subAcademico.segundoApellido;
+			document.querySelector('.comites__subcoordinador-cargo').innerHTML = subAcademico.cargo;
+
 		} else if (e.target.innerText === 'Publicidad' || e.target.dataset.comite === 'publicidad') {
 			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité de publicidad'
+
+			document.querySelector('.comites__coordinador-nombre').innerHTML = coorPublicidad.primerNombre + ' ' + coorPublicidad.primerApellido + ' ' + coorPublicidad.segundoApellido;
+			document.querySelector('.comites__coordinador-cargo').innerHTML = coorPublicidad.cargo;
+			document.querySelector('.comites__subcoordinador-nombre').innerHTML = subPublicidad.primerNombre + ' ' + subPublicidad.primerApellido + ' ' + subPublicidad.segundoApellido;
+			document.querySelector('.comites__subcoordinador-cargo').innerHTML = subPublicidad.cargo;
+
 		} else if (e.target.innerText === 'Logística' || e.target.dataset.comite === 'logistica') {
 			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité de logística'
+
+			document.querySelector('.comites__coordinador-nombre').innerHTML = coorLogistica.primerNombre + ' ' + coorLogistica.primerApellido + ' ' + coorLogistica.segundoApellido;
+			document.querySelector('.comites__coordinador-cargo').innerHTML = coorLogistica.cargo;
+			document.querySelector('.comites__subcoordinador-nombre').innerHTML = subLogistica.primerNombre + ' ' + subLogistica.primerApellido + ' ' + subLogistica.segundoApellido;
+			document.querySelector('.comites__subcoordinador-cargo').innerHTML = subLogistica.cargo;
+
 		} else if (e.target.innerText === 'Patrocinios' || e.target.dataset.comite === 'patrocinios') {
 			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité de patrocinios'
+
+			document.querySelector('.comites__coordinador-nombre').innerHTML = coorPatrocinios.primerNombre + ' ' + coorPatrocinios.primerApellido + ' ' + coorPatrocinios.segundoApellido;
+			document.querySelector('.comites__coordinador-cargo').innerHTML = coorPatrocinios.cargo;
+			document.querySelector('.comites__subcoordinador-nombre').innerHTML = subPatrocinios.primerNombre + ' ' + subPatrocinios.primerApellido + ' ' + subPatrocinios.segundoApellido;
+			document.querySelector('.comites__subcoordinador-cargo').innerHTML = subPatrocinios.cargo;
+
 		} else if (e.target.innerText === 'Lúdicas' || e.target.dataset.comite === 'ludicas') {
 			document.querySelector('.comites__nombre-comite').innerHTML = 'Comité de lúdicas'
+
+			document.querySelector('.comites__coordinador-nombre').innerHTML = coorLudicas.primerNombre + ' ' + coorLudicas.primerApellido + ' ' + coorLudicas.segundoApellido;
+			document.querySelector('.comites__coordinador-cargo').innerHTML = coorLudicas.cargo;
+			document.querySelector('.comites__subcoordinador-nombre').innerHTML = subLudicas.primerNombre + ' ' + subLudicas.primerApellido + ' ' + subLudicas.segundoApellido;
+			document.querySelector('.comites__subcoordinador-cargo').innerHTML = subLudicas.cargo;
 		}
 	})
 })
