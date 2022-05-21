@@ -49,10 +49,11 @@
 	</div>
 
 	<div class="container">
-		<section class="">
-			<h2 class="">Camino de Eventos</h2>
-			<img src="./assets/img/events_background.png" alt="juntadirectiva">
+		<div class="line_roadmap">
 
+		</div>
+		<section class="roadmap">
+			<h2 class="roadmap__h2">Camino de Eventos</h2>
 		</section>
 	</div>
 
@@ -70,6 +71,10 @@
 	<!-- ICONOS ionic-icons (sección comites) -->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+	<div class="tarjetas">
+		IEEE Day
+	</div>
 </body>
 
 </html>
