@@ -5,7 +5,7 @@
                 <a href="/ieee-web-page/#QuienesSomos" class="header__a"> NOSOTROS </a>
             </li>
             <li class="header__li">
-                <a href="/ieee-web-page/#informacion" class="header__a"> EVENTOS </a>
+                <a href="/ieee-web-page/eventos" class="header__a"> EVENTOS </a>
             </li>
             <li class="header__li">
                 <a href="noticias" class="header__a"> NOTICIAS </a>

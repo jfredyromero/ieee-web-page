@@ -9,6 +9,7 @@ require_once('./controllers/YearbookController.php');
 require_once('./controllers/OrganizationController.php');
 require_once('./controllers/GaleryController.php');
 require_once('./controllers/NoPageFoundController.php');
+require_once('./controllers/EventsController.php');
 
 //? URL
 $url = $_SERVER['REQUEST_URI'];
@@ -33,6 +34,11 @@ switch ($url) {
     case $dominio . 'organizacion':
         //echo 'Entro al case de la pagina de organizacion';
         OrganizationController::index();
+        break;
+
+    case $dominio . 'eventos':
+        //echo 'Entro al case de la pagina de eventos';
+        EventsController::index();
         break;
 
     case $dominio . 'galeria':
