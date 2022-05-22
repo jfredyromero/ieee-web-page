@@ -214,6 +214,26 @@ span {
   background-position: center;
   background-attachment: fixed;
 }
+/* ================= TARJAETAS ================== */
+.cards_container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 150px;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #123F72;
+  text-align: center;
+  color: white;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
 
 .banner__noticias {
   background-image: linear-gradient(90deg, var(--gris-t), transparent), url("../img/banner.png");
@@ -234,6 +254,7 @@ span {
 .banner__events {
   background-image: linear-gradient(90deg, var(--gris-t), transparent), url("../img/events_background.png");
 }
+
 
 /* ==========SIDEBAR========== */
 .sidebar {

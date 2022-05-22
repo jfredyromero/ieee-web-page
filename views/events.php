@@ -56,7 +56,39 @@
 			<h2 class="roadmap__h2">Camino de Eventos</h2>
 		</section>
 	</div>
+	<div class="cards_container">
+		<div class="cards">
+			IEEE Day 
+		</div>
+		<div class="cards">
+			Navidad <br> FIEEELIZ 
+		</div>
+		<div class="cards">
+			Día De La <br> Mujer 
+		</div>
+	</div>
+	<div class="cards_container">
+		<div class="cards">
+			Día De La <br> Madre
+		</div>
+		<div class="cards">
+			Día Del <br> Niño 
+		</div>
 
+	</div>
+	<div class="cards_container">
+		<div class="cards">
+			Bienvenida <br> De Primiparos
+		</div>
+		<div class="cards">
+			Ramakon 
+		</div>
+		<div class="cards">
+			TET <br> 2022
+		</div>
+	</div>
+	
+	
 	<section class="comites-fondo">
 		<div class="container comites">
 
@@ -72,9 +104,7 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	
-	<div class="tarjetas">
-		IEEE Day
-	</div>
+	
 </body>
 
 </html>
