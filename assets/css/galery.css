@@ -880,25 +880,29 @@ span {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .gridBlock {
   opacity: 0;
 }
 
 /* Grid almost fully pulled from https://www.rino-pelle.com/ */
 .grid-container {
-  position: relative;
   width: 100vw;
   height: 400vh;
+  position: relative;
 }
 
 .grid {
-  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   width: 70vw;
   height: 60vw;
   margin: 0 calc(100vw / 20 * 3);
+  position: absolute;
 }
 
 @media only screen and (max-width: 580px) {
