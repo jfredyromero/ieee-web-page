@@ -851,314 +851,6 @@ span {
   padding: 1em 0;
 }
 
-.roadmap__h2 {
-  font-size: 2rem;
-  color: var(--azul-2);
-  margin-bottom: 3rem;
-}
-
-@media (min-width: 768px) {
-  .roadmap__h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .roadmap__h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .roadmap__h2 {
-    font-size: 3.5rem;
-  }
-}
-
-.roadmap__img {
-  width: 60%;
-  height: auto;
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 426px) {
-  .roadmap__img {
-    display: none;
-  }
-}
-
-.roadmap__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 768px) {
-  .roadmap__buttons {
-    display: none;
-  }
-}
-
-.roadmap__button {
-  padding: 0.5em 0.8em;
-  background-color: rgba(18, 63, 114, 0.3);
-  color: var(--azul-2);
-  margin: 0.4em 0.1em;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.roadmap__button:hover {
-  background-color: var(--azul-2);
-  color: var(--blanco);
-}
-
-@media (min-width: 768px) {
-  .roadmap__button {
-    display: none;
-  }
-}
-
-.roadmap__h3 {
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: var(--gris-t);
-  margin-bottom: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .roadmap__h3 {
-    position: absolute;
-    top: 10%;
-    left: 0;
-    font-size: 1.5rem;
-    color: #4e4e4e;
-    letter-spacing: 0.05em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .roadmap__h3 {
-    font-size: 1.75rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .roadmap__h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 2560px) {
-  .roadmap__h3 {
-    font-size: 3.5rem;
-  }
-}
-
-.roadmap__h4 {
-  font-weight: 500;
-}
-
-@media (min-width: 768px) {
-  .roadmap__h4 {
-    position: absolute;
-    top: 16%;
-    left: 0;
-    font-size: 1.125rem;
-    color: #4e4e4e;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
-}
-
-@media (min-width: 1024px) {
-  .roadmap__h4 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 2560px) {
-  .roadmap__h4 {
-    font-size: 3rem;
-  }
-}
-
-.roadmap__p {
-  margin: 1em 0;
-  line-height: 1.2em;
-  color: #4e4e4e;
-}
-
-@media (min-width: 768px) {
-  .roadmap__p {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .roadmap__p {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .roadmap__p {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 2560px) {
-  .roadmap__p {
-    font-size: 2.5rem;
-  }
-}
-
-.roadmap__persona {
-  width: 100%;
-  height: 300px;
-  background-image: url("../img/juntaDirectiva/presidente.jpg");
-  background-clip: content-box;
-  background-size: cover;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px var(--gris);
-}
-
-@media (min-width: 375px) {
-  .roadmap__persona {
-    width: 80%;
-  }
-}
-
-@media (min-width: 425px) {
-  .roadmap__persona {
-    width: 300px;
-    height: 400px;
-  }
-}
-
-@media (min-width: 768px) {
-  .roadmap__persona {
-    display: none;
-  }
-}
-
-.roadmap__cards {
-  position: absolute;
-  bottom: 10%;
-  right: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-@media (max-width: 767px) {
-  .roadmap__cards {
-    display: none;
-  }
-}
-
-.roadmap__card {
-  margin: 0 10px;
-}
-
-@media (min-width: 2560px) {
-  .roadmap__card {
-    margin: 0 30px;
-  }
-}
-
-.roadmap__card:last-child {
-  margin-right: 0;
-}
-
-.roadmap__card-image {
-  width: 90px;
-  height: 90px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s all ease;
-}
-
-@media (min-width: 1024px) {
-  .roadmap__card-image {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .roadmap__card-image {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media (min-width: 2560px) {
-  .roadmap__card-image {
-    width: 18rem;
-    height: 18rem;
-  }
-}
-
-@media (min-width: 2560px) {
-  .roadmap__card-image {
-    border-radius: 40px;
-  }
-}
-
-.roadmap__active-button {
-  background-color: var(--azul-2);
-  color: var(--blanco);
-}
-
-.roadmap .disabled-button {
-  background-color: rgba(129, 129, 129, 0.3);
-  color: var(--blanco);
-  cursor: not-allowed;
-}
-
-.roadmap__active-card {
-  width: 140px;
-  height: 160px;
-}
-
-@media (min-width: 1024px) {
-  .roadmap__active-card {
-    width: 180px;
-    height: 200px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .roadmap__active-card {
-    width: 200px;
-    height: 250px;
-  }
-}
-
-@media (min-width: 2560px) {
-  .roadmap__active-card {
-    width: 22rem;
-    height: 30rem;
-  }
-}
-
-.roadmap .disabled-card {
-  cursor: not-allowed;
-}
-
-.tarjetas {
-  width: 394px;
-  height: 276;
-}
-
 /* ================= TARJAETAS ================== */
 .cards_container {
   display: flex;
@@ -1178,5 +870,139 @@ span {
   height: 150px;
   border-radius: 15px;
   font-size: 1.2rem;
+}
+
+.container-timeline {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-container-wrapper--timeline .swiper-slide {
+  display: flex;
+  background: gainsboro;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.swiper-container-wrapper--timeline .swiper-slide .container {
+  padding: 0;
+  width: 100%;
+}
+
+.swiper-container-wrapper--timeline .swiper-slide .title {
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.5s ease 0.5s;
+}
+
+.swiper-container-wrapper--timeline .swiper-slide-active .title {
+  opacity: 1;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar {
+  position: relative;
+  margin-bottom: 70px;
+  background-color: transparent;
+  height: 4px;
+  border-bottom: 1px solid #888;
+  width: 75%;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar-fill {
+  background-color: #123f72;
+  height: 3px;
+  top: 2px;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar:before {
+  position: absolute;
+  top: 2px;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background-color: #123f72;
+  content: "";
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-progressbar:after {
+  position: absolute;
+  top: 3px;
+  right: -100%;
+  width: 100%;
+  height: 1px;
+  background-color: #888;
+  content: "";
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom {
+  position: relative;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  line-height: 1.66;
+  bottom: 0;
+  z-index: 11;
+  width: 75%;
+  display: flex;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title {
+  position: absolute;
+  font-weight: 400;
+  right: 0;
+  transform: translateX(50%);
+  transition: 0.2s all ease-in-out;
+  transition-delay: 0s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title:after {
+  position: absolute;
+  top: calc(100% + 19px);
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #123f72;
+  border-radius: 2rem;
+  content: "";
+  transition: 0.2s all ease-in-out;
+  transition-delay: 0s;
+  z-index: 1;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title {
+  font-weight: 400;
+  transition-delay: 0.4s;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title:after {
+  background: #123f72;
+  width: 25px;
+  height: 25px;
+  transition-delay: 0.4s;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title {
+  color: #888;
+  font-weight: 16px;
+}
+
+.swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title:after {
+  background: #888;
 }
 /*# sourceMappingURL=events.css.map */
