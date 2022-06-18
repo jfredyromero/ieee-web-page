@@ -110,31 +110,31 @@
 								<p>Ana Isabel Caicedo</p>
 							</div> -->
 						</div>
-						
+
 						<div class="line"></div>
 					</div>
 				</div>
 
-					<div class="juntadirectiva__buttons">
-						<button class="juntadirectiva__button juntadirectiva__active-button">Presidente</button>
-						<button class="juntadirectiva__button">Vicepresidente</button>
-						<button class="juntadirectiva__button">Secretario</button>
-						<button class="juntadirectiva__button">Tesorero</button>
-						<button class="juntadirectiva__button">Fiscal</button>
-					</div>
+				<div class="juntadirectiva__buttons">
+					<button class="juntadirectiva__button juntadirectiva__active-button">Presidente</button>
+					<button class="juntadirectiva__button">Vicepresidente</button>
+					<button class="juntadirectiva__button">Secretario</button>
+					<button class="juntadirectiva__button">Tesorero</button>
+					<button class="juntadirectiva__button">Fiscal</button>
+				</div>
 
-					<h3 class="juntadirectiva__h3">Lina Virginia Muñoz Garcés</h3>
-					<h4 class="juntadirectiva__h4">Presidente</h4>
-					<p class="juntadirectiva__p">“This is an example web page design section to see your shape divider live in action on a beautiful design.”</p>
-					<img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__persona">
+				<h3 class="juntadirectiva__h3">Lina Virginia Muñoz Garcés</h3>
+				<h4 class="juntadirectiva__h4">Presidente</h4>
+				<p class="juntadirectiva__p">“This is an example web page design section to see your shape divider live in action on a beautiful design.”</p>
+				<img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__persona">
 
-					<div class="juntadirectiva__cards">
-						<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image juntadirectiva__active-card" data-card="presidente"> </div>
-						<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/vicepresidente.jpeg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="vicepresidente"> </div>
-						<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/tesorero.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="tesorero"> </div>
-						<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/secretario.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="secretario"> </div>
-						<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/fiscal.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="fiscal"> </div>
-					</div>
+				<div class="juntadirectiva__cards">
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image juntadirectiva__active-card" data-card="presidente"> </div>
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/vicepresidente.jpeg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="vicepresidente"> </div>
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/tesorero.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="tesorero"> </div>
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/secretario.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="secretario"> </div>
+					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/fiscal.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="fiscal"> </div>
+				</div>
 			</section>
 		</div>
 	</div>
@@ -201,9 +201,12 @@
 
 	<script>
 		const juntaDirectiva = <?php echo json_encode($juntaDirectiva) ?>;
-		const coordinadores = <?php echo json_encode($coordinadores) ?>;
-		const subcoordinadores = <?php echo json_encode($subcoordinadores) ?>;
-		const comites = <?php echo json_encode($comites) ?>;
+		// const coordinadores = <?php 
+		// echo json_encode($coordinadores) ?>;
+		// const subcoordinadores = <?php 
+		// echo json_encode($subcoordinadores) ?>;
+		// const comites = <?php 
+		// echo json_encode($comites) ?>;
 	</script>
 
 	<script src="assets/js/organization.js"></script>
