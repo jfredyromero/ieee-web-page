@@ -231,7 +231,7 @@ span {
   background-image: linear-gradient(90deg, var(--gris-t), transparent), url("../img/banner.png");
 }
 
-.banner__eventos {
+.banner__events {
   background-image: linear-gradient(90deg, var(--gris-t), transparent), url("../img/events_background.png");
 }
 
