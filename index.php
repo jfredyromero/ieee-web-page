@@ -36,7 +36,6 @@ switch ($url) {
         break;
 
     case $dominio . 'galeria':
-        // echo 'Entro al case de la pagina de Galeria';
         // GaleryController::index();
         break;
 

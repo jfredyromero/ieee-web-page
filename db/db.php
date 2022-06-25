@@ -2,15 +2,14 @@
 class DBConnection
 {
 	private $host = 'localhost';
-	private $dbname = 'miembros_rama_ieee';
-	private $user = 'root';
-	private $password = '';
+	private $dbname = 'ieee';
+	private $user = 'ieee';
+	private $password = '*dbi333*';
 	private $charset = 'utf8';
 	private $db;
 
 	public function __construct()
 	{
-
 		try {
 			$this->db = new PDO("mysql:host=$this->host;dbname=$this->dbname;charset=$this->charset", $this->user, $this->password);
 		} catch (Exception $e) {
@@ -34,13 +33,13 @@ class DBConnection
 
 	public function getData($query)
 	{
-		// $stmt = $this->db->prepare($query);
-		// $stmt->execute();
 		$conn = mysqli_connect($this->host, $this->user, $this->password, $this->dbname);
-		mysqli_set_charset($conn, "utf8");
-		$result = $conn->query($query);
+		mysqli_set_charset($conn, "utf8mb4");
+		$result = mysqli_query($conn, $query);				
+		if (!$result) {
+			die("Database access failed");
+		}
 		$data = $result->fetch_assoc();
-		// return $stmt->fetchAll(PDO::FETCH_ASSOC);
 		return $data;
 	}
 }

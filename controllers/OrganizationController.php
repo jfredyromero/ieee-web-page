@@ -1,6 +1,5 @@
 <?php
 
-require_once('./db/db.php');
 require_once('./models/OrganizationModel.php');
 
 class OrganizationController {
@@ -10,10 +9,9 @@ class OrganizationController {
         $organizationModel = new OrganizationModel();
 
         $juntaDirectiva = $organizationModel->getJuntaDirectiva();
-        // $coordinadores = $organizationModel->getCoordinadores();
-        // $subcoordinadores = $organizationModel->getSubCoordinadores();
-        // $comites = $organizationModel->getComites();
-
+        $coordinadores = $organizationModel->getCoordinadores();
+        $subcoordinadores = $organizationModel->getSubCoordinadores();
+        $comites = $organizationModel->getComites();
         require_once('./views/organization.php');
     }
 }

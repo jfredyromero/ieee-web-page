@@ -3,6 +3,7 @@ const juntadirectivaButton = document.querySelectorAll('.juntadirectiva__button'
 const juntadirectivaCards = document.querySelectorAll('.juntadirectiva__card-image');
 
 //? Desestructuración de los elementos del array 'juntaDirectiva'
+
 const [presidente, vicepresidente, secretario, tesorero, fiscal] = juntaDirectiva;
 
 //? Determinar si alguno de los cargos de junta directiva no vienen definidos en el array 'juntaDirectiva'

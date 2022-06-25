@@ -198,18 +198,16 @@
 	include_once "components/footer.php";
 	include_once "components/scripts.php";
 	?>
+	<?php echo json_encode($juntaDirectiva); ?>
 
 	<script>
 		const juntaDirectiva = <?php echo json_encode($juntaDirectiva) ?>;
-		// const coordinadores = <?php 
-		// echo json_encode($coordinadores) ?>;
-		// const subcoordinadores = <?php 
-		// echo json_encode($subcoordinadores) ?>;
-		// const comites = <?php 
-		// echo json_encode($comites) ?>;
+		const coordinadores = <?php echo json_encode($coordinadores) ?>;
+		const subcoordinadores = <?php echo json_encode($subcoordinadores) ?>;
+		const comites = <?php echo json_encode($comites) ?>;
 	</script>
 
-	<script src="assets/js/organization.js"></script>
+	<!-- <script src="assets/js/organization.js"></script> -->
 
 	<!-- ICONOS ionic-icons (sección comites) -->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
