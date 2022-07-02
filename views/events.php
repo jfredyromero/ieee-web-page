@@ -198,8 +198,8 @@
     <script>
         document.getElementById("ieeeday").addEventListener("click", () => {
             Swal.fire({
-                title:"IEEE Day",
-                width:1200,
+                title: "IEEE Day",
+                width: 1200,
                 imageUrl: 'https://unsplash.it/400/200',
                 imageWidth: 1200,
                 imageHeight: 500,
@@ -207,7 +207,6 @@
                 showConfirmButton: false,
             })
         })
-
     </script>
 
     <?php
