@@ -1,14 +1,12 @@
 <?php
 
-//? Importamos los modelos requeridos
-
 //? Importamos los controladores
 require_once('./controllers/HomeController.php');
 require_once('./controllers/NewsController.php');
 require_once('./controllers/YearbookController.php');
 require_once('./controllers/OrganizationController.php');
 require_once('./controllers/GaleryController.php');
-require_once('./controllers/NoPageFoundController.php');
+require_once('./controllers/ApiController.php');
 
 // URL
 $url = $_SERVER['REQUEST_URI'];
@@ -36,6 +34,6 @@ switch ($url) {
         break;
 
     default:
-        NoPageFoundController::index();
+        ApiController::index();
         break;
 }

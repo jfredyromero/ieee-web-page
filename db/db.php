@@ -34,8 +34,8 @@ class DBConnection
 	public function getData($query)
 	{
 		$conn = mysqli_connect($this->host, $this->user, $this->password, $this->dbname);
-		mysqli_set_charset($conn, "utf8mb4");
-		$result = mysqli_query($conn, $query);				
+		mysqli_set_charset($conn, "utf8");
+		$result = mysqli_query($conn, $query);
 		if (!$result) {
 			die("Database access failed");
 		}
