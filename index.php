@@ -2,6 +2,7 @@
 
 //? Importamos los controladores
 require_once('./controllers/HomeController.php');
+require_once('./controllers/EventsController.php');
 require_once('./controllers/NewsController.php');
 require_once('./controllers/YearbookController.php');
 require_once('./controllers/OrganizationController.php');
@@ -15,6 +16,10 @@ $dominio = '/ieee-web-page/';
 switch ($url) {
     case $dominio:
         HomeController::index();
+        break;
+
+    case $dominio . 'eventos':
+        EventsController::index();
         break;
 
     case $dominio . 'noticias':
