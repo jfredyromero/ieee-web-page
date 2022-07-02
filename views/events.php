@@ -49,7 +49,7 @@
     </div>
 
     <div class="events">
-        <h2 class="events__h2">Events Timeline</h2>
+        <h2 class="events__h2">Camino de Eventos</h2>
     </div>
 
     <section class="cd-timeline js-cd-timeline">
@@ -60,12 +60,12 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <h2>Title of section 1</h2>
+                    <h2>IEEE Day</h2>
                     <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
 
                     <div class="flex justify-between items-center">
                         <span class="cd-timeline__date">Jan 14</span>
-                        <a href="#0" class="btn btn--subtle">Read more</a>
+                        <a href="#0" id="ieeeday" class="btn btn--subtle">Mirar Foto</a>
                     </div>
                 </div> <!-- cd-timeline__content -->
             </div> <!-- cd-timeline__block -->
@@ -76,12 +76,12 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <h2>Title of section 2</h2>
+                    <h2>Navidad FIEEELIZ</h2>
                     <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
 
                     <div class="flex justify-between items-center">
                         <span class="cd-timeline__date">Jan 18</span>
-                        <a href="#0" class="btn btn--subtle">Read more</a>
+                        <a href="#0" class="btn btn--subtle">Mirar Foto</a>
                     </div>
                 </div> <!-- cd-timeline__content -->
             </div> <!-- cd-timeline__block -->
@@ -92,12 +92,12 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <h2>Title of section 3</h2>
+                    <h2>Día de la mujer</h2>
                     <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
 
                     <div class="flex justify-between items-center">
                         <span class="cd-timeline__date">Jan 24</span>
-                        <a href="#0" class="btn btn--subtle">Read more</a>
+                        <a href="#0" class="btn btn--subtle">Mirar Foto</a>
                     </div>
                 </div> <!-- cd-timeline__content -->
             </div> <!-- cd-timeline__block -->
@@ -108,12 +108,12 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <h2>Title of section 4</h2>
+                    <h2>Día del niño</h2>
                     <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
 
                     <div class="flex justify-between items-center">
                         <span class="cd-timeline__date">Feb 14</span>
-                        <a href="#0" class="btn btn--subtle">Read more</a>
+                        <a href="#0" class="btn btn--subtle">Mirar Foto</a>
                     </div>
                 </div> <!-- cd-timeline__content -->
             </div> <!-- cd-timeline__block -->
@@ -124,12 +124,12 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <h2>Title of section 5</h2>
+                    <h2>Día de la madre</h2>
                     <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
 
                     <div class="flex justify-between items-center">
                         <span class="cd-timeline__date">Feb 18</span>
-                        <a href="#0" class="btn btn--subtle">Read more</a>
+                        <a href="#0" class="btn btn--subtle">Mirar Foto</a>
                     </div>
                 </div> <!-- cd-timeline__content -->
             </div> <!-- cd-timeline__block -->
@@ -140,7 +140,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <h2>Final Section</h2>
+                    <h2>BIEEEnvenida de Primiparos</h2>
                     <p class="color-contrast-medium">This is the content of the last section</p>
 
                     <div class="flex justify-between items-center">
@@ -148,6 +148,37 @@
                     </div>
                 </div> <!-- cd-timeline__content -->
             </div> <!-- cd-timeline__block -->
+
+            <div class="cd-timeline__block">
+                <div class="cd-timeline__img cd-timeline__img--movie">
+                    <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                </div> <!-- cd-timeline__img -->
+
+                <div class="cd-timeline__content text-component">
+                    <h2>Ramakon</h2>
+                    <p class="color-contrast-medium">This is the content of the last section</p>
+
+                    <div class="flex justify-between items-center">
+                        <span class="cd-timeline__date">Feb 26</span>
+                    </div>
+                </div> <!-- cd-timeline__content -->
+            </div> <!-- cd-timeline__block -->
+
+            <div class="cd-timeline__block">
+                <div class="cd-timeline__img cd-timeline__img--movie">
+                    <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                </div> <!-- cd-timeline__img -->
+
+                <div class="cd-timeline__content text-component">
+                    <h2>TET 2022</h2>
+                    <p class="color-contrast-medium">This is the content of the last section</p>
+
+                    <div class="flex justify-between items-center">
+                        <span class="cd-timeline__date">Feb 26</span>
+                    </div>
+                </div> <!-- cd-timeline__content -->
+            </div> <!-- cd-timeline__block -->
+
         </div>
     </section> <!-- cd-timeline -->
 
@@ -160,11 +191,31 @@
 	</div> -->
 
     <script src="./assets/js/events.js"></script>
+    <!-- SWEETALERT2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
+    <script>
+        document.getElementById("ieeeday").addEventListener("click", () => {
+            Swal.fire({
+                title:"IEEE Day",
+                width:1200,
+                imageUrl: 'https://unsplash.it/400/200',
+                imageWidth: 1200,
+                imageHeight: 500,
+                imageAlt: 'Custom image',
+                showConfirmButton: false,
+            })
+        })
+
+    </script>
 
     <?php
     include_once "components/footer.php";
     include_once "components/scripts.php";
     ?>
+
+
 </body>
 
 </html>
