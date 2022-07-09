@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 
 //? Importamos los controladores
 require_once('./controllers/HomeController.php');

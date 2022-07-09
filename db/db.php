@@ -39,7 +39,10 @@ class DBConnection
 		if (!$result) {
 			die("Database access failed");
 		}
-		$data = $result->fetch_assoc();
+		$data = array();
+		while ($row = mysqli_fetch_assoc($result)) {
+			$data[] = $row;
+		}
 		return $data;
 	}
 }
