@@ -79,14 +79,17 @@
 				</div>
 
 				<div class="juntadirectiva__buttons">
-					<button class="juntadirectiva__button juntadirectiva__active-button">Presidente</button>
-					<button class="juntadirectiva__button">Vicepresidente</button>
-					<button class="juntadirectiva__button">Secretario</button>
-					<button class="juntadirectiva__button">Tesorero</button>
-					<button class="juntadirectiva__button">Fiscal</button>
+
+					<?php
+					for ($i = 0; $i < count($juntaDirectiva); $i++) {
+					?>
+						<button class="juntadirectiva__button"> <?php echo $juntaDirectiva[$i]['cargo'] ?> </button>
+					<?php
+					}
+					?>
 				</div>
 
-				<h3 class="juntadirectiva__h3"> <?php echo ($juntaDirectiva[0]['primerNombre']." ".$juntaDirectiva[0]['segundoNombre']." ".$juntaDirectiva[0]['primerApellido']." ".$juntaDirectiva[0]['segundoApellido']) ?> </h3>
+				<h3 class="juntadirectiva__h3"> <?php echo ($juntaDirectiva[0]['primerNombre'] . " " . $juntaDirectiva[0]['segundoNombre'] . " " . $juntaDirectiva[0]['primerApellido'] . " " . $juntaDirectiva[0]['segundoApellido']) ?> </h3>
 				<h4 class="juntadirectiva__h4"><?php echo $juntaDirectiva[0]['cargo'] ?></h4>
 				<p class="juntadirectiva__p">“<?php echo $juntaDirectiva[0]['frase'] ?>”</p>
 

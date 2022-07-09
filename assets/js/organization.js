@@ -16,6 +16,9 @@ const timeline_title = document.querySelectorAll(
 const juntaDirectivaImage = document.querySelectorAll(
 	".juntadirectiva__card-image"
 )
+const juntaDirectivaButtons = document.querySelectorAll(
+	".juntadirectiva__button"
+);
 
 const domain = "http://localhost/ieee-web-page/api/";
 let datosMiembro = {
@@ -51,6 +54,7 @@ let datosComite = {
 juntaDirectivaDots[0].classList.add("active");
 juntaDirectivaImage[0].classList.add("juntadirectiva__active-card");
 
+juntaDirectivaButtons[0].classList.add("juntadirectiva__active-button");
 
 juntaDirectivaEvents.forEach((dot, index) => {
 
