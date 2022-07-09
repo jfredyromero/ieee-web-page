@@ -1,5 +1,9 @@
 @import "./app.scss";
 
+.text-justify{
+	text-align: justify;
+}
+
 .events {
 	display: flex;
 	justify-content: center;
@@ -51,6 +55,12 @@
 	font-size: x-large;
 	font-weight: bold;
 	color: white;
+
+	@media (max-width: 816px) {
+		& {
+			font-size: medium;
+		}
+	}
 }
 
 .p_event:hover{
@@ -70,3 +80,4 @@
 .p_event:hover::after {
 	transform: scale(1, 1);
 }
+

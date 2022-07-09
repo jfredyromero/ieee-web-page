@@ -213,12 +213,12 @@
         document.getElementById("tet2022").addEventListener("click", () => {
             Swal.fire({
                 title: "TET 2022",
-                width: 900,
+                width:700,
+                imageWidth:600,
+                imageheigth:400,
                 imageUrl: './assets/img/header.png',
-                imageWidth: 850,
-                imageHeight: 350,
                 imageAlt: 'Custom image',
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quod labore. Architecto veniam quae ex inventore facilis laboriosam magnam ea accusantium beatae, voluptas minima explicabo. Repellat, eaque sit? Aspernatur, cupiditate!",
+                html: '<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quod labore. Architecto veniam quae ex inventore facilis laboriosam magnam ea accusantium beatae, voluptas minima explicabo. Repellat, eaque sit? Aspernatur, cupiditate!</p>',
                 showConfirmButton: false,
             })
         })

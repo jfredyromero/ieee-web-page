@@ -796,6 +796,10 @@ span {
   }
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .events {
   display: flex;
   justify-content: center;
@@ -846,6 +850,11 @@ span {
   font-size: x-large;
   font-weight: bold;
   color: white;
+}
+@media (max-width: 816px) {
+  .p_event {
+    font-size: medium;
+  }
 }
 
 .p_event:hover {
