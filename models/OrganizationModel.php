@@ -86,7 +86,7 @@ class OrganizationModel{
 
     public function getComiteByNombre($comite){
         $this->db->getConnection();
-        $query = "SELECT c.*, cdm.*, m.* FROM comites c JOIN cargos_de_miembros cdm ON c.id = cdm.comite JOIN miembros m ON cdm.miembro = m.id WHERE cdm.cargo = ($idCoordinador) AND c.comite = '$comite'";
+        $query = "SELECT c.*, cdm.*, m.* FROM comites c JOIN cargos_de_miembros cdm ON c.id = cdm.comite JOIN miembros m ON cdm.miembro = m.id WHERE cdm.cargo = ($this->idCoordinador) AND c.comite = '$comite'";
         $result = $this->db->getData($query);
         return $result;
     }
