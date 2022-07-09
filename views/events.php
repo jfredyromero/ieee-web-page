@@ -191,36 +191,37 @@
 		</svg>
 	</div> -->
 
+
     <script src="./assets/js/events.js"></script>
     <!-- SWEETALERT2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="sweetalert2.all.min.js"></script>
 
     <script>
-        document.getElementById("ieeeday").addEventListener("click", () => {
-            Swal.fire({
-                title: "IEEE Day",
-                width: 1200,
-                imageUrl: 'https://unsplash.it/400/200',
-                imageWidth: 1200,
-                imageHeight: 500,
-                imageAlt: 'Custom image',
-                showConfirmButton: false,
-            })
-        })
+        // document.getElementById("ieeeday").addEventListener("click", () => {
+        //     Swal.fire({
+        //         title: "IEEE Day",
+        //         width: 1200,
+        //         imageUrl: 'https://unsplash.it/400/200',
+        //         imageWidth: 1200,
+        //         imageHeight: 500,
+        //         imageAlt: 'Custom image',
+        //         showConfirmButton: false,
+        //     })
+        // })
 
         document.getElementById("tet2022").addEventListener("click", () => {
             Swal.fire({
                 title: "TET 2022",
-                width: 1200,
+                width: 900,
                 imageUrl: './assets/img/header.png',
-                imageWidth: 1200,
-                imageHeight: 500,
+                imageWidth: 850,
+                imageHeight: 350,
                 imageAlt: 'Custom image',
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quod labore. Architecto veniam quae ex inventore facilis laboriosam magnam ea accusantium beatae, voluptas minima explicabo. Repellat, eaque sit? Aspernatur, cupiditate!",
                 showConfirmButton: false,
             })
         })
-    
     </script>
 
     <?php
