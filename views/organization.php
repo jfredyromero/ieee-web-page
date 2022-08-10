@@ -60,80 +60,49 @@
 				<img class="juntadirectiva__img" src="./assets/img/juntadirectiva.svg" alt="juntadirectiva">
 
 				<div class="juntadirectiva__timeline">
-					<!-- <div class="title">
-						<h4>Cargos</h4>
-						<h3>Junta Directiva</h3>
-					</div> -->
 					<div class="events">
-						<div class="event">
-							<div class="knob active"></div>
-							<div class="date">
-								<h2>Presidente</h2>
-							</div>
-							<!-- <div class="description">
-								<p>Lina Virginia Muñoz</p>
-							</div> -->
-						</div>
-						<div class="event">
-							<div class="knob"></div>
-							<div class="date">
-								<h2>Vice-presidente</h2>
-							</div>
-							<!-- <div class="description">
-								<p>Juan Diego Bravo Guevara</p>
-							</div> -->
-						</div>
-						<div class="event">
-							<div class="knob"></div>
-							<div class="date">
-								<h2>Tesorero</h2>
-							</div>
-							<!-- <div class="description">
-								<p>Isabela Omen</p>
-							</div> -->
-						</div>
-						<div class="event">
-							<div class="knob"></div>
-							<div class="date">
-								<h2>Secretario</h2>
-							</div>
-							<!-- <div class="description">
-								<p>Paula Andrea Rosero</p>
-							</div> -->
-						</div>
-						<div class="event">
-							<div class="knob"></div>
-							<div class="date">
-								<h2>Fiscal</h2>
-							</div>
-							<!-- <div class="description">
-								<p>Ana Isabel Caicedo</p>
-							</div> -->
-						</div>
 
-						<div class="line"></div>
+						<?php
+						for ($i = 0; $i < count($juntaDirectiva); $i++) {
+						?>
+							<div class="event">
+								<div class="knob"></div>
+								<div class="date">
+									<h2 class="event__h2"><?php echo $juntaDirectiva[$i]['cargo'] ?></h2>
+								</div>
+							</div>
+							<div class="line"></div>
+						<?php
+						}
+						?>
 					</div>
 				</div>
 
 				<div class="juntadirectiva__buttons">
-					<button class="juntadirectiva__button juntadirectiva__active-button">Presidente</button>
-					<button class="juntadirectiva__button">Vicepresidente</button>
-					<button class="juntadirectiva__button">Secretario</button>
-					<button class="juntadirectiva__button">Tesorero</button>
-					<button class="juntadirectiva__button">Fiscal</button>
+
+					<?php
+					for ($i = 0; $i < count($juntaDirectiva); $i++) {
+					?>
+						<button class="juntadirectiva__button"> <?php echo $juntaDirectiva[$i]['cargo'] ?> </button>
+					<?php
+					}
+					?>
 				</div>
 
-				<h3 class="juntadirectiva__h3">Lina Virginia Muñoz Garcés</h3>
-				<h4 class="juntadirectiva__h4">Presidente</h4>
-				<p class="juntadirectiva__p">“This is an example web page design section to see your shape divider live in action on a beautiful design.”</p>
-				<img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__persona">
+				<h3 class="juntadirectiva__h3"> <?php echo ($juntaDirectiva[0]['primerNombre'] . " " . $juntaDirectiva[0]['segundoNombre'] . " " . $juntaDirectiva[0]['primerApellido'] . " " . $juntaDirectiva[0]['segundoApellido']) ?> </h3>
+				<h4 class="juntadirectiva__h4"><?php echo $juntaDirectiva[0]['cargo'] ?></h4>
+				<p class="juntadirectiva__p">“<?php echo $juntaDirectiva[0]['frase'] ?>”</p>
 
 				<div class="juntadirectiva__cards">
-					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/presidente.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image juntadirectiva__active-card" data-card="presidente"> </div>
-					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/vicepresidente.jpeg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="vicepresidente"> </div>
-					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/tesorero.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="tesorero"> </div>
-					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/secretario.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="secretario"> </div>
-					<div class="juntadirectiva__card"> <img src="./assets/img/juntaDirectiva/fiscal.jpg" alt="imagen responsable del cargo de junta directiva" class="juntadirectiva__card-image" data-card="fiscal"> </div>
+
+					<?php
+					for ($i = 0; $i < count($juntaDirectiva); $i++) {
+					?>
+						<div class="juntadirectiva__card"> <img src="<?php echo $juntaDirectiva[$i]['urlFoto'] ?>" alt="imagen responsable del cargo de <?php echo $juntaDirectiva[$i]['cargo'] ?>" class="juntadirectiva__card-image" data-card="<?php echo $juntaDirectiva[$i]['cargo'] ?>"> </div>
+					<?php
+					}
+					?>
+
 				</div>
 			</section>
 		</div>
@@ -143,32 +112,19 @@
 		<div class="container comites">
 			<h2 class="comites__titulo">Comités</h2>
 			<img src="./assets/img/comites.svg" alt="" class="comites__img">
-
-			<h3 class="comites__nombre-comite">Comité Académico</h3>
-
-			<p class="comites__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in volutpat nisi, et elementum ante. Vestibulum ullamcorper mauris vel euismod mattis. Vestibulum efficitur in nunc in eleifend</p>
-
+			<h3 class="comites__nombre-comite">Comité <?php echo $comites[0]['comite'] ?></h3>
+			<p class="comites__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in volutpat nisi, et elementum ante. Vestibulum ullamcorper mauris vel euismod mattis. Vestibulum efficitur in nunc in eleifend <?php echo $comites[0]['comite'] ?></p>
 			<div class="comites__buttons">
-				<div class="comites__button comites__active-button" data-comite="Académico">
-					<ion-icon name="book" class="comites__icono" data-comite="academico"></ion-icon>
-					<h5 class="comites__h5 comites__active-h5"> Académico </h5>
-				</div> <!-- academico -->
-				<div class="comites__button" data-comite="Publicidad">
-					<ion-icon name="newspaper" class="comites__icono" data-comite="publicidad"></ion-icon>
-					<h5 class="comites__h5"> Publicidad </h5>
-				</div> <!-- publicidad -->
-				<div class="comites__button" data-comite="logistica">
-					<ion-icon name="calendar-clear" class="comites__icono" data-comite="logistica"></ion-icon>
-					<h5 class="comites__h5"> Logística </h5>
-				</div> <!-- logistica -->
-				<div class="comites__button" data-comite="patrocinios">
-					<ion-icon name="wallet" class="comites__icono" data-comite="patrocinios"></ion-icon>
-					<h5 class="comites__h5"> Patrocinios </h5>
-				</div> <!-- patrocinios -->
-				<div class="comites__button" data-comite="ludicas">
-					<ion-icon name="balloon" class="comites__icono" data-comite="ludicas"></ion-icon>
-					<h5 class="comites__h5"> Lúdicas </h5>
-				</div> <!-- ludicas -->
+				<?php
+				for ($i = 0; $i < count($comites); $i++) {
+				?>
+					<div class="comites__button " data-comite="<?php echo $comites[$i]['comite'] ?>">
+						<ion-icon name="<?php echo $iconos[$i] ?>" class="comites__icono" data-comite="<?php echo $comites[$i]['comite'] ?>"></ion-icon>
+						<h5 data-comite="<?php echo $comites[$i]['comite'] ?>" class="comites__h5"> <?php echo $comites[$i]['comite'] ?> </h5>
+					</div>
+				<?php
+				}
+				?>
 			</div>
 
 			<div class="comites__coordinadores">

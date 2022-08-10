@@ -5,6 +5,17 @@ require_once('./db/db.php');
 class OrganizationModel{
 
     private $db;
+    private $idCoordinadorTET = "SELECT id from cargos WHERE cargo = 'Coordinador TET'"; // 1
+    private $idWebMaster = "SELECT id from cargos WHERE cargo = 'Web Master'"; // 2
+    private $idCoordinadoraWIE = "SELECT id from cargos WHERE cargo = 'Coordinadora WIE'"; // 3
+    private $idPresidente = "SELECT id from cargos WHERE cargo = 'Presidente'"; // 4 - Junta
+    private $idVicepresidente = "SELECT id from cargos WHERE cargo = 'Vicepresidente'"; // 5 - Junta
+    private $idFiscal = "SELECT id from cargos WHERE cargo = 'Fiscal'"; // 6 - Junta
+    private $idTesorero = "SELECT id from cargos WHERE cargo = 'Tesorero'"; // 7 - Junta
+    private $idSecretario = "SELECT id from cargos WHERE cargo = 'Secretario'"; // 8 - Junta
+    private $idCoordinador = "SELECT id from cargos WHERE cargo = 'Coordinador'"; // 9
+    private $idVoluntario = "SELECT id from cargos WHERE cargo = 'Voluntario'"; // 10
+    // private $idSubCoordinador = "SELECT id from cargos WHERE cargo = 'Subcoordinador'"; // 11
     
     public function __construct(){
         $this->db = new DBConnection();
@@ -72,6 +83,11 @@ class OrganizationModel{
         $result = $this->db->getData($query);
         return $result;
     }
-}
 
-?>
+    public function getComiteByNombre($comite){
+        $this->db->getConnection();
+        $query = "SELECT c.*, cdm.*, m.* FROM comites c JOIN cargos_de_miembros cdm ON c.id = cdm.comite JOIN miembros m ON cdm.miembro = m.id WHERE cdm.cargo = ($this->idCoordinador) AND c.comite = '$comite'";
+        $result = $this->db->getData($query);
+        return $result;
+    }
+}

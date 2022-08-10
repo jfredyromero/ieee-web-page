@@ -9,6 +9,10 @@ class ApiController
         $url = $_SERVER['REQUEST_URI'];
         $dominio = '/ieee-web-page/api/';
 
+        if(substr( $url, 0, 4 ) === "http"){
+
+        }
+
         switch ($url) {
             case $dominio . 'get-junta-directiva':
                 $organizationModel = new OrganizationModel();
@@ -54,7 +58,7 @@ class ApiController
                 $organizationModel = new OrganizationModel();
                 echo json_encode($organizationModel->getComites());
                 break;
-
+            
             default:
                 NoPageFoundController::index();
                 break;

@@ -13,7 +13,7 @@
     </li>
     <li class="banner__li">
         <span class="banner__span">
-        <a href="" target="_blank" class="banner__a">
+        <a href="mailto:ieee@unicauca.edu.co" target="_blank" class="banner__a">
             <i class="banner__i fa-solid fa-envelope"></i>
         </a>
         </span>
