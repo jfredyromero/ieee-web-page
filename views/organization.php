@@ -126,11 +126,10 @@
 				}
 				?>
 			</div>
-
 			<div class="comites__coordinadores">
 				<div class="comites__coordinador">
 					<div class="comites__persona">
-						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Coordinador del comité" class="comites__persona-img">
+						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Coordinador del comité" class="comites__persona-img" id="comites-coordinador">
 					</div>
 					<div class="comites__persona-info">
 						<h3 class="comites__coordinador-nombre">Johan Santiago Yangana</h3>
@@ -139,7 +138,7 @@
 				</div>
 				<div class="comites__coordinador">
 					<div class="comites__persona">
-						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Sub-coordinador del comité" class="comites__persona-img">
+						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Sub-coordinador del comité" class="comites__persona-img" id="comites-subcoordinador">
 					</div>
 					<div class="comites__persona-info">
 						<h3 class="comites__subcoordinador-nombre">Luis Fernando Coral Patiño</h3>

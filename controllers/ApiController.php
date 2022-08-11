@@ -9,8 +9,9 @@ class ApiController
         $url = $_SERVER['REQUEST_URI'];
         $dominio = '/ieee-web-page/api/';
 
-        if(substr( $url, 0, 4 ) === "http"){
-
+        if (substr($url, 19, 11) === "get-comites") {
+            $comite = urldecode(substr($url, 31));
+            $url = substr($url, 0, 30);
         }
 
         switch ($url) {
@@ -56,9 +57,13 @@ class ApiController
 
             case $dominio . 'get-comites':
                 $organizationModel = new OrganizationModel();
-                echo json_encode($organizationModel->getComites());
+                if ($comite) {
+                    echo json_encode($organizationModel->getComiteByNombre($comite));
+                } else {
+                    echo json_encode($organizationModel->getComites());
+                }
                 break;
-            
+
             default:
                 NoPageFoundController::index();
                 break;

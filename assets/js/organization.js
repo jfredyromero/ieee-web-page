@@ -4,18 +4,12 @@ const juntadirectivaButton = document.querySelectorAll(
 const juntadirectivaCards = document.querySelectorAll(
 	".juntadirectiva__card-image"
 );
-const juntaDirectivaEvents = document.querySelectorAll(
-	".event"
-);
-const juntaDirectivaDots = document.querySelectorAll(
-	".knob"
-);
-const timeline_title = document.querySelectorAll(
-	".event__h2"
-);
+const juntaDirectivaEvents = document.querySelectorAll(".event");
+const juntaDirectivaDots = document.querySelectorAll(".knob");
+const timeline_title = document.querySelectorAll(".event__h2");
 const juntaDirectivaImage = document.querySelectorAll(
 	".juntadirectiva__card-image"
-)
+);
 const juntaDirectivaButtons = document.querySelectorAll(
 	".juntadirectiva__button"
 );
@@ -46,7 +40,7 @@ let datosComite = {
 		segundoApellido: "",
 		cargo: "",
 		urlFoto: "",
-	}
+	},
 };
 
 //? Dependiendo del boton seleccionado, realizar los cambios en los textos de la junta directiva
@@ -57,11 +51,12 @@ juntaDirectivaImage[0].classList.add("juntadirectiva__active-card");
 juntaDirectivaButtons[0].classList.add("juntadirectiva__active-button");
 
 juntaDirectivaEvents.forEach((dot, index) => {
-
-	dot.addEventListener('click', () => {
+	dot.addEventListener("click", () => {
 		juntaDirectivaDots.forEach((dot, index) => {
 			juntaDirectivaDots[index].classList.remove("active");
-			juntaDirectivaImage[index].classList.remove("juntadirectiva__active-card");
+			juntaDirectivaImage[index].classList.remove(
+				"juntadirectiva__active-card"
+			);
 		});
 		juntaDirectivaDots[index].classList.add("active");
 		juntaDirectivaImage[index].classList.add("juntadirectiva__active-card");
@@ -70,19 +65,19 @@ juntaDirectivaEvents.forEach((dot, index) => {
 
 		switch (cargo.toLowerCase()) {
 			case "presidente":
-				getMemberData("get-presidente", "assets/img/juntaDirectiva/presidente.jpg");
+				getMemberData("get-presidente");
 				break;
 			case "vicepresidente":
-				getMemberData("get-vicepresidente", "assets/img/juntaDirectiva/vicepresindente.jpg");
+				getMemberData("get-vicepresidente");
 				break;
 			case "secretario":
-				getMemberData("get-secretario", "assets/img/juntaDirectiva/secretario.jpg");
+				getMemberData("get-secretario");
 				break;
 			case "tesorero":
-				getMemberData("get-tesorero", "assets/img/juntaDirectiva/tesorero.jpg");
+				getMemberData("get-tesorero");
 				break;
 			case "fiscal":
-				getMemberData("get-fiscal", "assets/img/juntaDirectiva/fiscal.jpg");
+				getMemberData("get-fiscal");
 				break;
 			default:
 				break;
@@ -92,7 +87,6 @@ juntaDirectivaEvents.forEach((dot, index) => {
 
 juntadirectivaButton.forEach(button => {
 	button.addEventListener("click", e => {
-
 		juntadirectivaButton.forEach(button => {
 			button.classList.remove("juntadirectiva__active-button");
 		});
@@ -101,19 +95,19 @@ juntadirectivaButton.forEach(button => {
 
 		switch (e.target.innerText.toLowerCase()) {
 			case "presidente":
-				getMemberData("get-presidente", "assets/img/juntaDirectiva/presidente.jpg");
+				getMemberData("get-presidente");
 				break;
 			case "vicepresidente":
-				getMemberData("get-vicepresidente", "assets/img/juntaDirectiva/vicepresindente.jpg");
+				getMemberData("get-vicepresidente");
 				break;
 			case "secretario":
-				getMemberData("get-secretario", "assets/img/juntaDirectiva/secretario.jpg");
+				getMemberData("get-secretario");
 				break;
 			case "tesorero":
-				getMemberData("get-tesorero", "assets/img/juntaDirectiva/tesorero.jpg");
+				getMemberData("get-tesorero");
 				break;
 			case "fiscal":
-				getMemberData("get-fiscal", "assets/img/juntaDirectiva/fiscal.jpg");
+				getMemberData("get-fiscal");
 				break;
 			default:
 				break;
@@ -122,7 +116,6 @@ juntadirectivaButton.forEach(button => {
 });
 
 function updateMemberData(data) {
-
 	const datos = data[0];
 	datosMiembro.cargo = datos.cargo;
 	datosMiembro.primerNombre = datos.primerNombre;
@@ -130,6 +123,11 @@ function updateMemberData(data) {
 	datosMiembro.primerApellido = datos.primerApellido;
 	datosMiembro.segundoApellido = datos.segundoApellido;
 	datosMiembro.frase = datos.frase;
+	datosMiembro.urlFoto = datos.urlFoto;
+	displayMemberData();
+}
+
+function displayMemberData() {
 	document.querySelector(".juntadirectiva__h4").innerHTML =
 		datosMiembro.cargo;
 	document.querySelector(".juntadirectiva__h3").innerHTML =
@@ -146,11 +144,10 @@ function updateMemberData(data) {
 		datosMiembro.urlFoto;
 }
 
-function getMemberData(apiUrl, photoUrl) {
+function getMemberData(apiUrl) {
 	fetch(domain + apiUrl)
 		.then(response => response.json())
 		.then(data => {
-			datosMiembro.urlFoto = photoUrl;
 			updateMemberData(data);
 		});
 }
@@ -170,19 +167,19 @@ juntadirectivaCards.forEach((card, index) => {
 
 		switch (card.dataset.card.toLowerCase()) {
 			case "presidente":
-				getMemberData("get-presidente", "assets/img/juntaDirectiva/presidente.jpg");
+				getMemberData("get-presidente");
 				break;
 			case "vicepresidente":
-				getMemberData("get-vicepresidente", "assets/img/juntaDirectiva/vicepresindente.jpg");
+				getMemberData("get-vicepresidente");
 				break;
 			case "secretario":
-				getMemberData("get-secretario", "assets/img/juntaDirectiva/secretario.jpg");
+				getMemberData("get-secretario");
 				break;
 			case "tesorero":
-				getMemberData("get-tesorero", "assets/img/juntaDirectiva/tesorero.jpg");
+				getMemberData("get-tesorero");
 				break;
 			case "fiscal":
-				getMemberData("get-fiscal", "assets/img/juntaDirectiva/fiscal.jpg");
+				getMemberData("get-fiscal");
 				break;
 			default:
 				break;
@@ -201,81 +198,17 @@ comitesH5[0].classList.add("comites__active-h5");
 
 const comitesButtonClick = document.querySelectorAll(".comites__button-click");
 
-
-fetch(domain + "get-coordinadores")
-	.then(response => response.json())
-	.then(data => {
-		const [
-			coorAcademico,
-			coorLogistica,
-			coorPublicidad,
-			coorPatrocinios,
-			coorLudicas,
-		] = data;
-	});
-
-// const [subAcademico, subLogistica, subPublicidad, subPatrocinios, subLudicas] =
-// 	subcoordinadores;
-
-// button.classList.remove("comites__active-button");
-// comitesH5[0].classList.remove("comites__active-h5");
-// button.classList.add("comites__active-button");
-// comitesH5[0].classList.add("comites__active-h5");
-
 comitesButtons.forEach((button, index) => {
 	button.addEventListener("click", e => {
 		comitesButtons.forEach((button, index) => {
 			button.classList.remove("comites__active-button");
 			comitesH5[index].classList.remove("comites__active-h5");
 		});
-
 		button.classList.add("comites__active-button");
 		comitesH5[index].classList.add("comites__active-h5");
-
-		switch (e.target.dataset.comite.toLowerCase()) {
-			case "académico":
-
-				document.querySelector(".comites__nombre-comite").innerHTML =
-					"Comité Académico";
-
-				document.querySelector(".comites__coordinador-nombre").innerHTML =
-					coorAcademico.primerNombre +
-					" " +
-					coorAcademico.primerApellido +
-					" " +
-					coorAcademico.segundoApellido;
-				document.querySelector(".comites__coordinador-cargo").innerHTML =
-					coorAcademico.cargo;
-				document.querySelector(
-					".comites__subcoordinador-nombre"
-				).innerHTML =
-					subAcademico.primerNombre +
-					" " +
-					subAcademico.primerApellido +
-					" " +
-					subAcademico.segundoApellido;
-				document.querySelector(".comites__subcoordinador-cargo").innerHTML =
-					subAcademico.cargo;
-
-
-
-				getMemberData("get-presidente", "assets/img/juntaDirectiva/presidente.jpg");
-				break;
-			case "publicidad":
-				getMemberData("get-vicepresidente", "assets/img/juntaDirectiva/vicepresindente.jpg");
-				break;
-			case "logística":
-				getMemberData("get-secretario", "assets/img/juntaDirectiva/secretario.jpg");
-				break;
-			case "patrocinios":
-				getMemberData("get-tesorero", "assets/img/juntaDirectiva/tesorero.jpg");
-				break;
-			case "lúdicas":
-				getMemberData("get-fiscal", "assets/img/juntaDirectiva/fiscal.jpg");
-				break;
-			default:
-				break;
-		}
+		document.querySelector(".comites__nombre-comite").innerHTML =
+			"Comité " + e.target.dataset.comite;
+		getComiteData("get-comites/" + e.target.dataset.comite.toLowerCase());
 	});
 });
 
@@ -288,24 +221,49 @@ function getComiteData(apiUrl) {
 }
 
 function updateComiteData(data) {
-	datosComite.cargo = data.cargo;
-	datosComite.primerNombre = data.primerNombre;
-	datosComite.segundoNombre = data.segundoNombre;
-	datosComite.primerApellido = data.primerApellido;
-	datosComite.segundoApellido = data.segundoApellido;
-	datosComite.frase = data.frase;
-	document.querySelector(".juntadirectiva__h4").innerHTML =
-		datosComite.cargo;
-	document.querySelector(".juntadirectiva__h3").innerHTML =
-		datosComite.primerNombre +
+	for (const member of data) {
+		if (member.cargo == "Coordinador") {
+			datosComite.datosCoordinador.primerNombre = member.primerNombre;
+			datosComite.datosCoordinador.segundoNombre = member.segundoNombre;
+			datosComite.datosCoordinador.primerApellido = member.primerApellido;
+			datosComite.datosCoordinador.segundoApellido =
+				member.segundoApellido;
+			datosComite.datosCoordinador.urlFoto = member.urlFoto;
+		} else {
+			datosComite.datosSubcoordinador.primerNombre = member.primerNombre;
+			datosComite.datosSubcoordinador.segundoNombre =
+				member.segundoNombre;
+			datosComite.datosSubcoordinador.primerApellido =
+				member.primerApellido;
+			datosComite.datosSubcoordinador.segundoApellido =
+				member.segundoApellido;
+			datosComite.datosSubcoordinador.urlFoto = member.urlFoto;
+		}
+	}
+	displayComiteData();
+}
+
+function displayComiteData() {
+	document.querySelector(".comites__coordinador-nombre").innerHTML =
+		datosComite.datosCoordinador.primerNombre +
 		" " +
-		(datosComite.segundoNombre != null
-			? datosComite.segundoNombre + " "
+		(datosComite.datosCoordinador.segundoNombre != null
+			? datosComite.datosCoordinador.segundoNombre + " "
 			: "") +
-		datosComite.primerApellido +
+		datosComite.datosCoordinador.primerApellido +
 		" " +
-		datosComite.segundoApellido;
-	document.querySelector(".juntadirectiva__p").innerHTML = datosComite.frase;
-	document.querySelector(".juntadirectiva__persona").src =
-		datosComite.urlFoto;
+		datosComite.datosCoordinador.segundoApellido;
+	document.querySelector("#comites-coordinador").src =
+		datosComite.datosCoordinador.urlFoto;
+	document.querySelector(".comites__subcoordinador-nombre").innerHTML =
+		datosComite.datosSubcoordinador.primerNombre +
+		" " +
+		(datosComite.datosSubcoordinador.segundoNombre != null
+			? datosComite.datosSubcoordinador.segundoNombre + " "
+			: "") +
+		datosComite.datosSubcoordinador.primerApellido +
+		" " +
+		datosComite.datosSubcoordinador.segundoApellido;
+	document.querySelector("#comites-subcoordinador").src =
+		datosComite.datosSubcoordinador.urlFoto;
 }
