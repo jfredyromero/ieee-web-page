@@ -47,16 +47,66 @@
 		<web-particles id="particles-js" options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":false,"mode":"push"},"onHover":{"enable":false,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff", "opacity":1},"links":{"color":"#ffffff","distance":150,"enable":true,"opacity":0.1,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'></web-particles>
 	</div>
 
+	<section id="QuienesSomos" class="nosotros">
+		<h2 class="nosotros__h2">¿Quienes Somos?</h2>
+		<div class="timeline__container">
+			<div class="timeline__arrow timeline__arrow--left">
+				<div class="center-arrow" id="left-arrow">
+				</div>
+			</div>
+			<div class="timeline__arrow timeline__arrow--right">
+				<div class="center-arrow" id="right-arrow">
+				</div>
+			</div>
+			<div class="timeline" id="timeline">
+				<?php
+				for ($i = $anioInicio; $i <= $anioFinal; $i = $i + $intervalo) {
+				?>
+					<div class="timeline__interval">
+						<a href="#mosaico" data-id="<?php echo $i ?>">
+							<div class="flex-1"></div>
+							<img src="/ieee-web-page/assets/img/timeline/<?php echo $img ?>.jpg" alt="<?php echo $i ?>-Image">
+							<div class="timeline__vertical-line"></div>
+							<span><?php echo $i ?>s</span>
+						</a>
+					</div>
+				<?php
+					$img++;
+				}
+				?>
+			</div>
+		</div>
+	</section>
+
 	<div class="wave">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 195">
 			<path fill="#123F72" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,90.7C672,85,768,107,864,101.3C960,96,1056,64,1152,74.7C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 		</svg>
+
+		<?php
+		for ($i = $anioInicio; $i <= $anioFinal; $i = $i + $intervalo) {
+		?>
+			<a class="year-link" data-id="<?php echo $i ?>">
+				<div class="year-interval"><?php echo $i ?></div>
+			</a>
+		<?php
+		}
+		?>
+
+		<div id="mosaico">
+
+		</div>
+
+
+
 	</div>
 
 	<?php
 	include_once "components/footer.php";
 	include_once "components/scripts.php";
+
 	?>
+	<script src="assets/js/yearbook.js" type="module"></script>
 </body>
 
 </html>
