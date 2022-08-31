@@ -1128,14 +1128,42 @@ span {
   padding-top: 1em;
   font-size: 2.375em;
   color: var(--azul-2);
+  margin-bottom: 1.5em;
 }
 .pasos__container{
   display: flex;
-}
-.finan__container{
-  display: flex;
+  justify-content: space-around;
 }
 
+.finan__container{
+  width: 40%;
+
+}
+.pagos__container{
+  width: 40%;
+}
+.titulo__seccion{
+  text-align: center;
+  font-size: 2em;
+  color: var(--azul-2);
+}
+.pasos__group{
+  width: 100%;
+}
+
+.pasos__item{
+  margin-top: 2.375em;
+  background-color: var(--azul-2);
+  color: var(--blanco-2);
+  border-radius: 8px;
+  padding: 2em;
+}
+.pasos__item ul{
+  margin-top: 1em;
+}
+.item__bold{
+  font-weight: bold;
+}
 
 
 

@@ -231,10 +231,84 @@
 
 		<div class="pasos__container">
 			<div class="finan__container">
-				<h2>Financiación</h2>
+				<h2 class=titulo__seccion>Financiación</h2>
+				<div class="pasos__group">
+					<div class="pasos__item">
+						<span class="item__bold">Elige el tipo de plan que más se acomode a tus necesidades:</span>
+						<ul>
+							<li><span class="item__bold">TIPO A -</span> Reserva <span class="item__bold">20%</span> + 4 cuotas del <span class="item__bold">20%</span></li>
+							<li><span class="item__bold">TIPO B -</span> Reserva <span class="item__bold">50%</span> + 4 cuotas del <span class="item__bold">12.5%</span></li>
+						</ul>
+					</div>
+					<div class="pasos__item">
+						<span class="item__bold">Consignar el valor total de la entrada a la siguiente cuenta
+						de ahorros Bancolombia:</span>
+						<ul>
+							<li>Nombre: Asociación Rama Estudiantil Ieee Unicauca</li>
+							<li>Número de cuenta: 86800066664</li>
+							<li>NIT: 817004128</li>
+						</ul>
+					</div>
+					<div class="pasos__item">
+						<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
+						con los siguientes datos:</span>
+						<ul>
+							<li>Nombre completo</li>
+							<li>Cédula</li>
+							<li>Código</li>
+							<li>Número Celular</li>
+							<li>Fecha de inicio</li>
+							<li>Tipo de plan</li>
+							<li>Comprobante de pago</li>
+						</ul>
+						<span class="item__bold">Nota: Este paso se debe realizar cada que se realice un abono.</span>
+					</div>
+					<div class="pasos__item">
+						<span class="item__bold">Una vez realizados todos los pagos, se te enviará tu boleta
+						digital vía correo electrónico</span>
+
+					</div>
+				</div>
 			</div>
 			<div class="pagos__container">
-				<h2>Pago Total</h2>
+				<h2 class="titulo__seccion">Pago Total</h2>
+				<div class="pasos__group">
+
+					<div class="pasos__item">
+						<span class="item__bold">Consignar el valor total a la siguiente cuenta
+						de ahorros Bancolombia:</span>
+						<ul>
+							<li>Nombre: Asociación Rama Estudiantil Ieee Unicauca</li>
+							<li>Número de cuenta: 86800066664</li>
+							<li>NIT: 817004128</li>
+						</ul>
+					</div>
+					<div class="pasos__item">
+						<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
+						con los siguientes datos:</span>
+						<ul>
+							<li>Nombre completo</li>
+							<li>Cédula</li>
+							<li>Código</li>
+							<li>Número Celular</li>
+							<li>Fecha de inicio</li>
+							<li>Tipo de plan</li>
+							<li>Comprobante de pago</li>
+						</ul>
+					</div>
+					<div class="pasos__item">
+						<span class="item__bold">Enviaremos tu recibo de pago por correo
+							electrónico o lo puedes recoger en físico en la oficina 306
+							de la FIET
+						</span>
+					</div>
+					<div class="pasos__item">
+						<span class="item__bold">En los dias próximos al evento se te
+							enviará tu boleta digital vía correo electrónico
+						</span>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
