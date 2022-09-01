@@ -25,7 +25,7 @@ switch ($url) {
         EventsController::index();
         break;
 
-    case $dominio . 'noticias':
+    case $dominio . 'tet':
         NewsController::index();
         break;
 

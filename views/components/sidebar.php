@@ -9,16 +9,16 @@
                     <a href="#informacion" class="sidebar__a">EVENTOS</a>
                 </li>
                 <li class="sidebar__li">
-                    <a href="#" class="sidebar__a">NOTICIAS</a>
+                    <a href="tet" class="sidebar__a">TET</a>
                 </li>
                 <li class="sidebar__li">
-                    <a href="#" class="sidebar__a">ANUARIO</a>
+                    <a href="anuario" class="sidebar__a">ANUARIO</a>
                 </li>
                 <li class="sidebar__li">
-                    <a href="#" class="sidebar__a">GALERIA</a>
+                    <a href="galeria" class="sidebar__a">GALERIA</a>
                 </li>
                 <li class="sidebar__li">
-                    <a href="#" class="sidebar__a">ORGANIZACIÓN</a>
+                    <a href="organizacion" class="sidebar__a">ORGANIZACIÓN</a>
                 </li>
             </ul>
         </nav>

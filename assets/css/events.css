@@ -257,19 +257,19 @@ span {
 }
 
 .banner__noticias {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9254901961), transparent), url("../img/miembros-rama-2022.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9254901961), transparent), url("../img/miembros-rama-2022-3.png");
 }
 
 .banner__anuario {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9254901961), transparent), url("../img/miembros-rama-2022.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9254901961), transparent), url("../img/miembros-rama-2022-3.png");
 }
 
 .banner__galeria {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9254901961), transparent), url("../img/miembros-rama-2022.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9254901961), transparent), url("../img/miembros-rama-2022-3.png");
 }
 
 .banner__organizacion {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9254901961), transparent), url("../img/miembros-rama-2022.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9254901961), transparent), url("../img/miembros-rama-2022-3.png");
 }
 
 /* ==========SIDEBAR========== */
@@ -658,7 +658,7 @@ span {
   }
 }
 .footer__links {
-  width: 20%;
+  width: 30%;
   margin: 0.5em 0;
   padding-top: 1em;
   border-top: solid var(--blanco-difuminado) 2px;
