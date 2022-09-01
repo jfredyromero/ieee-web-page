@@ -234,15 +234,34 @@
 				<h2 class=titulo__seccion>Financiación</h2>
 				<div class="pasos__group">
 					<div class="pasos__item">
-						<span class="item__bold">Elige el tipo de plan que más se acomode a tus necesidades:</span>
+
+						<div class="number__container">
+							<div class="number__list">
+								<img src="./assets/img/numero_1.png" class="number__img" alt="">
+							</div>
+							<div class="number__descp">
+								<span class="item__bold">Elige el tipo de plan que más se acomode a tus necesidades: </span>
+							</div>
+						</div>
+
 						<ul>
 							<li><span class="item__bold">TIPO A -</span> Reserva <span class="item__bold">20%</span> + 4 cuotas del <span class="item__bold">20%</span></li>
 							<li><span class="item__bold">TIPO B -</span> Reserva <span class="item__bold">50%</span> + 4 cuotas del <span class="item__bold">12.5%</span></li>
 						</ul>
 					</div>
 					<div class="pasos__item">
-						<span class="item__bold">Consignar el valor total de la entrada a la siguiente cuenta
-						de ahorros Bancolombia:</span>
+
+						<div class="number__container">
+							<div class="number__list">
+								<img src="./assets/img/numero_2.png" class="number__img" alt="">
+							</div>
+							<div class="number__descp">
+								<span class="item__bold">Consignar el valor total de la entrada a la siguiente cuenta
+								de ahorros Bancolombia:</span>
+							</div>
+						</div>
+
+
 						<ul>
 							<li>Nombre: Asociación Rama Estudiantil Ieee Unicauca</li>
 							<li>Número de cuenta: 86800066664</li>
@@ -250,8 +269,17 @@
 						</ul>
 					</div>
 					<div class="pasos__item">
-						<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
-						con los siguientes datos:</span>
+						<div class="number__container">
+							<div class="number__list">
+								<img src="./assets/img/numero_3.png" class="number__img" alt="">
+							</div>
+							<div class="number__descp">
+								<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
+								con los siguientes datos:</span>
+							</div>
+						</div>
+
+
 						<ul>
 							<li>Nombre completo</li>
 							<li>Cédula</li>
@@ -264,8 +292,17 @@
 						<span class="item__bold">Nota: Este paso se debe realizar cada que se realice un abono.</span>
 					</div>
 					<div class="pasos__item">
-						<span class="item__bold">Una vez realizados todos los pagos, se te enviará tu boleta
-						digital vía correo electrónico</span>
+						<div class="number__container">
+							<div class="number__list">
+								<img src="./assets/img/numero_4.png" class="number__img" alt="">
+							</div>
+							<div class="number__descp">
+								<span class="item__bold">Una vez realizados todos los pagos, se te enviará tu boleta
+								digital vía correo electrónico</span>
+							</div>
+						</div>
+
+
 
 					</div>
 				</div>
@@ -273,10 +310,17 @@
 			<div class="pagos__container">
 				<h2 class="titulo__seccion">Pago Total</h2>
 				<div class="pasos__group">
-
 					<div class="pasos__item">
-						<span class="item__bold">Consignar el valor total a la siguiente cuenta
-						de ahorros Bancolombia:</span>
+						<div class="number__container">
+							<div class="number__list">
+								<img src="./assets/img/numero_1.png" class="number__img" alt="">
+							</div>
+							<div class="number__descp">
+								<span class="item__bold">Consignar el valor total a la siguiente cuenta
+								de ahorros Bancolombia:</span>
+							</div>
+						</div>
+
 						<ul>
 							<li>Nombre: Asociación Rama Estudiantil Ieee Unicauca</li>
 							<li>Número de cuenta: 86800066664</li>
@@ -284,8 +328,16 @@
 						</ul>
 					</div>
 					<div class="pasos__item">
-						<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
-						con los siguientes datos:</span>
+						<div class="number__container">
+							<div class="number__list">
+								<img src="./assets/img/numero_2.png" class="number__img" alt="">
+							</div>
+							<div class="number__descp">
+								<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
+								con los siguientes datos:</span>
+							</div>
+						</div>
+
 						<ul>
 							<li>Nombre completo</li>
 							<li>Cédula</li>
@@ -297,19 +349,55 @@
 						</ul>
 					</div>
 					<div class="pasos__item">
-						<span class="item__bold">Enviaremos tu recibo de pago por correo
-							electrónico o lo puedes recoger en físico en la oficina 306
-							de la FIET
-						</span>
+						<div class="number__container">
+							<div class="number__list">
+								<img src="./assets/img/numero_3.png" class="number__img" alt="">
+							</div>
+							<div class="number__descp">
+								<span class="item__bold">Enviaremos tu recibo de pago por correo
+								electrónico o lo puedes recoger en físico en la oficina 306
+								de la FIET
+								</span>
+							</div>
+						</div>
+
 					</div>
 					<div class="pasos__item">
-						<span class="item__bold">En los dias próximos al evento se te
-							enviará tu boleta digital vía correo electrónico
-						</span>
+						<div class="number__container">
+							<div class="number__list">
+								<img src="./assets/img/numero_4.png" class="number__img" alt="">
+							</div>
+							<div class="number__descp">
+								<span class="item__bold">En los dias próximos al evento se te
+								enviará tu boleta digital vía correo electrónico
+								</span>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
 			</div>
+		</div>
+	</section>
+	<section class="info__insta">
+		<div class="insta__container">
+			<div class="insta__text">
+
+				<span class="item__bold">Para más informacion puedes <br>contactarnos vía instagram</span>
+
+
+			</div>
+			<a href="https://www.instagram.com/ieeeunicauca/">
+				<div class="insta__contact">
+					<div class="insta__log">
+						<img src="./assets/img/ig.png" alt="">
+					</div>
+					Contáctanos
+				</div>
+			</a>
+
+
 		</div>
 	</section>
 
