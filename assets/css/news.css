@@ -468,7 +468,6 @@ span {
 .banner__button {
   display: inline-block;
   position: relative;
-  width: 8em;
   padding: 0.8em 1em;
   border: solid var(--hueso) 1px;
   border-radius: 0.5em;
@@ -875,7 +874,7 @@ span {
 /*
   =============VISION=============== */
 .important2 {
-  background-color: var(--blanco-2);
+  background-color: var(--blanco);
   min-height: 76.5vh;
 }
 
@@ -976,7 +975,7 @@ span {
 /*==========PRECIOS ================= */
 .banner__price {
   background-color: var(--azul-2);
-  color: var(--blanco-2);
+  color: var(--blanco);
 }
 
 .price__titulo {
@@ -1006,7 +1005,7 @@ span {
 .costo__linea {
   width: 100%;
   height: 3px;
-  background-color: var(--blanco-2);
+  background-color: var(--blanco);
   margin-top: 0.5em;
   margin-bottom: 1.5em;
 }
@@ -1016,7 +1015,7 @@ span {
   column-count: 2;
   column-gap: 1rem;
   margin-top: 1.5em;
-  /* column-rule: 3px solid var(--blanco-2); */
+  /* column-rule: 3px solid var(--blanco); */
 }
 
 .costo__descp .col__precio {
@@ -1072,7 +1071,7 @@ span {
 .pasos__item {
   margin-top: 2.375em;
   background-color: var(--azul-2);
-  color: var(--blanco-2);
+  color: var(--blanco);
   border-radius: 8px;
   padding: 2em;
 }
@@ -1126,7 +1125,7 @@ span {
   display: flex;
   background-color: var(--azul-2);
   border-radius: 15px;
-  color: var(--blanco-2);
+  color: var(--blanco);
 }
 
 .insta__log {
