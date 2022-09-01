@@ -25,7 +25,7 @@
 				<div class="banner__info">
 					<div class="banner__name">
 						<h1 class="banner__titulo">TET 2022</h1>
-						<h1 class="banner__subtitulo">Organiza Rama Estudiantil IEEE</h1>
+						<h1 class="banner__subtitulo">Evento Insignia</h1>
 					</div>
 					<div class="banner__description">
 						<p class="banner__p">
