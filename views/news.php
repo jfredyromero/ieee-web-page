@@ -385,8 +385,6 @@
 			<div class="insta__text">
 
 				<span class="item__bold">Para más informacion puedes <br>contactarnos vía instagram</span>
-
-
 			</div>
 			<a href="https://www.instagram.com/ieeeunicauca/">
 				<div class="insta__contact">

@@ -1106,8 +1106,13 @@ span {
 /* ========== CONTACTO INSTAGRAM ======== */
 .insta__container {
   margin: auto;
+  width: 100%;
   text-align: center;
   margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .insta__text {
@@ -1116,20 +1121,40 @@ span {
 }
 
 .insta__contact {
-  justify-content: center;
-  padding: 1em;
-  margin: auto;
-  margin-top: 0.5em;
-  align-items: center;
-  width: 15%;
+  align-self: center;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10rem;
+  height: 5rem;
   background-color: var(--azul-2);
-  border-radius: 15px;
   color: var(--blanco);
+  border-radius: 1rem;
+  padding: 10px 15px;
+}
+.insta__contact:hover {
+  transform: scale(1.01);
+}
+.insta__contact::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 0.5em;
+  left: -400%;
+  right: 0%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(45deg, transparent, transparent, transparent, var(--blanco), transparent, transparent, transparent);
+}
+.insta__contact:hover::after {
+  right: -1500%;
+  transition: all 1s ease-in;
 }
 
 .insta__log {
   margin-right: 0.3em;
+  width: 2rem;
 }
 
 /* ==========================
