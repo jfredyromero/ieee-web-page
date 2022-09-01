@@ -16,22 +16,22 @@
 	padding: 4em 0;
 
 	&__timeline {
-        position: absolute;
-        right: 0;
-        top: 5em;
+		position: absolute;
+		right: 0;
+		top: 5em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 10px;
 
-		@media(max-width: 768px) {
+		@media (max-width: 768px) {
 			display: none;
-		}		
+		}
 	}
 
-    .title{
-        width: 100%;
-    }
+	.title {
+		width: 100%;
+	}
 
 	.title > h4,
 	.title > h3 {
@@ -74,18 +74,16 @@
 
 		background: #4c4c4c;
 		border-radius: 50%;
-
-        
 	}
 
-    .active{
-        background-color: var(--azul-2);
-        border-style: dashed;
-    }
+	.active {
+		background-color: var(--azul-2);
+		border-style: dashed;
+	}
 
-    .description{
-        font-weight: 300;
-    }
+	.description {
+		font-weight: 300;
+	}
 
 	.date,
 	.description {
@@ -577,13 +575,15 @@
 		}
 	}
 
-	&__coordinador-nombre, &__subcoordinador-nombre {
+	&__coordinador-nombre,
+	&__subcoordinador-nombre {
 		font-size: 1.125rem;
 		font-weight: 500;
 		margin-bottom: 0.5em;
 	}
 
-	&__coordinador-cargo, &__subcoordinador-cargo {
+	&__coordinador-cargo,
+	&__subcoordinador-cargo {
 		text-align: center;
 		font-weight: 300;
 		font-size: 0.9rem;

@@ -11,7 +11,7 @@ require_once('./controllers/YearbookController.php');
 require_once('./controllers/OrganizationController.php');
 require_once('./controllers/GaleryController.php');
 require_once('./controllers/ApiController.php');
-
+require_once('./controllers/NoPageFoundController.php');
 // URL
 $url = $_SERVER['REQUEST_URI'];
 $dominio = '/ieee-web-page/';
