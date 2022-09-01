@@ -8,7 +8,7 @@
                 <a href="eventos" class="header__a"> EVENTOS </a>
             </li>
             <li class="header__li">
-                <a href="noticias" class="header__a"> NOTICIAS </a>
+                <a href="tet" class="header__a"> TET </a>
             </li>
             <li class="header__li">
                 <a href="/ieee-web-page/">
