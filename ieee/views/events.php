@@ -61,7 +61,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component" id="tet2022">
-                    <img class="img_event" src="assets/img/header.png" alt="">
+                    <img class="img_event" src="./ieee/assets/img/header.png" alt="">
                     <p class="p_event">TET 2022</p>
                     <!-- <h2>TET 2022</h2>
                     <p class="color-contrast-medium">This is the content of the last section</p> -->
@@ -79,7 +79,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <img class="img_event" src="assets/img/header.png" alt="">
+                    <img class="img_event" src="./ieee/assets/img/header.png" alt="">
                     <p class="p_event">IEEE Day</p>
 
                     <div class="flex justify-between items-center">
@@ -94,7 +94,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <img class="img_event" src="assets/img/header.png" alt="">
+                    <img class="img_event" src="./ieee/assets/img/header.png" alt="">
                     <p class="p_event">Navidad FIEEELIZ</p>
 
                     <div class="flex justify-between items-center">
@@ -109,7 +109,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <img class="img_event" src="assets/img/header.png" alt="">
+                    <img class="img_event" src="./ieee/assets/img/header.png" alt="">
                     <p class="p_event">Día de la Mujer</p>
 
                     <div class="flex justify-between items-center">
@@ -124,7 +124,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <img class="img_event" src="assets/img/header.png" alt="">
+                    <img class="img_event" src="./ieee/assets/img/header.png" alt="">
                     <p class="p_event">Día del Niño</p>
 
                     <div class="flex justify-between items-center">
@@ -139,7 +139,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <img class="img_event" src="assets/img/header.png" alt="">
+                    <img class="img_event" src="./ieee/assets/img/header.png" alt="">
                     <p class="p_event">Día de la Madre</p>
 
                     <div class="flex justify-between items-center">
@@ -169,7 +169,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <img class="img_event" src="assets/img/header.png" alt="">
+                    <img class="img_event" src="./ieee/assets/img/header.png" alt="">
                     <p class="p_event">RAMAKON</p>
 
                     <div class="flex justify-between items-center">
