@@ -468,7 +468,6 @@ span {
 .banner__button {
   display: inline-block;
   position: relative;
-  width: 8em;
   padding: 0.8em 1em;
   border: solid var(--hueso) 1px;
   border-radius: 0.5em;
