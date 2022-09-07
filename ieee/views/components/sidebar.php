@@ -3,10 +3,10 @@
         <nav class="sidebar__nav">
             <ul class="sidebar__ul">
                 <li class="sidebar__li">
-                    <a href="#QuienesSomos" class="sidebar__a">NOSOTROS</a>
+                    <a href="/#QuienesSomos" class="sidebar__a">NOSOTROS</a>
                 </li>
                 <li class="sidebar__li">
-                    <a href="#informacion" class="sidebar__a">EVENTOS</a>
+                    <a href="eventos" class="sidebar__a">EVENTOS</a>
                 </li>
                 <li class="sidebar__li">
                     <a href="tet" class="sidebar__a">TET</a>
