@@ -57,7 +57,7 @@
 
             <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--movie">
-                    <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                    <img src="./ieee/assets/img/cd-icon-movie.svg" alt="Movie">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component" id="tet2022">
@@ -75,7 +75,7 @@
 
             <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--picture">
-                    <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+                    <img src="./ieee/assets/img/cd-icon-picture.svg" alt="Picture">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
@@ -90,7 +90,7 @@
 
             <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--movie">
-                    <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                    <img src="./ieee/assets/img/cd-icon-movie.svg" alt="Movie">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
@@ -105,7 +105,7 @@
 
             <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--picture">
-                    <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+                    <img src="./ieee/assets/img/cd-icon-picture.svg" alt="Picture">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
@@ -120,7 +120,7 @@
 
             <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--location">
-                    <img src="assets/img/cd-icon-location.svg" alt="Location">
+                    <img src="./ieee/assets/img/cd-icon-location.svg" alt="Location">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
@@ -135,7 +135,7 @@
 
             <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--location">
-                    <img src="assets/img/cd-icon-location.svg" alt="Location">
+                    <img src="./ieee/assets/img/cd-icon-location.svg" alt="Location">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
@@ -150,7 +150,7 @@
 
             <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--movie">
-                    <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                    <img src="./ieee/assets/img/cd-icon-movie.svg" alt="Movie">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">

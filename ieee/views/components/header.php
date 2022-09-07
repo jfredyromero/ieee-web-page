@@ -8,7 +8,7 @@
                 <a href="eventos" class="header__a"> EVENTOS </a>
             </li>
             <li class="header__li">
-                <a href="tet" class="header__a"> TET </a>
+                <a href="tet" class="header__a"> TET 2022 </a>
             </li>
             <li class="header__li">
                 <a href="/">
