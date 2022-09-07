@@ -1,6 +1,6 @@
 <?php
 
-require_once('./models/YearbookModel.php');
+require_once('./ieee/models/YearbookModel.php');
 
 
 class YearbookController
@@ -13,6 +13,6 @@ class YearbookController
         $img = 1;
         $cantidadAnios = $anioFinal - $anioInicio;
 
-        require_once('./views/yearbook.php');
+        require_once('./ieee/views/yearbook.php');
     }
 }

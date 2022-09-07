@@ -2,7 +2,7 @@
     class GaleryController {
 
         public static function index(){
-            require_once('./views/galery.php');
+            require_once('./ieee/views/galery.php');
         }
     }
 ?>

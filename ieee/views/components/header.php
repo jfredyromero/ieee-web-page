@@ -2,7 +2,7 @@
     <nav class="header__nav">
         <ul class="header__ul">
             <li class="header__li">
-                <a href="/ieee-web-page/#QuienesSomos" class="header__a"> NOSOTROS </a>
+                <a href="#QuienesSomos" class="header__a"> NOSOTROS </a>
             </li>
             <li class="header__li">
                 <a href="eventos" class="header__a"> EVENTOS </a>
@@ -11,8 +11,8 @@
                 <a href="tet" class="header__a"> TET </a>
             </li>
             <li class="header__li">
-                <a href="/ieee-web-page/">
-                    <img class="header__img" src="./assets/img/logo_IEEE.svg" alt="" />
+                <a href="/">
+                    <img class="header__img" src="./ieee/assets/img/logo_IEEE.svg" alt="" />
                 </a>
             </li>
             <li class="header__li">
@@ -26,7 +26,7 @@
             </li>
 
             <li class="header__li-mobile">
-                <img src="./assets/img/logo_IEEE.svg" alt="" class="header__img-mobile" />
+                <img src="./ieee/assets/img/logo_IEEE.svg" alt="" class="header__img-mobile" />
             </li>
 
             <li class="header__li-mobile">

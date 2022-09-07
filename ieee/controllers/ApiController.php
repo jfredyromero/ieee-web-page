@@ -1,6 +1,6 @@
 <?php
 
-require_once('./models/OrganizationModel.php');
+require_once('./ieee/models/OrganizationModel.php');
 
 class ApiController
 {

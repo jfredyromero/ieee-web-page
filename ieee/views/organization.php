@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Rama IEEE Unicauca</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="./assets/css/organization.css" />
+	<link rel="stylesheet" href="./ieee/assets/css/organization.css" />
 	<script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
@@ -111,7 +111,7 @@
 	<section class="comites-fondo">
 		<div class="container comites">
 			<h2 class="comites__titulo">Comités</h2>
-			<img src="./assets/img/comites.svg" alt="" class="comites__img">
+			<img src="./ieee/assets/img/comites.svg" alt="" class="comites__img">
 			<h3 class="comites__nombre-comite">Comité <?php echo $comites[0]['comite'] ?></h3>
 			<p class="comites__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in volutpat nisi, et elementum ante. Vestibulum ullamcorper mauris vel euismod mattis. Vestibulum efficitur in nunc in eleifend <?php echo $comites[0]['comite'] ?></p>
 			<div class="comites__buttons">
@@ -154,7 +154,7 @@
 	include_once "components/scripts.php";
 	?>
 
-	<script src="assets/js/organization.js"></script>
+	<script src="./ieee/assets/js/organization.js"></script>
 
 	<!-- ICONOS ionic-icons (sección comites) -->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

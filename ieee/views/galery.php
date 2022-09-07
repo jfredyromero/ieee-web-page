@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Rama IEEE Unicauca</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="./assets/css/galery.css" />
+	<link rel="stylesheet" href="./ieee/assets/css/galery.css" />
 	<script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
@@ -168,7 +168,7 @@
 	include_once "components/scripts.php";
 	?>
 
-	<script src="assets/js/galery.js"></script>
+	<script src="./ieee/assets/js/galery.js"></script>
 </body>
 
 </html>

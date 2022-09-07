@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rama IEEE Unicauca</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./assets/css/events2.css" />
-    <link rel="stylesheet" href="./assets/css/events.css" />
+    <link rel="stylesheet" href="./ieee/assets/css/events2.css" />
+    <link rel="stylesheet" href="./ieee/assets/css/events.css" />
     <script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
@@ -154,7 +154,7 @@
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
-                    <img class="img_event" src="assets/img/header.png" alt="">
+                    <img class="img_event" src="./ieee/assets/img/header.png" alt="">
                     <p class="p_event">BIEEENVENIDA de Primiparos</p>
 
                     <div class="flex justify-between items-center">
@@ -165,7 +165,7 @@
 
             <div class="cd-timeline__block">
                 <div class="cd-timeline__img cd-timeline__img--movie">
-                    <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                    <img src="./ieee/assets/img/cd-icon-movie.svg" alt="Movie">
                 </div> <!-- cd-timeline__img -->
 
                 <div class="cd-timeline__content text-component">
@@ -192,7 +192,7 @@
 	</div> -->
 
 
-    <script src="./assets/js/events.js"></script>
+    <script src="./ieee/assets/js/events.js"></script>
     <!-- SWEETALERT2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="sweetalert2.all.min.js"></script>
@@ -216,7 +216,7 @@
                 width:700,
                 imageWidth:600,
                 imageheigth:400,
-                imageUrl: './assets/img/header.png',
+                imageUrl: './ieee/assets/img/header.png',
                 imageAlt: 'Custom image',
                 html: '<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quod labore. Architecto veniam quae ex inventore facilis laboriosam magnam ea accusantium beatae, voluptas minima explicabo. Repellat, eaque sit? Aspernatur, cupiditate!</p>',
                 showConfirmButton: false,

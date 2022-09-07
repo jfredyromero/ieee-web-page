@@ -2,7 +2,7 @@
     class EventsController {      
 
         public static function index(){
-            require_once('./views/events.php');
+            require_once('./ieee/views/events.php');
         }
     }
 ?>

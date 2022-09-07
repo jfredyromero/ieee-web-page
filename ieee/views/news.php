@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Rama IEEE Unicauca</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="./assets/css/news.css" />
+	<link rel="stylesheet" href="./ieee/assets/css/news.css" />
 	<script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
@@ -391,7 +391,7 @@
 			<a href="https://www.instagram.com/ieeeunicauca/">
 				<div class="insta__contact">
 					<div class="insta__log">
-						<img src="./assets/img/ig.png" alt="">
+						<img src="./ieee/assets/img/ig.png" alt="">
 					</div>
 					Contáctanos
 				</div>

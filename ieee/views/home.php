@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Rama IEEE Unicauca</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="./assets/css/home.css" />
+	<link rel="stylesheet" href="./ieee/assets/css/home.css" />
 	<script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,7 +20,7 @@
 	<div class="principal">
 
 		<?php
-			include_once('./views/components/header.php');
+			include_once('./ieee/views/components/header.php');
 		?>
 
 		<main class="container">
@@ -45,7 +45,7 @@
 				</div>
 
 				<?php
-				include_once('./views/components/rrss.php');
+				include_once('./ieee/views/components/rrss.php');
 				?>
 
 			</section>
@@ -80,7 +80,7 @@
 					</div>
 
 					<div class="nosotros__logo-card">
-						<img src="./assets/img/mision.png" alt="" class="nosotros__img" />
+						<img src="./ieee/assets/img/mision.png" alt="" class="nosotros__img" />
 					</div>
 
 					<div class="nosotros__card-title">
@@ -117,7 +117,7 @@
 					</div>
 
 					<div class="nosotros__logo-card">
-						<img src="./assets/img/mision.png" alt="" class="nosotros__img" />
+						<img src="./ieee/assets/img/mision.png" alt="" class="nosotros__img" />
 					</div>
 
 					<div class="nosotros__card-title">
@@ -154,7 +154,7 @@
 					</div>
 
 					<div class="nosotros__logo-card">
-						<img src="./assets/img/mision.png" alt="" class="nosotros__img" />
+						<img src="./ieee/assets/img/mision.png" alt="" class="nosotros__img" />
 					</div>
 
 					<div class="nosotros__card-title">
@@ -186,7 +186,7 @@
 				</div>
 
 				<div class="information__graphic animate__animated animate__slideInRight">
-					<img class="information__img" src="./assets/img/Ensenar.png" alt="" />
+					<img class="information__img" src="./ieee/assets/img/Ensenar.png" alt="" />
 				</div>
 			</div>
 		</div>

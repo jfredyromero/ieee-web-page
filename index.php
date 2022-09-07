@@ -1,15 +1,14 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-
 //? Importamos los controladores
-require_once('./controllers/HomeController.php');
-require_once('./controllers/EventsController.php');
-require_once('./controllers/NewsController.php');
-require_once('./controllers/YearbookController.php');
-require_once('./controllers/OrganizationController.php');
-require_once('./controllers/GaleryController.php');
-require_once('./controllers/ApiController.php');
-require_once('./controllers/NoPageFoundController.php');
+require_once('./ieee/controllers/HomeController.php');
+require_once('./ieee/controllers/EventsController.php');
+require_once('./ieee/controllers/NewsController.php');
+require_once('./ieee/controllers/YearbookController.php');
+require_once('./ieee/controllers/OrganizationController.php');
+require_once('./ieee/controllers/GaleryController.php');
+require_once('./ieee/controllers/ApiController.php');
+require_once('./ieee/controllers/NoPageFoundController.php');
 // URL
 $url = $_SERVER['REQUEST_URI'];
 $dominio = '/ieee-web-page/';

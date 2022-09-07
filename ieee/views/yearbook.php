@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Rama IEEE Unicauca</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="./assets/css/yearbook.css" />
+	<link rel="stylesheet" href="./ieee/assets/css/yearbook.css" />
 	<script src="https://kit.fontawesome.com/8e13114fca.js" crossorigin="anonymous"></script>
 </head>
 
@@ -65,7 +65,7 @@
 					<div class="timeline__interval">
 						<a href="#mosaico" data-id="<?php echo $i ?>">
 							<div class="flex-1"></div>
-							<img src="/ieee-web-page/assets/img/timeline/<?php echo $img ?>.jpg" alt="<?php echo $i ?>-Image">
+							<img src="./ieee/assets/img/timeline/<?php echo $img ?>.jpg" alt="<?php echo $i ?>-Image">
 							<div class="timeline__vertical-line"></div>
 							<span><?php echo $i ?>s</span>
 						</a>
@@ -106,7 +106,7 @@
 	include_once "components/scripts.php";
 
 	?>
-	<script src="assets/js/yearbook.js" type="module"></script>
+	<script src="./ieee/assets/js/yearbook.js" type="module"></script>
 </body>
 
 </html>
