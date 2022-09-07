@@ -11,8 +11,8 @@ require_once('./ieee/controllers/ApiController.php');
 require_once('./ieee/controllers/NoPageFoundController.php');
 // URL
 $url = $_SERVER['REQUEST_URI'];
-$dominio = '/ieee-web-page/'; // Para desarrollo
-// $dominio = '/'; // Para producción
+// $dominio = '/ieee-web-page/'; // Para desarrollo
+$dominio = '/'; // Para producción
 
 switch ($url) {
     case $dominio:
