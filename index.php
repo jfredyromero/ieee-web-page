@@ -1,47 +1,45 @@
 <?php
-
-//? Importamos los modelos requeridos
-
+header('Access-Control-Allow-Origin: *');
 //? Importamos los controladores
-require_once('./controllers/HomeController.php');
-require_once('./controllers/NewsController.php');
-require_once('./controllers/YearbookController.php');
-require_once('./controllers/OrganizationController.php');
-require_once('./controllers/GaleryController.php');
-require_once('./controllers/NoPageFoundController.php');
-
-//? URL
+require_once('./ieee/controllers/HomeController.php');
+require_once('./ieee/controllers/EventsController.php');
+require_once('./ieee/controllers/TetController.php');
+require_once('./ieee/controllers/YearbookController.php');
+require_once('./ieee/controllers/OrganizationController.php');
+require_once('./ieee/controllers/GaleryController.php');
+require_once('./ieee/controllers/ApiController.php');
+require_once('./ieee/controllers/NoPageFoundController.php');
+// URL
 $url = $_SERVER['REQUEST_URI'];
-$dominio = '/ieee-web-page/';
+// $dominio = '/ieee-web-page/'; // Para desarrollo
+$dominio = '/'; // Para producción
 
 switch ($url) {
     case $dominio:
-        //echo 'Entro al case de la pagina principal';
         HomeController::index();
         break;
 
-    case $dominio . 'noticias':
-        //echo 'Entro al case de la pagina de noticias';
-        NewsController::index();
+    case $dominio . 'eventos':
+        EventsController::index();
+        break;
+
+    case $dominio . 'tet':
+        TetController::index();
         break;
 
     case $dominio . 'anuario':
-        //echo 'Entro al case de la pagina de anuario';
         YearbookController::index();
         break;
 
     case $dominio . 'organizacion':
-        //echo 'Entro al case de la pagina de organizacion';
         OrganizationController::index();
         break;
 
     case $dominio . 'galeria':
-        //echo 'Entro al case de la pagina de Galeria';
         GaleryController::index();
         break;
 
     default:
-        http_response_code(404);
-        NoPageFoundController::index();
+        ApiController::index();
         break;
 }
