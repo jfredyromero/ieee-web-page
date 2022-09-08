@@ -1,7 +1,5 @@
 <?php
 
-require_once('./ieee/models/OrganizationModel.php');
-
 class ApiController
 {
     public static function index()
@@ -21,6 +19,7 @@ class ApiController
             $anio = urldecode(substr($url, 32));
             $url = substr($url, 0, 31);
         }
+
 
         switch ($url) {
 

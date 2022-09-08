@@ -15,7 +15,7 @@
   --blanco: #fcfaf3;
   --blanco-difuminado: #fcfaf386;
   --hueso: #fffef7;
-  --azul-1: #302f4a;
+  --azul-1: rgb(13, 48, 87);
   --azul-2: #123f72;
   --azul-2-difuminado: rgba(18, 63, 114, 0.5);
   --rojo: #e02020;
@@ -41,7 +41,8 @@
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
     transition: none !important;
   }
 }
@@ -64,9 +65,11 @@ figure {
   width: 100%;
   display: block;
   /* opcional */
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /* opcional */
-  object-position: center center;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -126,6 +129,10 @@ q:after {
 }
 
 /* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--rojo);
+  color: var(--blanco);
+}
 ::selection {
   background-color: var(--rojo);
   color: var(--blanco);
@@ -140,11 +147,15 @@ button,
 label {
   font-family: inherit;
   font-size: inherit;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   background-color: transparent;
   display: block;
   /* opcional */
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 /* Reseteamos las tablas */
@@ -171,7 +182,9 @@ body {
   /* opcional */
   line-height: 1.4em;
   /* opcional */
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   /* opcional */
   font-smooth: always;
   /* opcional */
@@ -214,22 +227,36 @@ span {
 }
 
 .white-wave1 {
-  animation: animate 30s linear infinite;
+  -webkit-animation: animate 30s linear infinite;
+          animation: animate 30s linear infinite;
   z-index: 999;
 }
 
 .white-wave2 {
-  animation: animate1 20s linear infinite;
-  animation-delay: -5s;
+  -webkit-animation: animate1 20s linear infinite;
+          animation: animate1 20s linear infinite;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
   opacity: 0.5;
   z-index: 998;
 }
 
 .white-wave3 {
-  animation: animate 10s linear infinite;
-  animation-delay: -10s;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
   opacity: 0.2;
   z-index: 997;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100vh;
+  }
 }
 
 @keyframes animate {
@@ -811,6 +838,8 @@ span {
 }
 
 .timeline {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   align-items: center;
@@ -845,8 +874,10 @@ span {
 }
 .timeline__interval img {
   border-radius: 1rem;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   filter: brightness(0.7);
   z-index: 10;
   transition-duration: 500ms;
@@ -912,4 +943,229 @@ span {
   #right-arrow {
     display: none;
   }
+}
+/* Layout */
+#mosaico {
+  background-color: var(--azul-2);
+}
+
+.grid-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
+.vertical-timeline-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.vertical-timeline {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+.vertical-timeline a {
+  text-decoration: none;
+}
+
+.year-interval {
+  color: var(--blanco);
+  text-align: center;
+  font-size: 2rem;
+  transition: all 100ms ease !important;
+}
+
+.year-interval:not(.year-interval-icon)::after,
+.year-title::after {
+  content: "s";
+}
+
+.year-interval:not(.year-interval-icon):hover {
+  transform: scale(1.04);
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+.year-interval-icon {
+  width: 40%;
+  margin: 5% auto;
+}
+
+/* Mini Cards */
+.mini-cards-layout {
+  padding: 4%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5vh;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 1040px) {
+  .mini-cards-layout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 780px) {
+  .mini-cards-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .mini-cards-layout {
+    grid-template-columns: 1fr;
+  }
+}
+/* Tarjetas */
+.mini-card {
+  width: 220px;
+  height: 280px;
+  background-color: var(--blanco);
+  border-radius: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 22px 50px 10px rgba(0, 0, 0, 0.26);
+}
+
+.year-title {
+  text-align: center;
+  align-self: center;
+  color: var(--blanco);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.bg-blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: var(--blanco);
+  align-items: center;
+  width: 100%;
+  height: 85%;
+  border-radius: 6% 6% 50% 50%/6% 6% 5% 5%;
+  background-color: var(--azul-1);
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  border-radius: 6% 6% 0 0;
+}
+
+.img-container * {
+  transition: all 0.4s ease !important;
+}
+
+.img-container:hover .glass-hover {
+  opacity: 0.6;
+}
+
+.img-container a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.img-container p {
+  font-size: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.glass-hover {
+  transition: all 0.4s ease !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 6% 6% 0 0;
+  background-color: var(--azul-2);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.glass-hover i {
+  margin-top: 0rem;
+}
+
+.glass-hover p {
+  margin-top: 0rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.member-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 6% 6% 0 0;
+  height: 100%;
+  width: 100%;
+}
+
+.member-name {
+  color: var(--blanco);
+  margin: auto auto;
+  font-size: 1.25rem;
+}
+
+.insignias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 15%;
+}
+
+.insignias i {
+  color: var(--azul-2);
+  transform: scale(1.7);
+  transition-duration: 0.5s;
+}
+
+.insignias i:hover {
+  color: #00467b;
+  transform: scale(1.8);
+  transition-duration: 0.5s;
+}
+
+.insignias img:hover {
+  color: #00467b;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+.mini-card-medalla {
+  height: 90%;
+  width: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-card-medalla img {
+  cursor: pointer;
+  height: 100%;
 }/*# sourceMappingURL=yearbook.css.map */

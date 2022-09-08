@@ -40,33 +40,61 @@ document.addEventListener("DOMContentLoaded", () => {
 	const aniosLinks = document.querySelectorAll(".year-link");
 	aniosLinks.forEach(anioLink => {
 		anioLink.addEventListener("click", event => {
-			getMiembrosData(anioLink.dataset.id);
+			getMiembrosByYear(anioLink.dataset.id);
 		});
 	});
 
 	let miembrosData = [];
 
-	function getMiembrosData(anio) {
+	function getMiembrosByYear(anio) {
 		fetch(API_DOMAIN + ENDPOINT_MIEMBROS + anio)
 			.then(response => response.json())
 			.then(data => {
-				updateMiembrosData(data);
+				miembrosData = data;
+				displayMiembrosData();
 			})
 			.catch(error => {
 				console.log(error);
 			});
 	}
 
-	function updateMiembrosData(data) {
-		miembrosData = data;
-		displayMiembrosData();
-	}
-
 	function displayMiembrosData() {
-		document.getElementById("mosaico").innerHTML = miembrosData.map(
-			miembro => {
-				return miembro.primerNombre;
-			}
-		);
+		let miembrosHtml = miembrosData.map(miembro => {
+			let medallas = "";
+			miembro.cargos.forEach(cargo => {
+				medallas += `<div class="mini-card-medalla"><img src="${cargo.urlLogo}" title="${cargo.cargo}"></img></div>`;
+			});
+			return `<div class="mini-card" data-id="${miembro.id}">
+						<div class="bg-blue">
+							<div class="img-container">
+								<img class="member-img" src="https://www.pngitem.com/pimgs/m/661-6619328_default-avatar-png-blank-person-transparent-png.png">
+								<div class="glass-hover">
+									<i class="fas fa-arrow-circle-right fa-3x"></i>
+									<p>Ver Más</p>
+								</div>
+							</div>
+							<p class="member-name">${
+								miembro.nombrePreferido == 1
+									? miembro.primerNombre
+									: miembro.segundoNombre
+							} ${miembro.primerApellido}</p>
+						</div>
+						<div class="insignias">
+						${
+							miembro.cargos.length == 1
+								? `<div class="mini-card-medalla"><a href="${miembro.urlLinkedin}" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+						${medallas}
+						<div class="mini-card-medalla"><a href="mailto:${miembro.correo}" target="_blank"><i class="fas fa-envelope"></i></a></div>`
+								: miembro.cargos.length == 2
+								? `${medallas}
+								<div class="mini-card-medalla"><a href="mailto:${miembro.correo}" target="_blank"><i class="fas fa-envelope"></i></a></div>`
+								: medallas
+						}
+							
+						</div>
+					</div>`;
+		});
+		document.getElementById("mini-cards-layout").innerHTML =
+			miembrosHtml.join("");
 	}
 });

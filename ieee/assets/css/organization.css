@@ -15,7 +15,7 @@
   --blanco: #fcfaf3;
   --blanco-difuminado: #fcfaf386;
   --hueso: #fffef7;
-  --azul-1: #302f4a;
+  --azul-1: rgb(13, 48, 87);
   --azul-2: #123f72;
   --azul-2-difuminado: rgba(18, 63, 114, 0.5);
   --rojo: #e02020;
@@ -41,7 +41,8 @@
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
     transition: none !important;
   }
 }
@@ -64,9 +65,11 @@ figure {
   width: 100%;
   display: block;
   /* opcional */
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /* opcional */
-  object-position: center center;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -126,6 +129,10 @@ q:after {
 }
 
 /* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--rojo);
+  color: var(--blanco);
+}
 ::selection {
   background-color: var(--rojo);
   color: var(--blanco);
@@ -140,11 +147,15 @@ button,
 label {
   font-family: inherit;
   font-size: inherit;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   background-color: transparent;
   display: block;
   /* opcional */
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 /* Reseteamos las tablas */
@@ -171,7 +182,9 @@ body {
   /* opcional */
   line-height: 1.4em;
   /* opcional */
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   /* opcional */
   font-smooth: always;
   /* opcional */
@@ -214,22 +227,36 @@ span {
 }
 
 .white-wave1 {
-  animation: animate 30s linear infinite;
+  -webkit-animation: animate 30s linear infinite;
+          animation: animate 30s linear infinite;
   z-index: 999;
 }
 
 .white-wave2 {
-  animation: animate1 20s linear infinite;
-  animation-delay: -5s;
+  -webkit-animation: animate1 20s linear infinite;
+          animation: animate1 20s linear infinite;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
   opacity: 0.5;
   z-index: 998;
 }
 
 .white-wave3 {
-  animation: animate 10s linear infinite;
-  animation-delay: -10s;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
   opacity: 0.2;
   z-index: 997;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100vh;
+  }
 }
 
 @keyframes animate {
@@ -839,12 +866,15 @@ span {
   grid-template-columns: 16px 1fr;
   row-gap: 16px;
   padding-top: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .juntadirectiva .event {
   display: grid;
   grid-template-columns: 16px 1fr;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   grid-column: 1/3;
 }
 .juntadirectiva .date > h2,
@@ -1388,6 +1418,8 @@ span {
 }
 @media (min-width: 1024px) {
   .comites__active-button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 0 2em;
     display: flex;

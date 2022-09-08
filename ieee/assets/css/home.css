@@ -15,7 +15,7 @@
   --blanco: #fcfaf3;
   --blanco-difuminado: #fcfaf386;
   --hueso: #fffef7;
-  --azul-1: #302f4a;
+  --azul-1: rgb(13, 48, 87);
   --azul-2: #123f72;
   --azul-2-difuminado: rgba(18, 63, 114, 0.5);
   --rojo: #e02020;
@@ -41,7 +41,8 @@
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
     transition: none !important;
   }
 }
@@ -64,9 +65,11 @@ figure {
   width: 100%;
   display: block;
   /* opcional */
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /* opcional */
-  object-position: center center;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -126,6 +129,10 @@ q:after {
 }
 
 /* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--rojo);
+  color: var(--blanco);
+}
 ::selection {
   background-color: var(--rojo);
   color: var(--blanco);
@@ -140,11 +147,15 @@ button,
 label {
   font-family: inherit;
   font-size: inherit;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   background-color: transparent;
   display: block;
   /* opcional */
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 /* Reseteamos las tablas */
@@ -171,7 +182,9 @@ body {
   /* opcional */
   line-height: 1.4em;
   /* opcional */
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   /* opcional */
   font-smooth: always;
   /* opcional */
@@ -214,22 +227,36 @@ span {
 }
 
 .white-wave1 {
-  animation: animate 30s linear infinite;
+  -webkit-animation: animate 30s linear infinite;
+          animation: animate 30s linear infinite;
   z-index: 999;
 }
 
 .white-wave2 {
-  animation: animate1 20s linear infinite;
-  animation-delay: -5s;
+  -webkit-animation: animate1 20s linear infinite;
+          animation: animate1 20s linear infinite;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
   opacity: 0.5;
   z-index: 998;
 }
 
 .white-wave3 {
-  animation: animate 10s linear infinite;
-  animation-delay: -10s;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
   opacity: 0.2;
   z-index: 997;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100vh;
+  }
 }
 
 @keyframes animate {
@@ -919,6 +946,8 @@ span {
 }
 @media (max-width: 768px) {
   .important {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
   }
 }
@@ -1028,6 +1057,16 @@ span {
   font-weight: 900;
   color: var(--azul-2);
 }
+@-webkit-keyframes showCounter {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes showCounter {
   0% {
     opacity: 0;
@@ -1042,7 +1081,8 @@ span {
   opacity: 0;
 }
 .informe-anual__counter .animar {
-  animation: showCounter 1.3s;
+  -webkit-animation: showCounter 1.3s;
+          animation: showCounter 1.3s;
 }
 .informe-anual__title {
   margin-top: 1em;
