@@ -20,6 +20,13 @@ class ApiController
             $url = substr($url, 0, 31);
         }
 
+        // /ieee-web-page/api/ ------ 19
+        // get-one-miembro ---- 15, 19+15=34, 19+15+1=35
+
+        if (substr($url, 19, 15) === "get-one-miembro") {
+            $id = urldecode(substr($url, 35));
+            $url = substr($url, 0, 34);
+        }
 
         switch ($url) {
 
@@ -27,6 +34,10 @@ class ApiController
 
             case $dominio . 'get-miembros':
                 echo json_encode($yearbookModel->getMiembros($anio, $intervalo));
+                break;
+
+            case $dominio . 'get-one-miembro':
+                echo json_encode($yearbookModel->getMiembro($id));
                 break;
 
                 // Organization Model

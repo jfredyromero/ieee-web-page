@@ -24,4 +24,16 @@ class YearbookModel
         }
         return $result;
     }
+
+    public function getMiembro($id)
+    {
+        $this->db->getConnection();
+        // Traigo los datos del miembro
+        $query = "SELECT * from miembros WHERE id=$id";
+        $result = $this->db->getData($query);
+        $query2 = "SELECT cargos.cargo, comites.comite, cargos.urlLogo FROM cargos_de_miembros JOIN cargos ON cargos_de_miembros.cargo=cargos.id LEFT JOIN comites ON cargos_de_miembros.comite=comites.id WHERE miembro=$id ORDER BY cargos.id ASC";
+        $cargos = $this->db->getData($query2);
+        $result[0]["cargos"] = $cargos;
+        return $result;
+    }
 }
