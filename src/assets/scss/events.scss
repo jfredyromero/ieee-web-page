@@ -1,0 +1,83 @@
+@import "./app.scss";
+
+.text-justify{
+	text-align: justify;
+}
+
+.events {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 6rem;
+
+	&__h2 {
+		font-size: 2.375rem;
+		color: var(--azul-2);
+		margin-bottom: 2rem;
+	}
+}
+
+.cd-timeline {
+	background-color: white !important;
+}
+
+.cd-timeline__content {
+	background-color: #ffffff !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 25%);
+	filter: saturate(0);
+	transition-duration: 200ms;
+	border-radius: 0.2rem;
+}
+
+.cd-timeline__content:hover{
+	filter: saturate(1) blur(0);
+	transition-duration: 200ms;
+	cursor: pointer;
+}
+
+.cd-timeline__img--movie,
+.cd-timeline__img--picture,
+.cd-timeline__img--location {
+	background-color: #123f72 !important;
+}
+
+.img_event{
+	border-radius: 0.2rem;
+}
+
+.p_event {
+	position: absolute;
+	z-index: 10;
+	font-size: x-large;
+	font-weight: bold;
+	color: white;
+
+	@media (max-width: 816px) {
+		& {
+			font-size: medium;
+		}
+	}
+}
+
+.p_event:hover{
+	cursor: pointer;
+}
+
+.p_event::after {
+	content: "";
+	display: block;
+	height: 2px;
+	background-color: white;
+	transform: scale(0, 1);
+	transform-origin: center;
+	transition: transform 0.25s;
+}
+
+.p_event:hover::after {
+	transform: scale(1, 1);
+}
+
