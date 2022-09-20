@@ -4,16 +4,16 @@ import path from "path";
 
 export default defineConfig({
 	plugins: [
-		liveReload(__dirname + "/build/**/*.php"),
+		liveReload(__dirname + "/public/**/*.php"),
 		splitVendorChunkPlugin(),
 	],
 	root: "src",
 	base:
 		process.env.VITE_APP_ENV === "development"
 			? "/ieee-web-page/src/"
-			: "/ieee-web-page/build/",
+			: "/ieee-web-page/public/dist/",
 	build: {
-		outDir: "../build/",
+		outDir: "../public/dist",
 		emptyOutDir: true,
 		manifest: true,
 		rollupOptions: {
