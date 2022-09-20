@@ -1,5 +1,4 @@
 <?php
-
 class NoPageFoundController
 {
     public static function index()

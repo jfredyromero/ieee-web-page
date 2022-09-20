@@ -8,16 +8,18 @@ require_once('./controllers/HomeController.php');
 require_once('./controllers/EventsController.php');
 require_once('./controllers/TetController.php');
 require_once('./controllers/YearbookController.php');
-// require_once('./controllers/OrganizationController.php');
 // require_once('./controllers/GaleryController.php');
+require_once('./controllers/OrganizationController.php');
 require_once('./controllers/ApiController.php');
 require_once('./controllers/NoPageFoundController.php');
-// URL
+// Cargamos las variables de entorno
+(new DotEnv(__DIR__ . '/../.env'))->load();
+// Leemos el URL
 $url = $_SERVER['REQUEST_URI'];
-if (getenv('PROD') == 'true') {
-    $dominio = getenv('PROD_DOMAIN'); // Para producción
+if (getenv('VITE_PROD') == 'true') {
+    $dominio = getenv('VITE_PROD_DOMAIN'); // Para producción
 } else {
-    $dominio = getenv('DEV_DOMAIN'); // Para desarrollo
+    $dominio = getenv('VITE_DEV_DOMAIN'); // Para desarrollo
 }
 switch ($url) {
 
@@ -37,13 +39,13 @@ switch ($url) {
         YearbookController::index();
         break;
 
-        // case $dominio . 'organizacion':
-        //     OrganizationController::index();
-        //     break;
-
         // case $dominio . 'galeria':
         //     GaleryController::index();
         //     break;
+
+    case $dominio . 'organizacion':
+        OrganizationController::index();
+        break;
 
     default:
         ApiController::index();

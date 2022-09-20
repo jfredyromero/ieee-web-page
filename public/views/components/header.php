@@ -2,7 +2,7 @@
 	<nav class="header__nav">
 		<ul class="header__ul">
 			<li class="header__li">
-				<a href="/#QuienesSomos" class="header__a"> NOSOTROS </a>
+				<a href="<?php echo $GLOBALS["dominio"]; ?>#QuienesSomos" class="header__a"> NOSOTROS </a>
 			</li>
 			<li class="header__li">
 				<a href="eventos" class="header__a"> EVENTOS </a>

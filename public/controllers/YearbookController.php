@@ -2,7 +2,6 @@
 
 require_once('./models/YearbookModel.php');
 
-
 class YearbookController
 {
     public static function index()

@@ -24,4 +24,5 @@ export default defineConfig({
 		strictPort: true,
 		port: 5133,
 	},
+	envDir: "../",
 });

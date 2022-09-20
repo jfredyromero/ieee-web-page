@@ -55,7 +55,7 @@
 		<div class="container">
 			<section class="juntadirectiva">
 				<h2 class="juntadirectiva__h2">Junta Directiva</h2>
-				<img class="juntadirectiva__img" src="./assets/img/juntadirectiva.svg" alt="juntadirectiva">
+				<img id="junta-directiva-img" src="" alt="juntadirectiva" class="juntadirectiva__img">
 
 				<div class="juntadirectiva__timeline">
 					<div class="events">
@@ -108,7 +108,7 @@
 	<section class="comites-fondo">
 		<div class="container comites">
 			<h2 class="comites__titulo">Comités</h2>
-			<img src="./ieee/assets/img/comites.svg" alt="" class="comites__img">
+			<img id="comites-img" src="" alt="" class="comites__img">
 			<h3 class="comites__nombre-comite">Comité <?php echo $comites[0]['comite'] ?></h3>
 			<p class="comites__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in volutpat nisi, et elementum ante. Vestibulum ullamcorper mauris vel euismod mattis. Vestibulum efficitur in nunc in eleifend <?php echo $comites[0]['comite'] ?></p>
 			<div class="comites__buttons">
@@ -116,7 +116,7 @@
 				for ($i = 0; $i < count($comites); $i++) {
 				?>
 					<div class="comites__button " data-comite="<?php echo $comites[$i]['comite'] ?>">
-						<ion-icon name="<?php echo $iconos[$i] ?>" class="comites__icono" data-comite="<?php echo $comites[$i]['comite'] ?>"></ion-icon>
+						<i class="comites__icono fa-solid fa-<?php echo $iconos[$i] ?>"></i>
 						<h5 data-comite="<?php echo $comites[$i]['comite'] ?>" class="comites__h5"> <?php echo $comites[$i]['comite'] ?> </h5>
 					</div>
 				<?php
@@ -148,9 +148,6 @@
 	<?php
 	include_once "components/footer.php";
 	?>
-	<!-- ICONOS ionic-icons (sección comites) -->
-	<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
 </body>
 
 </html>

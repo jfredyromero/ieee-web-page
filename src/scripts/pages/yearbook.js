@@ -10,13 +10,8 @@ import img9 from "../../assets/img/pages/yearbook/timeline/9.jpg";
 import img10 from "../../assets/img/pages/yearbook/timeline/10.jpg";
 import img11 from "../../assets/img/pages/yearbook/timeline/11.jpg";
 import img12 from "../../assets/img/pages/yearbook/timeline/12.jpg";
+import { API_DOMAIN } from "../utilities/api-domain";
 
-let API_DOMAIN = "";
-if (import.meta.env.PROD) {
-	API_DOMAIN = "http://localhost/api/";
-} else {
-	API_DOMAIN = "http://localhost/ieee-web-page/build/api/";
-}
 const ENDPOINT_MIEMBROS = "get-miembros/";
 const IMG_ARRAY = [
 	img1,

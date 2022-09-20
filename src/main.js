@@ -11,6 +11,7 @@ import loadEvents from "./scripts/pages/events";
 import loadTet from "./scripts/pages/tet";
 import load404 from "./scripts/pages/404";
 import loadYearbook from "./scripts/pages/yearbook";
+import loadOrganization from "./scripts/pages/organization";
 
 import "./scripts/vendors/font-awesome.js";
 
@@ -40,7 +41,7 @@ const init = () => {
 			loadHome();
 			break;
 		case PAGE.includes("organización"):
-			loadHome();
+			loadOrganization();
 			break;
 		default:
 			load404();
