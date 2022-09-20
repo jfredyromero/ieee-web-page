@@ -47,11 +47,11 @@
 	</div>
 
 	<div class="juntadirectiva-fondo">
-		<!-- <div class="waves">
+		<div class="waves">
 			<div class="animated-wave white-wave1"></div>
 			<div class="animated-wave white-wave2"></div>
 			<div class="animated-wave white-wave3"></div>
-		</div> -->
+		</div>
 		<div class="container">
 			<section class="juntadirectiva">
 				<h2 class="juntadirectiva__h2">Junta Directiva</h2>
@@ -116,8 +116,8 @@
 				for ($i = 0; $i < count($comites); $i++) {
 				?>
 					<div class="comites__button " data-comite="<?php echo $comites[$i]['comite'] ?>">
-						<i class="comites__icono fa-solid fa-<?php echo $iconos[$i] ?>"></i>
-						<h5 data-comite="<?php echo $comites[$i]['comite'] ?>" class="comites__h5"> <?php echo $comites[$i]['comite'] ?> </h5>
+						<i class="comites__icono fa-solid fa-<?php echo $iconos[$i] ?>" data-comite="<?php echo $comites[$i]['comite'] ?>"></i>
+						<h5 class="comites__h5" data-comite="<?php echo $comites[$i]['comite'] ?>"> <?php echo $comites[$i]['comite'] ?> </h5>
 					</div>
 				<?php
 				}

@@ -9,8 +9,10 @@
 @import "./components/button";
 @import "./components/card";
 
+@import "./layout/banner";
 @import "./layout/footer";
-@import "./layout/navbar";
+@import "./layout/header";
+@import "./layout/sidebar";
 
 @import "./pages/404";
 @import "./pages/events";

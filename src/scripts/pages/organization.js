@@ -214,7 +214,9 @@ export default () => {
 			button.classList.add("comites__active-button");
 			comitesH5[index].classList.add("comites__active-h5");
 			document.querySelector(".comites__nombre-comite").innerHTML =
-				"Comité " + e.target.dataset.comite;
+				"Comité " +
+				(e.target.dataset.comite != "Académico" ? "de " : "") +
+				e.target.dataset.comite;
 			getComiteData(
 				"get-comites/" + e.target.dataset.comite.toLowerCase()
 			);

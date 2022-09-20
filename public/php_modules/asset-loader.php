@@ -1,19 +1,12 @@
 <?php
 
-// Helpers here serve as example. Change to suit your needs.
-const VITE_HOST = 'http://localhost:5133';
+// Importamos los PHP Modules
+require_once('dotenv-loader.php');
 
-// For a real-world example check here:
-// https://github.com/wp-bond/bond/blob/master/src/Tooling/Vite.php
-// https://github.com/wp-bond/boilerplate/tree/master/app/themes/boilerplate
-
-// you might check @vitejs/plugin-legacy if you need to support older browsers
-// https://github.com/vitejs/vite/tree/main/packages/plugin-legacy
-
-
+// Cargamos las variables de entorno
+(new DotEnv(__DIR__ . '/../../.env'))->load();
 
 // Prints all the html entries needed for Vite
-
 function vite(string $entry): string
 {
     return "\n" . jsTag($entry)
@@ -21,9 +14,7 @@ function vite(string $entry): string
         . "\n" . cssTag($entry);
 }
 
-
 // Some dev/prod mechanism would exist in your project
-
 function isDev(string $entry): bool
 {
     // This method is very useful for the local server
@@ -35,7 +26,7 @@ function isDev(string $entry): bool
     if ($exists !== null) {
         return $exists;
     }
-    $handle = curl_init(VITE_HOST . '/' . $entry);
+    $handle = curl_init(getenv('VITE_HOST') . '/' . $entry);
     curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($handle, CURLOPT_NOBODY, true);
 
@@ -46,13 +37,11 @@ function isDev(string $entry): bool
     return $exists = !$error;
 }
 
-
 // Helpers to print tags
-
 function jsTag(string $entry): string
 {
     $url = isDev($entry)
-        ? VITE_HOST . '/' . $entry
+        ? getenv('VITE_HOST') . '/' . $entry
         : assetUrl($entry);
 
     if (!$url) {
@@ -94,12 +83,10 @@ function cssTag(string $entry): string
     return $tags;
 }
 
-
 // Helpers to locate files
-
 function getManifest(): array
 {
-    $content = file_get_contents(__DIR__ . '/dist/manifest.json');
+    $content = file_get_contents('dist/manifest.json');
     return json_decode($content, true);
 }
 
@@ -135,48 +122,4 @@ function cssUrls(string $entry): array
         }
     }
     return $urls;
-}
-
-class DotEnv
-{
-    /**
-     * The directory where the .env file can be located.
-     *
-     * @var string
-     */
-    protected $path;
-
-
-    public function __construct(string $path)
-    {
-        if (!file_exists($path)) {
-            throw new \InvalidArgumentException(sprintf('%s does not exist', $path));
-        }
-        $this->path = $path;
-    }
-
-    public function load(): void
-    {
-        if (!is_readable($this->path)) {
-            throw new \RuntimeException(sprintf('%s file is not readable', $this->path));
-        }
-
-        $lines = file($this->path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        foreach ($lines as $line) {
-
-            if (strpos(trim($line), '#') === 0) {
-                continue;
-            }
-
-            list($name, $value) = explode('=', $line, 2);
-            $name = trim($name);
-            $value = trim($value);
-
-            if (!array_key_exists($name, $_SERVER) && !array_key_exists($name, $_ENV)) {
-                putenv(sprintf('%s=%s', $name, $value));
-                $_ENV[$name] = $value;
-                $_SERVER[$name] = $value;
-            }
-        }
-    }
 }

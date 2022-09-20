@@ -1,0 +1,185 @@
+/* ==========BANNER========== */
+.banner {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+
+	@media (max-width: 768px) {
+		& {
+			justify-content: center;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		margin: 9em 0;
+	}
+	&__name {
+		position: relative;
+		margin-bottom: 4em;
+		z-index: 1;
+
+		@media (max-width: 768px) {
+			& {
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+	&__titulo {
+		font-family: var(--tipo-secundaria);
+		font-style: normal;
+		font-weight: 900;
+		font-size: 5rem;
+		letter-spacing: 0.1em;
+		color: rgba(255, 255, 255, 0.4);
+
+		@media (max-width: 768px) {
+			& {
+				color: var(--hueso);
+				font-weight: 300;
+				font-size: 2.5rem;
+			}
+		}
+	}
+	&__subtitulo {
+		position: absolute;
+		top: 0.25em;
+		left: 0.6em;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 2.5rem;
+		line-height: 77px;
+		color: var(--blanco);
+
+		@media (max-width: 768px) {
+			& {
+				width: 100%;
+				color: var(--hueso);
+				font-weight: 200;
+				font-size: 2.5rem;
+				left: 0.2em;
+				text-transform: uppercase;
+			}
+		}
+
+		@media (max-width: 426px) {
+			& {
+				font-size: 2.5rem;
+			}
+		}
+	}
+	&__description {
+		width: 58%;
+		z-index: 1;
+
+		@media (max-width: 768px) {
+			& {
+				display: none;
+			}
+		}
+	}
+	&__p {
+		color: var(--blanco);
+	}
+	&__action {
+		margin-top: 4em;
+
+		@media (max-width: 768px) {
+			& {
+				display: none;
+			}
+		}
+	}
+	&__button {
+		display: inline-block;
+		position: relative;
+		padding: 0.8em 1em;
+		border: solid var(--hueso) 1px;
+		border-radius: 0.5em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: var(--azul-1);
+		background-color: var(--hueso);
+		font-weight: bold;
+		z-index: 1;
+		overflow: hidden;
+		cursor: pointer;
+		transition: all 0.5s ease;
+
+		&:hover {
+			transform: scale(1.1);
+			color: var(--blanco);
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			border-radius: 0.5em;
+			left: -20%;
+			right: -20%;
+			top: 0;
+			bottom: 0;
+			background-color: var(--azul-2);
+			z-index: -1;
+			transition: all 0.3s ease;
+			transform: skewX(0deg) scale(0, 1);
+		}
+
+		&:hover::after {
+			transition: all 0.5s ease-out;
+			transform: skewX(-45deg) scale(1, 1);
+		}
+	}
+
+	/* ==========RRSS========== */
+	&__rrss {
+		@media (max-width: 768px) {
+			& {
+				display: none;
+			}
+		}
+	}
+	&__li {
+		margin: 2em 0;
+	}
+	&__a {
+		font-size: 1.7rem;
+		color: var(--blanco);
+	}
+	&__i {
+		transition: all 0.5s ease;
+
+		&:hover {
+			transform: scale(1.3);
+		}
+	}
+	&__noticias {
+		background-image: linear-gradient(90deg, #000000ec, transparent),
+			url("../assets/img/global/bg-miembros-rama.png");
+	}
+
+	&__anuario {
+		background-image: linear-gradient(90deg, #000000ec, transparent),
+			url("../assets/img/global/bg-miembros-rama.png");
+	}
+
+	&__galeria {
+		background-image: linear-gradient(90deg, #000000ec, transparent),
+			url("../assets/img/global/bg-miembros-rama.png");
+	}
+
+	&__organizacion {
+		background-image: linear-gradient(90deg, #000000ec, transparent),
+			url("../assets/img/global/bg-miembros-rama.png");
+	}
+}

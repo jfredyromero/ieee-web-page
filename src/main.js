@@ -11,14 +11,10 @@ import loadEvents from "./scripts/pages/events";
 import loadTet from "./scripts/pages/tet";
 import load404 from "./scripts/pages/404";
 import loadYearbook from "./scripts/pages/yearbook";
+import loadGalery from "./scripts/pages/galery";
 import loadOrganization from "./scripts/pages/organization";
 
 import "./scripts/vendors/font-awesome.js";
-
-// GSAP - SCROLL-TRIGGER
-// import "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js";
-// import "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js";
-// import "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js";
 
 const init = () => {
 	loadImages();
@@ -38,7 +34,7 @@ const init = () => {
 			loadYearbook();
 			break;
 		case PAGE.includes("galeria"):
-			loadHome();
+			loadGalery();
 			break;
 		case PAGE.includes("organización"):
 			loadOrganization();
