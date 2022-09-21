@@ -25,12 +25,22 @@ class ApiController
             $url = substr($url, 0, strlen($dominioApi) + strlen($string2Analize));
         }
 
+        $string2Analize = "get-one-miembro";
+        if (substr($url, strlen($dominioApi), strlen($string2Analize)) === $string2Analize) {
+            $id = urldecode(substr($url, strlen($dominioApi) + strlen($string2Analize) + 1));
+            $url = substr($url, 0, strlen($dominioApi) + strlen($string2Analize));
+        }
+
         switch ($url) {
 
                 // Yearbook Model
 
             case $dominioApi . 'get-miembros':
                 echo json_encode($yearbookModel->getMiembros($anio, $intervalo));
+                break;
+
+            case $dominioApi . 'get-one-miembro':
+                echo json_encode($yearbookModel->getMiembro($id));
                 break;
 
                 // Organization Model

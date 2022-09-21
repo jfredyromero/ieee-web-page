@@ -6,9 +6,9 @@ class YearbookController
 {
     public static function index()
     {
-        $anioInicio = 1986;
+        $anioInicio = 2002;
         $anioFinal = date("Y");
-        $intervalo = 4;
+        $intervalo = 2;
         $img = 1;
         $cantidadAnios = $anioFinal - $anioInicio;
 

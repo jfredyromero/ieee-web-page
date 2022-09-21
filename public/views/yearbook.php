@@ -77,25 +77,58 @@
 			</div>
 		</div>
 	</section>
-
-	<div class="wave">
+	<div id="mosaico">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 195">
-			<path fill="#123F72" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,90.7C672,85,768,107,864,101.3C960,96,1056,64,1152,74.7C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+			<path fill="#FFFFFF" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,90.7C672,85,768,107,864,101.3C960,96,1056,64,1152,74.7C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 		</svg>
-
-		<?php
-		for ($i = $anioInicio; $i <= $anioFinal; $i = $i + $intervalo) {
-		?>
-			<a class="year-link" data-id="<?php echo $i ?>">
-				<div class="year-interval"><?php echo $i ?></div>
-			</a>
-		<?php
-		}
-		?>
-
-		<div id="mosaico">
-
+		<div class="year-title">2020</div>
+		<div class="grid-layout">
+			<div class="vertical-timeline-layout">
+				<div class="vertical-timeline">
+					<div class="year-interval year-interval-icon">
+						<a href="#timeline">
+							<img id="year-interval-icon-img" src="" alt="year-icon">
+						</a>
+					</div>
+					<?php
+					for ($i = $anioInicio; $i <= $anioFinal; $i = $i + $intervalo) {
+					?>
+						<a class="year-link" data-id="<?php echo $i ?>">
+							<div class="year-interval"><?php echo $i ?></div>
+						</a>
+					<?php
+					}
+					?>
+				</div>
+			</div>
+			<div class="mini-cards-layout" id="mini-cards-layout">
+				<div class="mini-card" data-id="1">
+					<div class="bg-blue">
+						<div class="img-container">
+							<img class="member-img" src="https://www.pngitem.com/pimgs/m/661-6619328_default-avatar-png-blank-person-transparent-png.png">
+							<div class="glass-hover">
+								<i class="fas fa-arrow-circle-right fa-3x"></i>
+								<p>Ver Más</p>
+							</div>
+						</div>
+						<p class="member-name">Jhon Doe</p>
+					</div>
+					<div class="insignias">
+						<div class="mini-card-medalla"><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+						medallas
+						<div class="mini-card-medalla"><a href="mailto:"><i class="fas fa-envelope"></i></a></div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="card-view-layout" id="card-view-layout">
+			<div class="empty-panel" id="card-view-empty-panel"></div>
+			<div class="card-view" id="card-view">
+				<div class="flip-container" id="flip-container">
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 	<?php
 	include_once "components/footer.php";

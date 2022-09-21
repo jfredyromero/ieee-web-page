@@ -264,9 +264,7 @@ export default () => {
 			(datosComite.datosCoordinador.segundoNombre != null
 				? datosComite.datosCoordinador.segundoNombre + " "
 				: "") +
-			datosComite.datosCoordinador.primerApellido +
-			" " +
-			datosComite.datosCoordinador.segundoApellido;
+			datosComite.datosCoordinador.primerApellido;
 		document.querySelector("#comites-coordinador").src =
 			datosComite.datosCoordinador.urlFoto;
 		document.querySelector(".comites__subcoordinador-nombre").innerHTML =
