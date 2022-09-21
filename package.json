@@ -1,0 +1,41 @@
+{
+	"name": "ieee-web-page",
+	"version": "2.0.0",
+	"description": "Unicauca's IEEE Branch Web Page",
+	"type": "module",
+	"scripts": {
+		"dev": "set VITE_APP_ENV=development&&vite",
+		"dev:mac": "VITE_APP_ENV=development vite",
+		"build": "vite build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jfredyromero/ieee-web-page.git"
+	},
+	"keywords": [
+		"ieee",
+		"branch",
+		"yearbook",
+		"students",
+		"tet"
+	],
+	"author": "Jhon Fredy Romero",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jfredyromero/ieee-web-page/issues"
+	},
+	"homepage": "https://github.com/jfredyromero/ieee-web-page#readme",
+	"devDependencies": {
+		"sass": "^1.54.9",
+		"vite": "^3.1.0",
+		"vite-plugin-live-reload": "^3.0.0"
+	},
+	"dependencies": {
+		"animate.css": "^4.1.1",
+		"circular-progress-bar": "^2.1.0",
+		"gsap": "^3.11.1",
+		"scrollreveal": "^4.0.9",
+		"sweetalert2": "^11.4.33",
+		"tsparticles": "^2.3.1"
+	}
+}
