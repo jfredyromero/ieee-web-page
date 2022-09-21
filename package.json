@@ -1,10 +1,12 @@
 {
 	"name": "ieee-web-page",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "Unicauca's IEEE Branch Web Page",
 	"type": "module",
 	"scripts": {
-		"dev": "set VITE_APP_ENV=development&&vite",
+		"start": "npm run dev",
+		"dev": "npm run dev:windows",
+		"dev:windows": "set VITE_APP_ENV=development&&vite",
 		"dev:mac": "VITE_APP_ENV=development vite",
 		"build": "vite build"
 	},
