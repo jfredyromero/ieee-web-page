@@ -4,10 +4,11 @@
 require_once('dotenv-loader.php');
 
 // Cargamos las variables de entorno
-(new DotEnv(__DIR__ . '/../../.env'))->load();
+$dotenv = new DotEnv(__DIR__ . '/../../.env');
+$dotenv->load();
 
 // Prints all the html entries needed for Vite
-function vite(string $entry): string
+function vite($entry)
 {
     return "\n" . jsTag($entry)
         . "\n" . jsPreloadImports($entry)
@@ -15,7 +16,7 @@ function vite(string $entry): string
 }
 
 // Some dev/prod mechanism would exist in your project
-function isDev(string $entry): bool
+function isDev($entry)
 {
     // This method is very useful for the local server
     // if we try to access it, and by any means, didn't started Vite yet
@@ -38,7 +39,7 @@ function isDev(string $entry): bool
 }
 
 // Helpers to print tags
-function jsTag(string $entry): string
+function jsTag($entry)
 {
     $url = isDev($entry)
         ? getenv('VITE_HOST') . '/' . $entry
@@ -52,7 +53,7 @@ function jsTag(string $entry): string
         . '"></script>';
 }
 
-function jsPreloadImports(string $entry): string
+function jsPreloadImports($entry)
 {
     if (isDev($entry)) {
         return '';
@@ -67,7 +68,7 @@ function jsPreloadImports(string $entry): string
     return $res;
 }
 
-function cssTag(string $entry): string
+function cssTag($entry)
 {
     // not needed on dev, it's inject by Vite
     if (isDev($entry)) {
@@ -84,13 +85,13 @@ function cssTag(string $entry): string
 }
 
 // Helpers to locate files
-function getManifest(): array
+function getManifest()
 {
     $content = file_get_contents('dist/manifest.json');
     return json_decode($content, true);
 }
 
-function assetUrl(string $entry): string
+function assetUrl($entry)
 {
     $manifest = getManifest();
     return isset($manifest[$entry])
@@ -98,9 +99,9 @@ function assetUrl(string $entry): string
         : '';
 }
 
-function importsUrls(string $entry): array
+function importsUrls($entry)
 {
-    $urls = [];
+    $urls = array();
     $manifest = getManifest();
 
     if (!empty($manifest[$entry]['imports'])) {
@@ -111,9 +112,9 @@ function importsUrls(string $entry): array
     return $urls;
 }
 
-function cssUrls(string $entry): array
+function cssUrls($entry)
 {
-    $urls = [];
+    $urls = array();
     $manifest = getManifest();
 
     if (!empty($manifest[$entry]['css'])) {

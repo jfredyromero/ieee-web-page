@@ -4,7 +4,8 @@
 	"description": "Unicauca's IEEE Branch Web Page",
 	"type": "module",
 	"scripts": {
-		"dev": "VITE_APP_ENV=development vite",
+		"dev": "set VITE_APP_ENV=development&&vite",
+		"dev:mac": "VITE_APP_ENV=development vite",
 		"build": "vite build"
 	},
 	"repository": {
