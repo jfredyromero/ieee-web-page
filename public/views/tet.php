@@ -164,6 +164,10 @@
 			</svg>
 		</div>
 
+
+
+
+
 		<section>
 			<div class="tematic__container">
 
@@ -171,33 +175,106 @@
 				<div class="tematic__temas">
 					<div class="tematic__group">
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_IA.png" alt="">
+							<div class="container__cube" id="IA__cube">
+								<div class="box">
+									<div class="card IA__cube" id="front">	</div>
+									<div class="card IA__cube" id="left">	</div>
+									<div class="card IA__cube" id="right">	</div>
+									<div class="card IA__cube" id="top">		</div>
+									<div class="card IA__cube" id="bottom">	</div>
+								</div>
+							</div>
+
 							<div class='tematic__subtitulo'>Inteligencia Artificial</div>
 						</div>
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_MarkD.png" alt="">
+							<div class="container__cube" id="MD__cube">
+								<div class="box">
+									<div class="card MD__cube" id="front">	</div>
+									<div class="card MD__cube" id="left">	</div>
+									<div class="card MD__cube" id="right">	</div>
+									<div class="card MD__cube" id="top">		</div>
+									<div class="card MD__cube" id="bottom">	</div>
+								</div>
+							</div>
 							<div class='tematic__subtitulo'>Marketing Digital</div>
 						</div>
 					</div>
 					<div class="tematic__group">
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_MachL.png" alt="">
+							<div class="container__cube" id="ML__cube">
+								<div class="box">
+									<div class="card ML__cube" id="front">	</div>
+									<div class="card ML__cube" id="left">	</div>
+									<div class="card ML__cube" id="right">	</div>
+									<div class="card ML__cube" id="top">		</div>
+									<div class="card ML__cube" id="bottom">	</div>
+								</div>
+							</div>
 							<div class='tematic__subtitulo'>Machine Learning</div>
 						</div>
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_BD.png" alt="">
+							<div class="container__cube" id="BD__cube">
+								<div class="box">
+									<div class="card BD__cube" id="front">	</div>
+									<div class="card BD__cube" id="left">	</div>
+									<div class="card BD__cube" id="right">	</div>
+									<div class="card BD__cube" id="top">		</div>
+									<div class="card BD__cube" id="bottom">	</div>
+								</div>
+							</div>
 							<div class='tematic__subtitulo'>Big Data</div>
 						</div>
 					</div>
 					<div class="tematic__group">
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_R5.png" alt="">
+							<div class="container__cube" id="R5__cube">
+								<div class="box">
+									<div class="card R5__cube" id="front">	</div>
+									<div class="card R5__cube" id="left">	</div>
+									<div class="card R5__cube" id="right">	</div>
+									<div class="card R5__cube" id="top">		</div>
+									<div class="card R5__cube" id="bottom">	</div>
+								</div>
+							</div>
 							<div class='tematic__subtitulo'>Redes 5G</div>
 						</div>
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_BCH.png" alt="">
+							<div class="container__cube" id="BC__cube">
+								<div class="box">
+									<div class="card BC__cube" id="front">	</div>
+									<div class="card BC__cube" id="left">	</div>
+									<div class="card BC__cube" id="right">	</div>
+									<div class="card BC__cube" id="top">		</div>
+									<div class="card BC__cube" id="bottom">	</div>
+								</div>
+							</div>
 							<div class='tematic__subtitulo'>Block Chain</div>
 						</div>
 					</div>
 					<div class="tematic__group">
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_IND.png" alt="">
+							<div class="container__cube"id="I4__cube">
+								<div class="box">
+									<div class="card I4__cube" id="front">	</div>
+									<div class="card I4__cube" id="left">	</div>
+									<div class="card I4__cube" id="right">	</div>
+									<div class="card I4__cube" id="top">		</div>
+									<div class="card I4__cube" id="bottom">	</div>
+								</div>
+							</div>
 							<div class='tematic__subtitulo'>Industria 4.0</div>
 						</div>
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_CD.png" alt="">
+							<div class="container__cube" >
+								<div class="box">
+									<div class="card CD__cube" id="front" >	</div>
+									<div class="card CD__cube" id="left" >	</div>
+									<div class="card CD__cube" id="right" >	</div>
+									<div class="card CD__cube" id="top" >		</div>
+									<div class="card CD__cube" id="bottom" >	</div>
+								</div>
+							</div>
 							<div class='tematic__subtitulo'>Ciencia de Datos</div>
 						</div>
 					</div>

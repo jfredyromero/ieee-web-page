@@ -156,6 +156,7 @@
 	margin-top: 1.5em;
 	display: flex;
 	justify-content: space-around;
+	width: 90%;
 }
 .tematic__img {
 	display: flex;
@@ -172,6 +173,7 @@
 
 /*==========PRECIOS ================= */
 .banner__price {
+	margin-top: 1em;
 	background-color: var(--azul-2);
 	color: var(--blanco);
 }
@@ -675,3 +677,114 @@
 .insta__contact:hover {
 	transform: scale(1.2);
 }
+
+// CUBES ANIMATION
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.container__cube{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	transform: translate(-50%,50%);
+	perspective: 1000px;
+}
+.box{
+
+	height: 40px;
+	width: 40px;
+	// transform: rotate(-90deg);
+	transform-style: preserve-3d ;
+	// NOTE COMENTARIO PARA VERIFICAR UBICACION DE CARAS LATERALES
+	// transform: rotateY(180deg);
+	animation: animate 10s infinite;
+}
+.card{
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid white;
+	font-size: 32px;
+	box-sizing: border-box;
+	position: absolute;
+
+}
+.IA__cube{
+	color: white;
+	background: #FF3B3B;
+}
+.MD__cube{
+	color: white;
+	background-color: #00B7C4;
+}
+.ML__cube{
+	color:white;
+	background: #FF8800 ;
+}
+.BD__cube{
+	color: white;
+	background-color: #004FC4;
+}
+.R5__cube{
+	color: white;
+	background: #E5B800;
+}
+.BC__cube{
+	color: white;
+	background: #6600CC;
+}
+.I4__cube{
+	color: white;
+	background: #06C270;
+}
+.CD__cube{
+	color: white;
+	background: #28293D;
+}
+
+@keyframes animate{
+
+	 0%{
+		transform: rotateX(45deg) rotateY(-45deg);
+	 }
+	 25%{
+		transform: rotateX(-45deg) rotateY(-45deg);
+	 }
+	 50%{
+		transform: rotateX(45deg) rotateY(45deg);
+	 }
+	 75%{
+		transform: rotateX(-45deg) rotateY(45deg);
+	 }
+	 100%{
+		transform: rotateX(45deg) rotateY(-45deg);
+	 }
+}
+
+
+#front{
+	transform: translateZ(20px);
+}
+#back{
+	transform: translateZ(-125x);
+}
+
+#left{
+	right: 20px;
+	transform: rotateY(-90deg);
+}
+#right{
+	left: 20px;
+	transform: rotateY(90deg);
+}
+#top{
+	bottom: 20px;
+	transform: rotateX(90deg);
+}
+#bottom{
+	top: 20px;
+	transform: rotateX(-90deg);
+}
+
