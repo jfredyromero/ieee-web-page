@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="">
 	<meta name="abstract" content="Página del anuario de la rama IEEE de la Universidad del Cauca">
+	<link rel="icon" type="image/jpg" href="/favicon.jpg" />
 	<title>Rama IEEE Unicauca</title>
 	<?php echo vite('main.js'); ?>
 </head>
@@ -28,16 +29,15 @@
 					</div>
 					<div class="banner__description">
 						<p class="banner__p">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							dolore atque minus corrupti. Exercitationem, molestiae neque!
+							Enterate más de quién hace parte de nosotros y nuestra historia a lo largo del tiempo
 						</p>
 					</div>
-					<div class="banner__action">
+					<a href="#mosaico" class="banner__action">
 						<button class="banner__button">
-							Join Us
+							Miembros actuales
 							<i class="fa-solid fa-angle-right"></i>
 						</button>
-					</div>
+					</a>
 				</div>
 				<?php
 				include_once "components/rrss.php";
@@ -48,7 +48,7 @@
 	</div>
 
 	<section id="QuienesSomos" class="nosotros">
-		<h2 class="nosotros__h2">¿Quienes Somos?</h2>
+		<h2 class="nosotros__h2">Línea de Tiempo</h2>
 		<div class="timeline__container">
 			<div class="timeline__arrow timeline__arrow--left">
 				<div class="center-arrow" id="left-arrow">
@@ -58,30 +58,32 @@
 				<div class="center-arrow" id="right-arrow">
 				</div>
 			</div>
-			<div class="timeline" id="timeline">
-				<?php
-				for ($i = $anioInicio; $i <= $anioFinal; $i = $i + $intervalo) {
-				?>
-					<div class="timeline__interval">
-						<a href="#mosaico" data-id="<?php echo $i ?>">
-							<div class="flex-1"></div>
-							<img data-img="<?php echo $img ?>" src="" alt="<?php echo $i ?>-Image" class="timeline-img">
-							<div class="timeline__vertical-line"></div>
-							<span><?php echo $i ?>s</span>
-						</a>
-					</div>
-				<?php
-					$img++;
-				}
-				?>
+			<div class="timeline-scroller">
+				<div class="timeline" id="timeline">
+					<?php
+					for ($i = $anioInicio; $i <= $anioFinal; $i = $i + $intervalo) {
+					?>
+						<div class="timeline__interval">
+							<a href="#mosaico" class="timeline__year-selector" data-id="<?php echo $i ?>">
+								<div class="flex-1"></div>
+								<img data-img="<?php echo $img ?>" src="" alt="<?php echo $i ?>-Image" class="timeline-img">
+								<div class="timeline__vertical-line"></div>
+								<span><?php echo $i ?>s</span>
+							</a>
+						</div>
+					<?php
+						$img++;
+					}
+					?>
+				</div>
 			</div>
 		</div>
 	</section>
-	<div id="mosaico">
+	<div class="mosaico">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 195">
 			<path fill="#FFFFFF" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,90.7C672,85,768,107,864,101.3C960,96,1056,64,1152,74.7C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 		</svg>
-		<div class="year-title">2020</div>
+		<div id="mosaico" class="year-title">2020</div>
 		<div class="grid-layout">
 			<div class="vertical-timeline-layout">
 				<div class="vertical-timeline">

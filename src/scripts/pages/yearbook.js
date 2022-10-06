@@ -101,10 +101,27 @@ export default () => {
 		10
 	);
 
+	// const timeline = document.querySelector("#timeline");
+	// timeline.addEventListener("animationend", () => {
+	// 	const rect = timeline.getBoundingClientRect();
+	// 	timeline.style.left = rect.x;
+	// });
+
+	const yearTitle = document.querySelector("#mosaico");
+
 	const aniosLinks = document.querySelectorAll(".year-link");
 	aniosLinks.forEach(anioLink => {
 		anioLink.addEventListener("click", event => {
 			getMiembrosByYear(anioLink.dataset.id);
+			yearTitle.innerHTML = anioLink.dataset.id;
+		});
+	});
+
+	const aniosSelector = document.querySelectorAll(".timeline__year-selector");
+	aniosSelector.forEach(anioSelector => {
+		anioSelector.addEventListener("click", event => {
+			getMiembrosByYear(anioSelector.dataset.id);
+			yearTitle.innerHTML = anioSelector.dataset.id;
 		});
 	});
 

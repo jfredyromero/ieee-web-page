@@ -28,16 +28,15 @@
 					</div>
 					<div class="banner__description">
 						<p class="banner__p">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							dolore atque minus corrupti. Exercitationem, molestiae neque!
+							Conoce a nuestra junta directiva, los diferentes comites y quiénes estan detrás de la organización de IEEE Unicauca.
 						</p>
 					</div>
-					<div class="banner__action">
+					<a href="#organizacion" class="banner__action">
 						<button class="banner__button">
-							Join Us
+							¿Y el presi?
 							<i class="fa-solid fa-angle-right"></i>
 						</button>
-					</div>
+					</a>
 				</div>
 				<?php
 				include_once "components/rrss.php";
@@ -47,13 +46,13 @@
 	</div>
 
 	<div class="juntadirectiva-fondo">
-		<div class="waves">
+		<!-- <div class="waves">
 			<div class="animated-wave white-wave1"></div>
 			<div class="animated-wave white-wave2"></div>
 			<div class="animated-wave white-wave3"></div>
-		</div>
+		</div> -->
 		<div class="container">
-			<section class="juntadirectiva">
+			<section id="organizacion" class="juntadirectiva">
 				<h2 class="juntadirectiva__h2">Junta Directiva</h2>
 				<img id="junta-directiva-img" src="" alt="juntadirectiva" class="juntadirectiva__img">
 
@@ -126,19 +125,19 @@
 			<div class="comites__coordinadores">
 				<div class="comites__coordinador">
 					<div class="comites__persona">
-						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Coordinador del comité" class="comites__persona-img" id="comites-coordinador">
+						<img src="<?php echo $comiteAcademico[0]['urlFoto'] ?>" alt="Coordinador del comité" class="comites__persona-img" id="comites-coordinador">
 					</div>
 					<div class="comites__persona-info">
-						<h3 class="comites__coordinador-nombre">Johan Santiago Yangana</h3>
+						<h3 class="comites__coordinador-nombre"><?php echo $comiteAcademico[0]['primerNombre'] ?> <?php echo $comiteAcademico[0]['segundoNombre'] ?> <?php echo $comiteAcademico[0]['primerApellido'] ?> <?php echo $comiteAcademico[0]['segundoApellido'] ?></h3>
 						<h4 class="comites__coordinador-cargo">Coordinador</h4>
 					</div>
 				</div>
 				<div class="comites__coordinador">
 					<div class="comites__persona">
-						<img src="assets/img/comites/coordinadorAcademico.jpeg" alt="Sub-coordinador del comité" class="comites__persona-img" id="comites-subcoordinador">
+						<img src="<?php echo $comiteAcademico[1]['urlFoto'] ?>" alt="Sub-coordinador del comité" class="comites__persona-img" id="comites-subcoordinador">
 					</div>
 					<div class="comites__persona-info">
-						<h3 class="comites__subcoordinador-nombre">Luis Fernando Coral Patiño</h3>
+						<h3 class="comites__subcoordinador-nombre"><?php echo $comiteAcademico[1]['primerNombre'] ?> <?php echo $comiteAcademico[1]['segundoNombre'] ?> <?php echo $comiteAcademico[1]['primerApellido'] ?> <?php echo $comiteAcademico[1]['segundoApellido'] ?></h3>
 						<h4 class="comites__subcoordinador-cargo">Sub-Coordinador</h4>
 					</div>
 				</div>

@@ -15,8 +15,8 @@ class OrganizationModel
     private $idTesorero = "SELECT id from cargos WHERE cargo = 'Tesorero'"; // 7 - Junta
     private $idSecretario = "SELECT id from cargos WHERE cargo = 'Secretario'"; // 8 - Junta
     private $idCoordinador = "SELECT id from cargos WHERE cargo = 'Coordinador'"; // 9
-    private $idVoluntario = "SELECT id from cargos WHERE cargo = 'Voluntario'"; // 10
-    private $idSubCoordinador = "SELECT id from cargos WHERE cargo = 'Subcoordinador'"; // 11
+    private $idSubCoordinador = "SELECT id from cargos WHERE cargo = 'Sub-Coordinador'"; // 10
+    private $idVoluntario = "SELECT id from cargos WHERE cargo = 'Voluntario'"; // 11
 
     public function __construct()
     {
@@ -26,7 +26,7 @@ class OrganizationModel
     public function getJuntaDirectiva()
     {
         $this->db->getConnection();
-        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE (c.id BETWEEN 4 AND 8) AND (m.anioSalidaRama IS NULL)";
+        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE (c.id BETWEEN ($this->idPresidente) AND ($this->idSecretario)) AND (m.anioSalidaRama IS NULL)";
         $result = $this->db->getData($query);
         return $result;
     }
@@ -34,7 +34,7 @@ class OrganizationModel
     public function getPresidente()
     {
         $this->db->getConnection();
-        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = 4 AND m.anioSalidaRama IS NULL";
+        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = ($this->idPresidente) AND m.anioSalidaRama IS NULL";
         $result = $this->db->getData($query);
         return $result;
     }
@@ -42,7 +42,7 @@ class OrganizationModel
     public function getVicepresidente()
     {
         $this->db->getConnection();
-        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = 5 AND m.anioSalidaRama IS NULL";
+        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = ($this->idVicepresidente) AND m.anioSalidaRama IS NULL";
         $result = $this->db->getData($query);
         return $result;
     }
@@ -50,7 +50,7 @@ class OrganizationModel
     public function getFiscal()
     {
         $this->db->getConnection();
-        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = 6 AND m.anioSalidaRama IS NULL";
+        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = ($this->idFiscal) AND m.anioSalidaRama IS NULL";
         $result = $this->db->getData($query);
         return $result;
     }
@@ -58,7 +58,7 @@ class OrganizationModel
     public function getTesorero()
     {
         $this->db->getConnection();
-        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = 7 AND m.anioSalidaRama IS NULL";
+        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = ($this->idTesorero) AND m.anioSalidaRama IS NULL";
         $result = $this->db->getData($query);
         return $result;
     }
@@ -66,7 +66,7 @@ class OrganizationModel
     public function getSecretario()
     {
         $this->db->getConnection();
-        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = 8 AND m.anioSalidaRama IS NULL";
+        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE c.id = ($this->idSecretario) AND m.anioSalidaRama IS NULL";
         $result = $this->db->getData($query);
         return $result;
     }
@@ -74,7 +74,7 @@ class OrganizationModel
     public function getCoordinadores()
     {
         $this->db->getConnection();
-        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE (c.id = 9) AND (m.anioSalidaRama IS NULL)";
+        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE (c.id = ($this->idCoordinador)) AND (m.anioSalidaRama IS NULL)";
         $result = $this->db->getData($query);
         return $result;
     }
@@ -82,7 +82,7 @@ class OrganizationModel
     public function getSubCoordinadores()
     {
         $this->db->getConnection();
-        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE (c.id = 11) AND (m.anioSalidaRama IS NULL)";
+        $query = "SELECT * FROM miembros AS m INNER JOIN cargos_de_miembros AS cdm ON m.id = cdm.miembro INNER JOIN cargos AS c ON cdm.cargo = c.id WHERE (c.id = ($this->idSubCoordinador)) AND (m.anioSalidaRama IS NULL)";
         $result = $this->db->getData($query);
         return $result;
     }

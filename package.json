@@ -7,8 +7,10 @@
 		"start": "npm run dev",
 		"dev": "npm run dev:windows",
 		"dev:windows": "set VITE_APP_ENV=development&&vite",
-		"dev:mac": "VITE_APP_ENV=development vite",
-		"build": "vite build"
+		"dev:mac": "npm run xampp && VITE_APP_ENV=development vite",
+		"build": "vite build",
+		"xampp": "sudo -S <<< 'Banana01*' /Applications/XAMPP/xamppfiles/xampp start",
+		"xampp:end": "sudo -S <<< 'Banana01*' /Applications/XAMPP/xamppfiles/xampp stop"
 	},
 	"repository": {
 		"type": "git",
