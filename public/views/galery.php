@@ -29,16 +29,15 @@
 					</div>
 					<div class="banner__description">
 						<p class="banner__p">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							dolore atque minus corrupti. Exercitationem, molestiae neque!
+							Aqui tenemos plasmado algunos de los momentos que compartimos en IEEE.
 						</p>
 					</div>
-					<div class="banner__action">
+					<a href="#galeria" class="banner__action">
 						<button class="banner__button">
-							Join Us
+							Quiero ver
 							<i class="fa-solid fa-angle-right"></i>
 						</button>
-					</div>
+					</a>
 				</div>
 				<?php
 				include_once "components/rrss.php";
@@ -46,7 +45,7 @@
 			</section>
 		</main>
 	</div>
-	<div class="grid-container">
+	<div id="galeria" class="grid-container">
 		<div class="grid">
 			<div class="gridLayer">
 				<div class="gridBlock"></div>

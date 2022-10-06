@@ -23,3 +23,42 @@
 		background-position: 0% 50%;
 	}
 }
+// Yearbook
+@keyframes empty-panel-animation-open {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes empty-panel-animation-close {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	95% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+@keyframes timeline-left {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-10%);
+	}
+}
+@keyframes timeline-right {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(50px);
+	}
+}

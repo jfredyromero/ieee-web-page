@@ -345,7 +345,7 @@
 
 							<div class="number__container">
 								<div class="number__list">
-									<img src="./ieee/assets/img/numero_1.png" class="number__img" alt="">
+									1
 								</div>
 								<div class="number__descp">
 									<span class="item__bold">Elige el tipo de plan que más se acomode a tus necesidades: </span>
@@ -361,7 +361,7 @@
 
 							<div class="number__container">
 								<div class="number__list">
-									<img src="./ieee/assets/img/numero_2.png" class="number__img" alt="">
+									2
 								</div>
 								<div class="number__descp">
 									<span class="item__bold">Consignar el valor total de la entrada a la siguiente cuenta
@@ -379,7 +379,7 @@
 						<div class="pasos__item">
 							<div class="number__container">
 								<div class="number__list">
-									<img src="./ieee/assets/img/numero_3.png" class="number__img" alt="">
+									3
 								</div>
 								<div class="number__descp">
 									<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
@@ -402,7 +402,7 @@
 						<div class="pasos__item">
 							<div class="number__container">
 								<div class="number__list">
-									<img src="./ieee/assets/img/numero_4.png" class="number__img" alt="">
+									4
 								</div>
 								<div class="number__descp">
 									<span class="item__bold">Una vez realizados todos los pagos, se te enviará tu boleta
@@ -421,7 +421,7 @@
 						<div class="pasos__item">
 							<div class="number__container">
 								<div class="number__list">
-									<img src="./ieee/assets/img/numero_1.png" class="number__img" alt="">
+									1
 								</div>
 								<div class="number__descp">
 									<span class="item__bold">Consignar el valor total a la siguiente cuenta
@@ -438,7 +438,7 @@
 						<div class="pasos__item">
 							<div class="number__container">
 								<div class="number__list">
-									<img src="./ieee/assets/img/numero_2.png" class="number__img" alt="">
+									2
 								</div>
 								<div class="number__descp">
 									<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
@@ -459,7 +459,7 @@
 						<div class="pasos__item">
 							<div class="number__container">
 								<div class="number__list">
-									<img src="./ieee/assets/img/numero_3.png" class="number__img" alt="">
+									3
 								</div>
 								<div class="number__descp">
 									<span class="item__bold">Enviaremos tu recibo de pago por correo
@@ -468,12 +468,11 @@
 									</span>
 								</div>
 							</div>
-
 						</div>
 						<div class="pasos__item">
 							<div class="number__container">
 								<div class="number__list">
-									<img src="./ieee/assets/img/numero_4.png" class="number__img" alt="">
+									4
 								</div>
 								<div class="number__descp">
 									<span class="item__bold">En los dias próximos al evento se te
@@ -481,25 +480,24 @@
 									</span>
 								</div>
 							</div>
-
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
 		<section class="info__insta">
 			<div class="insta__container">
 				<div class="insta__text">
-
 					<span class="item__bold">Para más informacion puedes <br>contactarnos vía instagram</span>
 				</div>
-				<a href="https://www.instagram.com/ieeeunicauca/" class="insta__contact">
-					<i class="fa-brands fa-instagram insta__log"></i>
-					Contáctanos
+				<br>
+				<a href="https://www.instagram.com/ieeeunicauca/" target="_blank">
+					<button class="insta-contact__button">
+						<i class="fa-brands fa-instagram insta__log"></i>
+						Contáctanos
+						<i class="fa-solid fa-angle-right"></i>
+					</button>
 				</a>
-
-
 			</div>
 		</section>
 		<?php

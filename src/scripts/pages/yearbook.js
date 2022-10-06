@@ -10,6 +10,18 @@ import img9 from "../../assets/img/pages/yearbook/timeline/9.jpg";
 import img10 from "../../assets/img/pages/yearbook/timeline/10.jpg";
 import img11 from "../../assets/img/pages/yearbook/timeline/11.jpg";
 import img12 from "../../assets/img/pages/yearbook/timeline/12.jpg";
+import medallaTet from "../../assets/img/pages/yearbook/medals/medallaTET.svg";
+import medallaWebMaster from "../../assets/img/pages/yearbook/medals/medallaWebMaster.svg";
+import medallaCoordinadoraWie from "../../assets/img/pages/yearbook/medals/medallaWIE.svg";
+import medallaPresidente from "../../assets/img/pages/yearbook/medals/medallaPresidente.svg";
+import medallaVicepresidente from "../../assets/img/pages/yearbook/medals/medallaVice.svg";
+import medallaFiscal from "../../assets/img/pages/yearbook/medals/medallaFiscal.svg";
+import medallaTesorero from "../../assets/img/pages/yearbook/medals/medallaTesorero.svg";
+import medallaSecretario from "../../assets/img/pages/yearbook/medals/medallaSecretario.svg";
+import medallaCoordinador from "../../assets/img/pages/yearbook/medals/medallaCoordinador.svg";
+import medallaSubcoordinador from "../../assets/img/pages/yearbook/medals/medallaCoordinador.svg";
+import medallaVoluntario from "../../assets/img/pages/yearbook/medals/medallaVoluntario.svg";
+
 import yearInterval from "../../assets/img/pages/yearbook/year-interval-icon.svg";
 
 import { API_DOMAIN } from "../utilities/api-domain";
@@ -30,6 +42,19 @@ const IMG_ARRAY = [
 	img11,
 	img12,
 ];
+const MEDALS_ARRAY = {
+	"medallaTET.svg": medallaTet,
+	"medallaWebMaster.svg": medallaWebMaster,
+	"medallaWIE.svg": medallaCoordinadoraWie,
+	"medallaPresidente.svg": medallaPresidente,
+	"medallaVice.svg": medallaVicepresidente,
+	"medallaFiscal.svg": medallaFiscal,
+	"medallaTesorero.svg": medallaTesorero,
+	"medallaSecretario.svg": medallaSecretario,
+	"medallaCoordinador.svg": medallaCoordinador,
+	"medallaCoordinador.svg": medallaSubcoordinador,
+	"medallaVoluntario.svg": medallaVoluntario,
+};
 
 export default () => {
 	// Loading Images
@@ -76,10 +101,27 @@ export default () => {
 		10
 	);
 
+	// const timeline = document.querySelector("#timeline");
+	// timeline.addEventListener("animationend", () => {
+	// 	const rect = timeline.getBoundingClientRect();
+	// 	timeline.style.left = rect.x;
+	// });
+
+	const yearTitle = document.querySelector("#mosaico");
+
 	const aniosLinks = document.querySelectorAll(".year-link");
 	aniosLinks.forEach(anioLink => {
 		anioLink.addEventListener("click", event => {
 			getMiembrosByYear(anioLink.dataset.id);
+			yearTitle.innerHTML = anioLink.dataset.id;
+		});
+	});
+
+	const aniosSelector = document.querySelectorAll(".timeline__year-selector");
+	aniosSelector.forEach(anioSelector => {
+		anioSelector.addEventListener("click", event => {
+			getMiembrosByYear(anioSelector.dataset.id);
+			yearTitle.innerHTML = anioSelector.dataset.id;
 		});
 	});
 
@@ -102,7 +144,9 @@ export default () => {
 		let miembrosHtml = miembrosData.map(miembro => {
 			let medallas = "";
 			miembro.cargos.forEach(cargo => {
-				medallas += `<div class="mini-card-medalla"><img src="${cargo.urlLogo}" title="${cargo.cargo}"></img></div>`;
+				medallas += `<div class="mini-card-medalla"><img src="${
+					MEDALS_ARRAY[cargo.urlLogo]
+				}" title="${cargo.cargo}"></img></div>`;
 			});
 			return `<div class="mini-card" data-id="${miembro.id}">
 						<div class="bg-blue">
@@ -195,18 +239,24 @@ export default () => {
 			if (cargo.cargo == "Coordinador") {
 				coorComites.push(" " + cargo.comite);
 				if (!banderaCoor) {
-					medallas += `<div class="medalla"><img src="${cargo.urlLogo}" title="${cargo.cargo}"></img></div>`;
+					medallas += `<div class="medalla"><img src="${
+						MEDALS_ARRAY[cargo.urlLogo]
+					}" title="${cargo.cargo}"></img></div>`;
 					banderaCoor = true;
 				}
 			} else if (cargo.cargo == "Voluntario") {
 				volComites.push(" " + cargo.comite);
 				if (!banderaVol) {
-					medallas += `<div class="medalla"><img src="${cargo.urlLogo}" title="${cargo.cargo}"></img></div>`;
+					medallas += `<div class="medalla"><img src="${
+						MEDALS_ARRAY[cargo.urlLogo]
+					}" title="${cargo.cargo}"></img></div>`;
 					banderaVol = true;
 				}
 			} else {
 				aportes += `<li><p>${cargo.cargo}</p></li>`;
-				medallas += `<div class="medalla"><img src="${cargo.urlLogo}" title="${cargo.cargo}"></img></div>`;
+				medallas += `<div class="medalla"><img src="${
+					MEDALS_ARRAY[cargo.urlLogo]
+				}" title="${cargo.cargo}"></img></div>`;
 			}
 		}
 		banderaCoor = false;
