@@ -6,7 +6,7 @@
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
-	background: linear-gradient(272deg, #f6c124, #daa300, #5a4300);
+	background: linear-gradient(272deg, var(--azul-1), var(--azul-2), var(--azul-3));
 	background-size: 600% 600%;
 	animation: gradient-animation 10s ease infinite;
 	&__caption {
@@ -25,13 +25,18 @@
 	&__text {
 		line-height: 5rem;
 		text-transform: uppercase;
+		color: white;
 		font-size: 40px;
-		font-weight: 600;
+		font-weight: 300;
 		a {
 			transition: all 200ms ease;
 			font-size: 25px;
+			font-weight: 500;
 			&:hover {
 				transform: scale(1.1);
+			}
+			i{
+				margin: 20px;
 			}
 		}
 	}
@@ -46,15 +51,15 @@
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(0);
 		border-radius: 42.5%;
-		background: #f9dd83;
+		background: var(--azul-3);
 		opacity: 0.5;
 		animation: waves 25s infinite linear;
 		&--second {
-			background: #f4c141;
+			background: var(--azul-2);
 			animation: waves 19s infinite linear;
 		}
 		&--third {
-			background: #a07e29;
+			background: var(--azul-1);
 			animation: waves 30s infinite linear;
 		}
 	}

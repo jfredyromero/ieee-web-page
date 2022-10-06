@@ -11,7 +11,7 @@ export default defineConfig({
 	base:
 		process.env.VITE_APP_ENV === "development"
 			? "/ieee-web-page/src/"
-			: "/ieee-web-page/public/dist/",
+			: "/dist/",
 	build: {
 		outDir: "../public/dist",
 		emptyOutDir: true,
