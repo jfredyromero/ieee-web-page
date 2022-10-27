@@ -333,173 +333,148 @@
 			</svg>
 		</div>
 		<!-- FINANCIACION -->
-		<section id="pasos">
-			<h1 class="ent__titulo">¿Cómo adquiero mi entrada?</h1>
-			<h1 class="ent__subtitulo">Paso a Paso</h1>
-
-			<div class="pasos__container">
-				<div class="finan__container">
-					<h2 class=titulo__seccion>Financiación</h2>
-					<div class="pasos__group">
-						<div class="pasos__item">
-
-							<div class="number__container">
-								<div class="number__list">
-									<img src="./ieee/assets/img/numero_1.png" class="number__img" alt="">
-								</div>
-								<div class="number__descp">
-									<span class="item__bold">Elige el tipo de plan que más se acomode a tus necesidades: </span>
-								</div>
-							</div>
-
-							<ul>
-								<li><span class="item__bold">TIPO A -</span> Reserva <span class="item__bold">20%</span> + 4 cuotas del <span class="item__bold">20%</span></li>
-								<li><span class="item__bold">TIPO B -</span> Reserva <span class="item__bold">50%</span> + 4 cuotas del <span class="item__bold">12.5%</span></li>
-							</ul>
+		<section class="finan__container">
+			<div class="finan__title">
+				¿Cómo adquiero mi entrada?
+			</div>
+			<div class="finan__subtitle">
+				Paso a Paso
+			</div>
+			<div class="finan__group">
+				<!-- CARD 1 -->
+				<div class="finan__card">
+					<div class="finan__metod">MÉTODO 1</div>
+					<div class="finan__section">
+						<div class="finan__subtitle">Por evento</div>
+						<div class="finan__price">
+							<div class="finan__price__COP">COP</div>
+							<div class="finan__price2">XXXXXXX</div>
 						</div>
-						<div class="pasos__item">
-
-							<div class="number__container">
-								<div class="number__list">
-									<img src="./ieee/assets/img/numero_2.png" class="number__img" alt="">
-								</div>
-								<div class="number__descp">
-									<span class="item__bold">Consignar el valor total de la entrada a la siguiente cuenta
-										de ahorros Bancolombia:</span>
-								</div>
-							</div>
-
-
-							<ul>
-								<li>Nombre: Asociación Rama Estudiantil Ieee Unicauca</li>
-								<li>Número de cuenta: 86800066664</li>
-								<li>NIT: 817004128</li>
-							</ul>
+						<div class="finan__footer">
+							<span>TIPO A</span> - Reserva <span>20%</span> + 4 cuotas del <span>20%</span>
 						</div>
-						<div class="pasos__item">
-							<div class="number__container">
-								<div class="number__list">
-									<img src="./ieee/assets/img/numero_3.png" class="number__img" alt="">
-								</div>
-								<div class="number__descp">
-									<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
-										con los siguientes datos:</span>
-								</div>
+						<div class="finan__description">
+							<div class="finan__item__title" >
+								Consignar el valor total de la entrada a la siguiente cuenta de ahorro
 							</div>
-
-
-							<ul>
-								<li>Nombre completo</li>
-								<li>Cédula</li>
-								<li>Código</li>
-								<li>Número Celular</li>
-								<li>Fecha de inicio</li>
-								<li>Tipo de plan</li>
-								<li>Comprobante de pago</li>
-							</ul>
-							<span class="item__bold">Nota: Este paso se debe realizar cada que se realice un abono.</span>
+							<div class="finan__item__descp" >
+								Nombre: Asociacion Rama Estudiantil IEEE Unicauca <br>
+								Número de cuenta: 86800066664 <br>
+								NIT: 817004128
+							</div><hr>
+							<div class="finan__item__title" >
+								Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co con los siguientes datos
+							</div>
+							<div class="finan__item__descp">
+								Nombre completo		<br>
+								Cédula 				<br>
+								Código 				<br>
+								Número Celular 		<br>
+								Fecha de inicio		<br>
+								Tipo de Plan		<br>
+								Comprobante de pago	<br>
+								<span>Nota: Este paso se debe realizar cada que se realice un abono</span>
+							</div><hr>
+							<div class="finan__item__title" >
+								Una vez realizados todos los pagos, se te enviará tu boleta digital vía correo electrónico
+							</div>
 						</div>
-						<div class="pasos__item">
-							<div class="number__container">
-								<div class="number__list">
-									<img src="./ieee/assets/img/numero_4.png" class="number__img" alt="">
-								</div>
-								<div class="number__descp">
-									<span class="item__bold">Una vez realizados todos los pagos, se te enviará tu boleta
-										digital vía correo electrónico</span>
-								</div>
-							</div>
-
-
-
+						<div class="finan__button">
+								<button><a href="">Comprar Plan</a></button>
 						</div>
 					</div>
 				</div>
-				<div class="pagos__container">
-					<h2 class="titulo__seccion">Pago Total</h2>
-					<div class="pasos__group">
-						<div class="pasos__item">
-							<div class="number__container">
-								<div class="number__list">
-									<img src="./ieee/assets/img/numero_1.png" class="number__img" alt="">
-								</div>
-								<div class="number__descp">
-									<span class="item__bold">Consignar el valor total a la siguiente cuenta
-										de ahorros Bancolombia:</span>
-								</div>
-							</div>
 
-							<ul>
-								<li>Nombre: Asociación Rama Estudiantil Ieee Unicauca</li>
-								<li>Número de cuenta: 86800066664</li>
-								<li>NIT: 817004128</li>
-							</ul>
+
+				<!-- CARD 2 -->
+				<div class="finan__card">
+					<div class="finan__metod">MÉTODO 2</div>
+					<div class="finan__section">
+						<div class="finan__subtitle">Por evento</div>
+						<div class="finan__price">
+							<div class="finan__price__COP">COP</div>
+							<div class="finan__price2">XXXXXXX</div>
 						</div>
-						<div class="pasos__item">
-							<div class="number__container">
-								<div class="number__list">
-									<img src="./ieee/assets/img/numero_2.png" class="number__img" alt="">
-								</div>
-								<div class="number__descp">
-									<span class="item__bold">Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co
-										con los siguientes datos:</span>
-								</div>
-							</div>
-
-							<ul>
-								<li>Nombre completo</li>
-								<li>Cédula</li>
-								<li>Código</li>
-								<li>Número Celular</li>
-								<li>Fecha de inicio</li>
-								<li>Tipo de plan</li>
-								<li>Comprobante de pago</li>
-							</ul>
+						<div class="finan__footer">
+							<span>TIPO B</span> - Reserva <span>50%</span> + 4 cuotas del <span>12.5%</span>
 						</div>
-						<div class="pasos__item">
-							<div class="number__container">
-								<div class="number__list">
-									<img src="./ieee/assets/img/numero_3.png" class="number__img" alt="">
-								</div>
-								<div class="number__descp">
-									<span class="item__bold">Enviaremos tu recibo de pago por correo
-										electrónico o lo puedes recoger en físico en la oficina 306
-										de la FIET
-									</span>
-								</div>
+						<div class="finan__description">
+							<div class="finan__item__title">
+								Consignar el valor total de la entrada a la siguiente cuenta de ahorro
 							</div>
-
+							<div class="finan__item__descp">
+								Nombre: Asociacion Rama Estudiantil IEEE Unicauca <br>
+								Número de cuenta: 86800066664 <br>
+								NIT: 817004128
+							</div><hr>
+							<div class="finan__item__title">
+								Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co con los siguientes datos
+							</div>
+							<div class="finan__item__descp">
+								Nombre completo		<br>
+								Cédula 				<br>
+								Código 				<br>
+								Número Celular 		<br>
+								Fecha de inicio		<br>
+								Tipo de Plan		<br>
+								Comprobante de pago	<br>
+								<span>Nota: Este paso se debe realizar cada que se realice un abono</span>
+							</div><hr>
+							<div class="finan__item__title">
+								Una vez realizados todos los pagos, se te enviará tu boleta digital vía correo electrónico
+							</div>
 						</div>
-						<div class="pasos__item">
-							<div class="number__container">
-								<div class="number__list">
-									<img src="./ieee/assets/img/numero_4.png" class="number__img" alt="">
-								</div>
-								<div class="number__descp">
-									<span class="item__bold">En los dias próximos al evento se te
-										enviará tu boleta digital vía correo electrónico
-									</span>
-								</div>
-							</div>
-
+						<div class="finan__button">
+								<button><a href="">Comprar Plan</a></button>
 						</div>
 					</div>
-
 				</div>
+				<!-- CARD 3 -->
+				<div class="finan__card">
+					<div class="finan__metod">PAGO TOTAL</div>
+					<div class="finan__section">
+						<div class="finan__subtitle">Por evento</div>
+						<div class="finan__price">
+							<div class="finan__price__COP">COP</div>
+							<div class="finan__price2">XXXXXXX</div>
+						</div>
+						<div class="finan__footer">
+							<span>PAGO TOTAL</span>
+						</div>
+						<div class="finan__description">
+							<div class="finan__item__title">
+								Consignar el valor total de la entrada a la siguiente cuenta de ahorro
+							</div>
+							<div class="finan__item__descp">
+								Nombre: Asociacion Rama Estudiantil IEEE Unicauca <br>
+								Número de cuenta: 86800066664 <br>
+								NIT: 817004128
+							</div><hr>
+							<div class="finan__item__title">
+								Enviaremos tu recibo de pago por correo electrónico o lo puedes recoger en fisico en la oficina 306 de la FIET
+							</div><hr>
+							<div class="finan__item__title" >
+								En los días próximos al evento se te enviará tu boleta digital vía correo electrónico
+							</div>
+						</div>
+						<div class="finan__button">
+								<button><a href="">Comprar Plan</a></button>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</section>
 		<section class="info__insta">
 			<div class="insta__container">
 				<div class="insta__text">
-
 					<span class="item__bold">Para más informacion puedes <br>contactarnos vía instagram</span>
 				</div>
 				<a href="https://www.instagram.com/ieeeunicauca/" class="insta__contact">
 					<i class="fa-brands fa-instagram insta__log"></i>
 					Contáctanos
 				</a>
-
-
 			</div>
 		</section>
 		<?php

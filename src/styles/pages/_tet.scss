@@ -1,3 +1,11 @@
+// VARIABLES DE COLORES
+:root{
+	--negro1: 		#222222;
+	--negro2: 		#303030;
+	--amarillo: 	#F49208;
+	--blanco-tet:	 #F5F5F5;
+}
+
 /* ========== LOGO TET============== */
 .info__tet {
 	width: 100%;
@@ -223,69 +231,95 @@
 	width: 50%;
 }
 
-/* =======PASO A PASO====== */
-.ent__titulo {
+/* =======FINANCIACION====== */
+.finan__title, .finan__subtitle{
 	text-align: center;
-	font-size: 2.375em;
+	font-size: 2.375rem;
+	margin-bottom: 40px;
 	color: var(--azul-2);
 }
-.ent__subtitulo {
-	text-align: center;
-	padding-top: 1em;
-	font-size: 2.375em;
-	color: var(--azul-2);
-	margin-bottom: 1.5em;
-}
-.pasos__container {
+.finan__group{
+	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
 }
-
-.finan__container {
-	width: 40%;
-}
-.pagos__container {
-	width: 40%;
-}
-.titulo__seccion {
-	text-align: center;
-	font-size: 2em;
-	color: var(--azul-2);
-}
-.pasos__group {
-	width: 100%;
-}
-
-.pasos__item {
-	margin-top: 2.375em;
-	background-color: var(--azul-2);
+.finan__metod{
+	text-align: left;
+	font-size: 1.375rem;
 	color: var(--blanco);
-	border-radius: 8px;
-	padding: 2em;
+	padding: 10px;
+	background-color: var(--negro1);
+	border-radius: 10px;
 }
-.pasos__item ul {
-	margin-top: 1em;
+.finan__card{
+	background-color:var(--negro2);
+	width: 30%;
+	border-radius: 0 0 5% 5%;
+	box-sizing: content-box;
 }
-.item__bold {
+.finan__subtitle{
+	margin-top: 1rem;
+	text-align: center;
+	color: var(--blanco);
+	font-size: 1.3rem;
+}
+
+.finan__price{
+	// BUG AQUI HAY UNA CAMBONADA EN EL TAMAÑO DE TEXT
+	display: flex;
+	justify-content: center;
+	font-size: 1.375rem;
+	align-items: center;
+	color: var(--blanco);
+}
+.finan__price2{
+	// BUG AQUI HAY UNA CAMBONADA EN EL TAMAÑO DE TEXT
+	font-size: 3.375rem;
 	font-weight: bold;
 }
-
-.number__container {
-	display: flex;
+.finan__footer{
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	text-align: center;
+	color: var(--amarillo);
+	padding: 2rem;
+}
+.finan__footer span{
+	font-weight: bold;
+}
+.finan__description{
 	align-items: stretch;
-	align-items: center;
+	background-color: var(--hueso);
+	border: 0.2px solid var(--negro2);
+	// border-radius: 0 0 5% 5%;
 }
-
-.number__list {
-	width: 10%;
-	margin-right: 1em;
+.finan__description hr{
+	height: 0.2px;
+	background-color: var(--negro2);
 }
-.number__img {
+.finan__item__title{
+	text-align: center;
+	font-weight: bold;
+	padding: 1rem;
+}
+.finan__item__descp{
+	padding: 1rem;
+}
+.finan__item__descp span{
+	font-weight: bold;
+}
+.finan__button{
+	margin: auto;
+	height: 3rem;
+}
+.finan__button button{
+	background-color: var(--amarillo);
 	width: 100%;
-}
-
-.number__descp {
-	width: 90%;
+	height: 100%;
+	border-radius: 0 0 10px 10px;
+	font-weight: bold;
+	font-size: 1.3rem;
+	color: var(--blanco-tet);
 }
 /* ========== CONTACTO INSTAGRAM ======== */
 .insta__container {
@@ -445,24 +479,7 @@
 		font-size: 2rem;
 		margin-bottom: 0;
 	}
-	.finan__container {
-		margin: auto;
-		width: 90%;
-		margin-top: 3em;
-	}
-	.pagos__container {
-		width: 90%;
-		margin: auto;
-	}
-	.titulo__seccion {
-		margin-top: 1em;
-	}
-	.number__list {
-		width: 20%;
-	}
-	.insta__contact {
-		width: 60%;
-	}
+
 }
 
 /* MEDIA QUERIES MAX-768PX */
@@ -638,27 +655,7 @@
 		width: 100%;
 		padding: 2rem;
 	}
-	/* .price__container{
-      flex-direction: column;
-      margin-top: 2em;
-    }
-    .price__titulo{
-      font-size: 2.5rem;
-      margin-top: 0.2rem;
-    }
-    .costo__titulo{
-      font-size: 2.3rem;
-    }
-    .costo__linea{
-      margin-bottom: 1.2rem;
-    }
-    .costo__descp{
-      font-size: 1.5rem;
-    }
-    .costo__base{
-      width: 100%;
-      margin-right: 0;
-    } */
+
 	.costo__img {
 		display: none;
 	}
@@ -715,7 +712,8 @@
 	color: white;
 	background: #FF3B3B;
 }
-.MD__cube{
+.MD__cube {
+	animation-delay: 5s;
 	color: white;
 	background-color: #00B7C4;
 }
