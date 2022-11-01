@@ -466,7 +466,53 @@
 
 			</div>
 		</section>
+
+		<!-- SPONSOR SECTION -->
+		<section class="sponsor__section">
+			<div class="sponsor__container">
+
+				<div class="sponsor__title">
+					Nuestros Patrocinadores
+				</div>
+				<div class="sponsor__group">
+
+					<div class="sponsor__card" >
+						<img src="" alt="" id="sponsor-tet">
+					</div>
+					<div class="sponsor__card" >
+						<img src="" alt="" id="sponsor-tet2">
+					</div>
+					<div class="sponsor__card" >
+						<img src="" alt="" id="sponsor-tet3">
+					</div>
+					<div class="sponsor__card" >
+						<img src="" alt="" id="sponsor-tet4">
+					</div>
+				</div>
+				<div class="sponsor__group">
+
+					<div class="sponsor__card" >
+						<img src="" alt="" id="sponsor-tet">
+					</div>
+					<div class="sponsor__card" >
+						<img src="" alt="" id="sponsor-tet2">
+					</div>
+					<div class="sponsor__card" >
+						<img src="" alt="" id="sponsor-tet3">
+					</div>
+					<div class="sponsor__card" >
+						<img src="" alt="" id="sponsor-tet4">
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
 		<section class="info__insta">
+
+
 			<div class="insta__container">
 				<div class="insta__text">
 					<span class="item__bold">Para más informacion puedes <br>contactarnos vía instagram</span>

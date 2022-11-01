@@ -321,6 +321,35 @@
 	font-size: 1.3rem;
 	color: var(--blanco-tet);
 }
+/*============SPONSORS =================== */
+.sponsor__title{
+	margin-top: 3em;
+	text-align: center;
+	font-size: 2.375rem;
+	color: var(--azul-2);
+	margin-bottom: 2em;
+}
+.sponsor__group{
+	margin-bottom: 2em;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.sponsor__card{
+	background-color: #004FC4;
+	width: 200px;
+	text-align: center;
+	height: 150px;
+	border-radius: 10%;
+	// border: 2px inset;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+.sponsor__card img {
+	height: 100%;
+	border-radius: 10%;
+}
+
+
 /* ========== CONTACTO INSTAGRAM ======== */
 .insta__container {
 	margin: auto;
@@ -479,6 +508,18 @@
 		font-size: 2rem;
 		margin-bottom: 0;
 	}
+	.finan__title{
+		font-size: 2rem;
+		line-height: 2.37rem;
+	}
+
+	.sponsor__title{
+		font-size: 2rem;
+		line-height: 2.37rem;
+	}
+	.sponsor__group{
+		margin-bottom: 0em;
+	}
 
 }
 
@@ -605,6 +646,8 @@
 	.insta__contact {
 		width: 40%;
 	}
+
+
 }
 
 /* MEDIA QUERIES MIN-768PX */
@@ -658,6 +701,14 @@
 
 	.costo__img {
 		display: none;
+	}
+	// SPONSOR CARD
+	.sponsor__group{
+		justify-content: center;
+	}
+	.sponsor__card{
+		margin-top: 1.5em;
+		margin: 10px;
 	}
 }
 
