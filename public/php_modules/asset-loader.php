@@ -18,16 +18,18 @@ function vite($entry)
 // Some dev/prod mechanism would exist in your project
 function isDev($entry)
 {
-    // This method is very useful for the local server
-    // if we try to access it, and by any means, didn't started Vite yet
-    // it will fallback to load the production files from manifest
-    // so you still navigate your site as you intended!
+    // * This method is very useful for the local server
+    // * if we try to access it, and by any means, is't started Vite yet
+    // * it will fallback to load the production files from manifest
+    // * so you still navigate your site as you intended!
 
     static $exists = null;
     if ($exists !== null) {
         return $exists;
     }
+
     $handle = curl_init(getenv('VITE_HOST') . '/' . $entry);
+
     curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($handle, CURLOPT_NOBODY, true);
 
@@ -41,9 +43,13 @@ function isDev($entry)
 // Helpers to print tags
 function jsTag($entry)
 {
-    $url = isDev($entry)
-        ? getenv('VITE_HOST') . '/' . $entry
-        : assetUrl($entry);
+    if (getenv('VITE_PROD') == 'false') {
+        $url = isDev($entry)
+            ? getenv('VITE_HOST') . '/' . $entry
+            : assetUrl($entry);
+    } else {
+        $url = assetUrl($entry);
+    }
 
     if (!$url) {
         return '';
@@ -55,8 +61,10 @@ function jsTag($entry)
 
 function jsPreloadImports($entry)
 {
-    if (isDev($entry)) {
-        return '';
+    if (getenv('VITE_PROD') == 'false') {
+        if (isDev($entry)) {
+            return '';
+        }
     }
 
     $res = '';
@@ -71,8 +79,10 @@ function jsPreloadImports($entry)
 function cssTag($entry)
 {
     // not needed on dev, it's inject by Vite
-    if (isDev($entry)) {
-        return '';
+    if (getenv('VITE_PROD') == 'false') {
+        if (isDev($entry)) {
+            return '';
+        }
     }
 
     $tags = '';

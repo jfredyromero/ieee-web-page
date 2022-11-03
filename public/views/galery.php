@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="">
 	<meta name="abstract" content="Página de la galeria de la rama IEEE de la Universidad del Cauca">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>Rama IEEE Unicauca</title>
 	<?php echo vite('main.js'); ?>
 </head>
@@ -29,16 +30,15 @@
 					</div>
 					<div class="banner__description">
 						<p class="banner__p">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							dolore atque minus corrupti. Exercitationem, molestiae neque!
+							Aqui tenemos plasmado algunos de los momentos que compartimos en IEEE.
 						</p>
 					</div>
-					<div class="banner__action">
+					<a href="#galeria" class="banner__action">
 						<button class="banner__button">
-							Join Us
+							Quiero ver
 							<i class="fa-solid fa-angle-right"></i>
 						</button>
-					</div>
+					</a>
 				</div>
 				<?php
 				include_once "components/rrss.php";
@@ -46,7 +46,7 @@
 			</section>
 		</main>
 	</div>
-	<div class="grid-container">
+	<div id="galeria" class="grid-container">
 		<div class="grid">
 			<div class="gridLayer">
 				<div class="gridBlock"></div>

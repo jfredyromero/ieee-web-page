@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="">
     <meta name="abstract" content="Página de eventos de la rama IEEE de la Universidad del Cauca">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Rama IEEE Unicauca</title>
     <?php echo vite('main.js'); ?>
 </head>
@@ -28,16 +29,15 @@
                     </div>
                     <div class="banner__description">
                         <p class="banner__p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                            dolore atque minus corrupti. Exercitationem, molestiae neque!
+                            ¿Qué hacemos? Enterate de todos los eventos que realizamos y que no te puedes perder
                         </p>
                     </div>
-                    <div class="banner__action">
+                    <a href="#eventos" class="banner__action">
                         <button class="banner__button">
-                            Join Us
+                            Quiero ver
                             <i class="fa-solid fa-angle-right"></i>
                         </button>
-                    </div>
+                    </a>
                 </div>
                 <?php
                 include_once "components/rrss.php";
@@ -46,7 +46,7 @@
         </main>
     </div>
 
-    <div class="events">
+    <div id="eventos" class="events">
         <h2 class="events__h2">Camino de Eventos</h2>
     </div>
 
@@ -58,7 +58,7 @@
                     <img src="" alt="Movie" class="movie-img">
                 </div> <!-- cd-timeline__img -->
 
-                <div class="cd-timeline__content text-component" id="tet2022">
+                <div class="cd-timeline__content text-component" id="tet-2022">
                     <img src="" alt="" class="img_event">
                     <p class="p_event">TET 2022</p>
                     <!-- <h2>TET 2022</h2>
@@ -76,7 +76,7 @@
                     <img src="" alt="Picture" class="picture-img">
                 </div> <!-- cd-timeline__img -->
 
-                <div class="cd-timeline__content text-component">
+                <div class="cd-timeline__content text-component" id="ieee-day">
                     <img src="" alt="" class="img_event">
                     <p class="p_event">IEEE Day</p>
 
@@ -91,7 +91,7 @@
                     <img src="" alt="Movie" class="movie-img">
                 </div> <!-- cd-timeline__img -->
 
-                <div class="cd-timeline__content text-component">
+                <div class="cd-timeline__content text-component" id="navidad-fieeeliz">
                     <img src="" alt="" class="img_event">
                     <p class="p_event">Navidad FIEEELIZ</p>
 
@@ -106,7 +106,7 @@
                     <img src="" alt="Picture" class="picture-img">
                 </div> <!-- cd-timeline__img -->
 
-                <div class="cd-timeline__content text-component">
+                <div class="cd-timeline__content text-component" id="dia-mujer">
                     <img src="" alt="" class="img_event">
                     <p class="p_event">Día de la Mujer</p>
 
@@ -121,7 +121,7 @@
                     <img src="" alt="Location" class="location-img">
                 </div> <!-- cd-timeline__img -->
 
-                <div class="cd-timeline__content text-component">
+                <div class="cd-timeline__content text-component" id="dia-niño">
                     <img src="" alt="" class="img_event">
                     <p class="p_event">Día del Niño</p>
 
@@ -136,7 +136,7 @@
                     <img src="" alt="Location" class="location-img">
                 </div> <!-- cd-timeline__img -->
 
-                <div class="cd-timeline__content text-component">
+                <div class="cd-timeline__content text-component" id="dia-madre">
                     <img src="" alt="" class="img_event">
                     <p class="p_event">Día de la Madre</p>
 
@@ -151,7 +151,7 @@
                     <img src="" alt="Movie" class="movie-img">
                 </div> <!-- cd-timeline__img -->
 
-                <div class="cd-timeline__content text-component">
+                <div class="cd-timeline__content text-component" id="bienvenida-primiparos">
                     <img src="" alt="" class="img_event">
                     <p class="p_event">BIEEENVENIDA de Primiparos</p>
 
@@ -166,7 +166,7 @@
                     <img src="" alt="Movie" class="movie-img">
                 </div> <!-- cd-timeline__img -->
 
-                <div class="cd-timeline__content text-component">
+                <div class="cd-timeline__content text-component" id="ramakon">
                     <img src="" alt="" class="img_event">
                     <p class="p_event">RAMAKON</p>
 

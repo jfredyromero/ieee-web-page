@@ -8,7 +8,7 @@ class YearbookController
     {
         $anioInicio = 2002;
         $anioFinal = date("Y");
-        $intervalo = 2;
+        $intervalo = 4;
         $img = 1;
         $cantidadAnios = $anioFinal - $anioInicio;
 

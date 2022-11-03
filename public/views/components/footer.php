@@ -12,14 +12,18 @@
 			<div class="container footer__top">
 				<h2 class="footer__h2">Ready to get started?</h2>
 				<div class="footer__actions">
-					<button class="footer__button footer__join-us">
-						Join Us
-						<i class="footer__i fa-solid fa-angle-right"></i>
-					</button>
-					<button class="footer__button footer__contact-us">
-						Contact
-						<i class="footer__i fa-solid fa-angle-right"></i>
-					</button>
+					<a href="https://www.instagram.com/ieeeunicauca/" target="_blank">
+						<button class="footer__button footer__join-us">
+							Join Us
+							<i class="footer__i fa-solid fa-angle-right"></i>
+						</button>
+					</a>
+					<a href="https://www.instagram.com/ieeeunicauca/" target="_blank">
+						<button class="footer__button footer__contact-us">
+							Contact
+							<i class="footer__i fa-solid fa-angle-right"></i>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>

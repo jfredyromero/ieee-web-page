@@ -1,8 +1,10 @@
 export default () => {
-	const hamburger = document.querySelector(".header__button");
+
+	try {
+		const hamburger = document.querySelector(".header__button");
 	const sidebar = document.querySelector(".sidebar");
 	const sidebarButton = document.querySelectorAll(".sidebar__a");
-	const dropdownButton = document.querySelector("#dropdown");
+
 	hamburger.addEventListener("click", () => {
 		if (sidebar.classList.contains("active")) {
 			return sidebar.classList.remove("active");
@@ -15,7 +17,9 @@ export default () => {
 			return sidebar.classList.remove("active");
 		});
 	});
-	dropdownButton.addEventListener("click", () => {
-		document.querySelector(".header__dropdown").classList.toggle("active");
-	});
+
+	} catch (error) {
+		console.warn("La página que buscas no existe.");
+	}
+	
 };

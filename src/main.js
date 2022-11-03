@@ -3,6 +3,7 @@ import "./styles/main.scss";
 
 // Scripts
 import loadParticles from "./scripts/components/particles";
+import loadSidebar from "./scripts/components/side-bar";
 
 import loadImages from "./scripts/utilities/img-loading";
 
@@ -19,6 +20,7 @@ import "./scripts/vendors/font-awesome.js";
 const init = () => {
 	loadImages();
 	loadParticles();
+	loadSidebar();
 	const PAGE = document.querySelector('meta[name="abstract"]').content;
 	switch (true) {
 		case PAGE.includes("inicio"):

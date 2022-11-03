@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="">
 	<meta name="abstract" content="Página de inicio de la rama IEEE de la Universidad del Cauca">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>Rama IEEE Unicauca</title>
 	<?php echo vite('main.js'); ?>
 </head>
@@ -28,16 +29,15 @@
 					</div>
 					<div class="banner__description">
 						<p class="banner__p">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-							dolore atque minus corrupti. Exercitationem, molestiae neque!
+							El IEEE es una organización sin ánimo de lucro y es considerada la mayor asociación del mundo para el desarrollo tecnológico.
 						</p>
 					</div>
-					<div class="banner__action">
+					<a href="https://www.instagram.com/ieeeunicauca/" target="_blank" class="banner__action">
 						<button class="banner__button">
-							Join Us
+							Contáctanos
 							<i class="fa-solid fa-angle-right"></i>
 						</button>
-					</div>
+					</a>
 				</div>
 				<?php
 				include_once('components/rrss.php');
@@ -81,8 +81,7 @@
 
 					<div class="nosotros__card-description">
 						<p class="nosotros__p">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Distinctio quisquam soluta, non iure nihil explicabo.
+							Nuestra misión es difundir avances científicos y tecnológicos y ser agentes de cambio para nuestra Comunidad Herediana a través de la generación de proyectos humanitarios y científicos, talleres y conferencias que apoyen a nuestros miembros y la comunidad en su crecimiento profesional.
 						</p>
 					</div>
 				</div>
@@ -113,13 +112,12 @@
 					</div>
 
 					<div class="nosotros__card-title">
-						<h3 class="nosotros__h3">Misión</h3>
+						<h3 class="nosotros__h3">Visión</h3>
 					</div>
 
 					<div class="nosotros__card-description">
 						<p class="nosotros__p">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Distinctio quisquam soluta, non iure nihil explicabo.
+							Estar capacitados para desarrollar cualquier proyecto tecnológico propuesto a nuestra asociación por parte de la Comunidad Herediana y externos, y además ser una Rama Estudiantil ejemplar y referente de eventos , conferencias y talleres de alta calidad relacionados con ciencia y tecnología.
 						</p>
 					</div>
 				</div>
@@ -150,13 +148,12 @@
 					</div>
 
 					<div class="nosotros__card-title">
-						<h3 class="nosotros__h3">Misión</h3>
+						<h3 class="nosotros__h3">Principios y Valores</h3>
 					</div>
 
 					<div class="nosotros__card-description">
 						<p class="nosotros__p">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Distinctio quisquam soluta, non iure nihil explicabo.
+							Somos un grupo donde esta presente la union, el trabajo en equipo, la disposicion de ayudar y la participacion con las diferentes habilidades que tiene cada miembro, que con respeto y comprencion aportamos a cada miembro una construccion sana y positiva para su siguiente paso.
 						</p>
 					</div>
 				</div>
@@ -168,12 +165,9 @@
 		<div class="container">
 			<div id="informacion" class="information">
 				<div class="information__text">
-					<h2 class="information__h2">Titulo Sección</h2>
+					<h2 class="information__h2">Haz parte de esta gran familia!</h2>
 					<p class="information__p">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Explicabo ducimus dolor possimus odio ipsa? Vero aliquid illum
-						dolor doloribus maiores sed, velit, quisquam sapiente fuga
-						delectus, adipisci perspiciatis nostrum ad!
+						Sé parte de la aventura IEEE, ayudandonos a crecer con tu potencial, ¡Animate!
 					</p>
 				</div>
 
