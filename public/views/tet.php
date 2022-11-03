@@ -177,11 +177,11 @@
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_IA.png" alt="">
 							<div class="container__cube" id="IA__cube">
 								<div class="box">
-									<div class="card IA__cube" id="front">	</div>
-									<div class="card IA__cube" id="left">	</div>
-									<div class="card IA__cube" id="right">	</div>
-									<div class="card IA__cube" id="top">		</div>
-									<div class="card IA__cube" id="bottom">	</div>
+									<div class="card IA__cube" id="front"> </div>
+									<div class="card IA__cube" id="left"> </div>
+									<div class="card IA__cube" id="right"> </div>
+									<div class="card IA__cube" id="top"> </div>
+									<div class="card IA__cube" id="bottom"> </div>
 								</div>
 							</div>
 
@@ -190,11 +190,11 @@
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_MarkD.png" alt="">
 							<div class="container__cube" id="MD__cube">
 								<div class="box">
-									<div class="card MD__cube" id="front">	</div>
-									<div class="card MD__cube" id="left">	</div>
-									<div class="card MD__cube" id="right">	</div>
-									<div class="card MD__cube" id="top">		</div>
-									<div class="card MD__cube" id="bottom">	</div>
+									<div class="card MD__cube" id="front"> </div>
+									<div class="card MD__cube" id="left"> </div>
+									<div class="card MD__cube" id="right"> </div>
+									<div class="card MD__cube" id="top"> </div>
+									<div class="card MD__cube" id="bottom"> </div>
 								</div>
 							</div>
 							<div class='tematic__subtitulo'>Marketing Digital</div>
@@ -204,11 +204,11 @@
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_MachL.png" alt="">
 							<div class="container__cube" id="ML__cube">
 								<div class="box">
-									<div class="card ML__cube" id="front">	</div>
-									<div class="card ML__cube" id="left">	</div>
-									<div class="card ML__cube" id="right">	</div>
-									<div class="card ML__cube" id="top">		</div>
-									<div class="card ML__cube" id="bottom">	</div>
+									<div class="card ML__cube" id="front"> </div>
+									<div class="card ML__cube" id="left"> </div>
+									<div class="card ML__cube" id="right"> </div>
+									<div class="card ML__cube" id="top"> </div>
+									<div class="card ML__cube" id="bottom"> </div>
 								</div>
 							</div>
 							<div class='tematic__subtitulo'>Machine Learning</div>
@@ -216,11 +216,11 @@
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_BD.png" alt="">
 							<div class="container__cube" id="BD__cube">
 								<div class="box">
-									<div class="card BD__cube" id="front">	</div>
-									<div class="card BD__cube" id="left">	</div>
-									<div class="card BD__cube" id="right">	</div>
-									<div class="card BD__cube" id="top">		</div>
-									<div class="card BD__cube" id="bottom">	</div>
+									<div class="card BD__cube" id="front"> </div>
+									<div class="card BD__cube" id="left"> </div>
+									<div class="card BD__cube" id="right"> </div>
+									<div class="card BD__cube" id="top"> </div>
+									<div class="card BD__cube" id="bottom"> </div>
 								</div>
 							</div>
 							<div class='tematic__subtitulo'>Big Data</div>
@@ -230,11 +230,11 @@
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_R5.png" alt="">
 							<div class="container__cube" id="R5__cube">
 								<div class="box">
-									<div class="card R5__cube" id="front">	</div>
-									<div class="card R5__cube" id="left">	</div>
-									<div class="card R5__cube" id="right">	</div>
-									<div class="card R5__cube" id="top">		</div>
-									<div class="card R5__cube" id="bottom">	</div>
+									<div class="card R5__cube" id="front"> </div>
+									<div class="card R5__cube" id="left"> </div>
+									<div class="card R5__cube" id="right"> </div>
+									<div class="card R5__cube" id="top"> </div>
+									<div class="card R5__cube" id="bottom"> </div>
 								</div>
 							</div>
 							<div class='tematic__subtitulo'>Redes 5G</div>
@@ -242,11 +242,11 @@
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_BCH.png" alt="">
 							<div class="container__cube" id="BC__cube">
 								<div class="box">
-									<div class="card BC__cube" id="front">	</div>
-									<div class="card BC__cube" id="left">	</div>
-									<div class="card BC__cube" id="right">	</div>
-									<div class="card BC__cube" id="top">		</div>
-									<div class="card BC__cube" id="bottom">	</div>
+									<div class="card BC__cube" id="front"> </div>
+									<div class="card BC__cube" id="left"> </div>
+									<div class="card BC__cube" id="right"> </div>
+									<div class="card BC__cube" id="top"> </div>
+									<div class="card BC__cube" id="bottom"> </div>
 								</div>
 							</div>
 							<div class='tematic__subtitulo'>Block Chain</div>
@@ -254,25 +254,25 @@
 					</div>
 					<div class="tematic__group">
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_IND.png" alt="">
-							<div class="container__cube"id="I4__cube">
+							<div class="container__cube" id="I4__cube">
 								<div class="box">
-									<div class="card I4__cube" id="front">	</div>
-									<div class="card I4__cube" id="left">	</div>
-									<div class="card I4__cube" id="right">	</div>
-									<div class="card I4__cube" id="top">		</div>
-									<div class="card I4__cube" id="bottom">	</div>
+									<div class="card I4__cube" id="front"> </div>
+									<div class="card I4__cube" id="left"> </div>
+									<div class="card I4__cube" id="right"> </div>
+									<div class="card I4__cube" id="top"> </div>
+									<div class="card I4__cube" id="bottom"> </div>
 								</div>
 							</div>
 							<div class='tematic__subtitulo'>Industria 4.0</div>
 						</div>
 						<div class='tematic__img'><img class="tematic__logo" src="./ieee/assets/img/logo_CD.png" alt="">
-							<div class="container__cube" >
+							<div class="container__cube">
 								<div class="box">
-									<div class="card CD__cube" id="front" >	</div>
-									<div class="card CD__cube" id="left" >	</div>
-									<div class="card CD__cube" id="right" >	</div>
-									<div class="card CD__cube" id="top" >		</div>
-									<div class="card CD__cube" id="bottom" >	</div>
+									<div class="card CD__cube" id="front"> </div>
+									<div class="card CD__cube" id="left"> </div>
+									<div class="card CD__cube" id="right"> </div>
+									<div class="card CD__cube" id="top"> </div>
+									<div class="card CD__cube" id="bottom"> </div>
 								</div>
 							</div>
 							<div class='tematic__subtitulo'>Ciencia de Datos</div>
@@ -354,33 +354,35 @@
 							<span>TIPO A</span> - Reserva <span>20%</span> + 4 cuotas del <span>20%</span>
 						</div>
 						<div class="finan__description">
-							<div class="finan__item__title" >
+							<div class="finan__item__title">
 								Consignar el valor total de la entrada a la siguiente cuenta de ahorro
 							</div>
-							<div class="finan__item__descp" >
+							<div class="finan__item__descp">
 								Nombre: Asociacion Rama Estudiantil IEEE Unicauca <br>
 								Número de cuenta: 86800066664 <br>
 								NIT: 817004128
-							</div><hr>
-							<div class="finan__item__title" >
+							</div>
+							<hr>
+							<div class="finan__item__title">
 								Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co con los siguientes datos
 							</div>
 							<div class="finan__item__descp">
-								Nombre completo		<br>
-								Cédula 				<br>
-								Código 				<br>
-								Número Celular 		<br>
-								Fecha de inicio		<br>
-								Tipo de Plan		<br>
-								Comprobante de pago	<br>
+								Nombre completo <br>
+								Cédula <br>
+								Código <br>
+								Número Celular <br>
+								Fecha de inicio <br>
+								Tipo de Plan <br>
+								Comprobante de pago <br>
 								<span>Nota: Este paso se debe realizar cada que se realice un abono</span>
-							</div><hr>
-							<div class="finan__item__title" >
+							</div>
+							<hr>
+							<div class="finan__item__title">
 								Una vez realizados todos los pagos, se te enviará tu boleta digital vía correo electrónico
 							</div>
 						</div>
 						<div class="finan__button">
-								<button><a href="">Comprar Plan</a></button>
+							<button><a href="">Comprar Plan</a></button>
 						</div>
 					</div>
 				</div>
@@ -406,26 +408,28 @@
 								Nombre: Asociacion Rama Estudiantil IEEE Unicauca <br>
 								Número de cuenta: 86800066664 <br>
 								NIT: 817004128
-							</div><hr>
+							</div>
+							<hr>
 							<div class="finan__item__title">
 								Enviar un correo con asunto "ABONO TET" a ramaieee@unicauca.edu.co con los siguientes datos
 							</div>
 							<div class="finan__item__descp">
-								Nombre completo		<br>
-								Cédula 				<br>
-								Código 				<br>
-								Número Celular 		<br>
-								Fecha de inicio		<br>
-								Tipo de Plan		<br>
-								Comprobante de pago	<br>
+								Nombre completo <br>
+								Cédula <br>
+								Código <br>
+								Número Celular <br>
+								Fecha de inicio <br>
+								Tipo de Plan <br>
+								Comprobante de pago <br>
 								<span>Nota: Este paso se debe realizar cada que se realice un abono</span>
-							</div><hr>
+							</div>
+							<hr>
 							<div class="finan__item__title">
 								Una vez realizados todos los pagos, se te enviará tu boleta digital vía correo electrónico
 							</div>
 						</div>
 						<div class="finan__button">
-								<button><a href="">Comprar Plan</a></button>
+							<button><a href="">Comprar Plan</a></button>
 						</div>
 					</div>
 				</div>
@@ -449,16 +453,18 @@
 								Nombre: Asociacion Rama Estudiantil IEEE Unicauca <br>
 								Número de cuenta: 86800066664 <br>
 								NIT: 817004128
-							</div><hr>
+							</div>
+							<hr>
 							<div class="finan__item__title">
 								Enviaremos tu recibo de pago por correo electrónico o lo puedes recoger en fisico en la oficina 306 de la FIET
-							</div><hr>
-							<div class="finan__item__title" >
+							</div>
+							<hr>
+							<div class="finan__item__title">
 								En los días próximos al evento se te enviará tu boleta digital vía correo electrónico
 							</div>
 						</div>
 						<div class="finan__button">
-								<button><a href="">Comprar Plan</a></button>
+							<button><a href="">Comprar Plan</a></button>
 						</div>
 					</div>
 				</div>
@@ -476,32 +482,32 @@
 				</div>
 				<div class="sponsor__group">
 
-					<div class="sponsor__card" >
-						<img src="" alt="" id="sponsor-tet">
+					<div class="sponsor__card">
+						<img src="" class="sponsor-img" alt="">
 					</div>
-					<div class="sponsor__card" >
-						<img src="" alt="" id="sponsor-tet2">
+					<div class="sponsor__card">
+						<img src="" class="sponsor-img" alt="">
 					</div>
-					<div class="sponsor__card" >
-						<img src="" alt="" id="sponsor-tet3">
+					<div class="sponsor__card">
+						<img src="" class="sponsor-img" alt="">
 					</div>
-					<div class="sponsor__card" >
-						<img src="" alt="" id="sponsor-tet4">
+					<div class="sponsor__card">
+						<img src="" class="sponsor-img" alt="">
 					</div>
 				</div>
 				<div class="sponsor__group">
 
-					<div class="sponsor__card" >
-						<img src="" alt="" id="sponsor-tet">
+					<div class="sponsor__card">
+						<img src="" class="sponsor-img" alt="">
 					</div>
-					<div class="sponsor__card" >
-						<img src="" alt="" id="sponsor-tet2">
+					<div class="sponsor__card">
+						<img src="" class="sponsor-img" alt="">
 					</div>
-					<div class="sponsor__card" >
-						<img src="" alt="" id="sponsor-tet3">
+					<div class="sponsor__card">
+						<img src="" class="sponsor-img" alt="">
 					</div>
-					<div class="sponsor__card" >
-						<img src="" alt="" id="sponsor-tet4">
+					<div class="sponsor__card">
+						<img src="" class="sponsor-img" alt="">
 					</div>
 				</div>
 

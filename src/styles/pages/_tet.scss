@@ -1,9 +1,9 @@
 // VARIABLES DE COLORES
-:root{
-	--negro1: 		#222222;
-	--negro2: 		#303030;
-	--amarillo: 	#F49208;
-	--blanco-tet:	 #F5F5F5;
+:root {
+	--negro1: #222222;
+	--negro2: #303030;
+	--amarillo: #f49208;
+	--blanco-tet: #f5f5f5;
 }
 
 /* ========== LOGO TET============== */
@@ -232,18 +232,19 @@
 }
 
 /* =======FINANCIACION====== */
-.finan__title, .finan__subtitle{
+.finan__title,
+.finan__subtitle {
 	text-align: center;
 	font-size: 2.375rem;
 	margin-bottom: 40px;
 	color: var(--azul-2);
 }
-.finan__group{
+.finan__group {
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
 }
-.finan__metod{
+.finan__metod {
 	text-align: left;
 	font-size: 1.375rem;
 	color: var(--blanco);
@@ -251,20 +252,20 @@
 	background-color: var(--negro1);
 	border-radius: 10px;
 }
-.finan__card{
-	background-color:var(--negro2);
+.finan__card {
+	background-color: var(--negro2);
 	width: 30%;
 	border-radius: 0 0 5% 5%;
 	box-sizing: content-box;
 }
-.finan__subtitle{
+.finan__subtitle {
 	margin-top: 1rem;
 	text-align: center;
 	color: var(--blanco);
 	font-size: 1.3rem;
 }
 
-.finan__price{
+.finan__price {
 	// BUG AQUI HAY UNA CAMBONADA EN EL TAMAÑO DE TEXT
 	display: flex;
 	justify-content: center;
@@ -272,47 +273,47 @@
 	align-items: center;
 	color: var(--blanco);
 }
-.finan__price2{
+.finan__price2 {
 	// BUG AQUI HAY UNA CAMBONADA EN EL TAMAÑO DE TEXT
 	font-size: 3.375rem;
 	font-weight: bold;
 }
-.finan__footer{
+.finan__footer {
 	font-size: 1.3rem;
 	margin-top: 1rem;
 	text-align: center;
 	color: var(--amarillo);
 	padding: 2rem;
 }
-.finan__footer span{
+.finan__footer span {
 	font-weight: bold;
 }
-.finan__description{
+.finan__description {
 	align-items: stretch;
 	background-color: var(--hueso);
 	border: 0.2px solid var(--negro2);
 	// border-radius: 0 0 5% 5%;
 }
-.finan__description hr{
+.finan__description hr {
 	height: 0.2px;
 	background-color: var(--negro2);
 }
-.finan__item__title{
+.finan__item__title {
 	text-align: center;
 	font-weight: bold;
 	padding: 1rem;
 }
-.finan__item__descp{
+.finan__item__descp {
 	padding: 1rem;
 }
-.finan__item__descp span{
+.finan__item__descp span {
 	font-weight: bold;
 }
-.finan__button{
+.finan__button {
 	margin: auto;
 	height: 3rem;
 }
-.finan__button button{
+.finan__button button {
 	background-color: var(--amarillo);
 	width: 100%;
 	height: 100%;
@@ -322,33 +323,37 @@
 	color: var(--blanco-tet);
 }
 /*============SPONSORS =================== */
-.sponsor__title{
+.sponsor__title {
 	margin-top: 3em;
 	text-align: center;
 	font-size: 2.375rem;
 	color: var(--azul-2);
 	margin-bottom: 2em;
 }
-.sponsor__group{
+.sponsor__group {
 	margin-bottom: 2em;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
-.sponsor__card{
-	background-color: #004FC4;
-	width: 200px;
+.sponsor__card {
+	// background-color: var(--azul-2);
+	width: 270px;
 	text-align: center;
-	height: 150px;
-	border-radius: 10%;
-	// border: 2px inset;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+	height: 200px;
+	border-radius: 3%;
+	padding: 20px;
+	border-top: 4px solid var(--azul-2);
+	box-shadow: 2px 2px 10px 3px rgba(212, 212, 212, 0.9),
+		-2px -2px 10px 3px rgba(212, 212, 212, 0.9);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
 .sponsor__card img {
-	height: 100%;
-	border-radius: 10%;
+	width: 100%;
+	margin: 0 auto;
 }
-
 
 /* ========== CONTACTO INSTAGRAM ======== */
 .insta__container {
@@ -508,19 +513,18 @@
 		font-size: 2rem;
 		margin-bottom: 0;
 	}
-	.finan__title{
+	.finan__title {
 		font-size: 2rem;
 		line-height: 2.37rem;
 	}
 
-	.sponsor__title{
+	.sponsor__title {
 		font-size: 2rem;
 		line-height: 2.37rem;
 	}
-	.sponsor__group{
+	.sponsor__group {
 		margin-bottom: 0em;
 	}
-
 }
 
 /* MEDIA QUERIES MAX-768PX */
@@ -646,8 +650,6 @@
 	.insta__contact {
 		width: 40%;
 	}
-
-
 }
 
 /* MEDIA QUERIES MIN-768PX */
@@ -703,10 +705,10 @@
 		display: none;
 	}
 	// SPONSOR CARD
-	.sponsor__group{
+	.sponsor__group {
 		justify-content: center;
 	}
-	.sponsor__card{
+	.sponsor__card {
 		margin-top: 1.5em;
 		margin: 10px;
 	}
@@ -727,28 +729,27 @@
 }
 
 // CUBES ANIMATION
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
-.container__cube{
+.container__cube {
 	height: 100px;
 	width: 100px;
 	margin: auto;
-	transform: translate(-50%,50%);
+	transform: translate(-50%, 50%);
 	perspective: 1000px;
 }
-.box{
-
+.box {
 	height: 40px;
 	width: 40px;
 	// transform: rotate(-90deg);
-	transform-style: preserve-3d ;
+	transform-style: preserve-3d;
 	// NOTE COMENTARIO PARA VERIFICAR UBICACION DE CARAS LATERALES
 	// transform: rotateY(180deg);
 	animation: animate 10s infinite;
 }
-.card{
+.card {
 	height: 40px;
 	width: 40px;
 	text-align: center;
@@ -757,83 +758,79 @@
 	font-size: 32px;
 	box-sizing: border-box;
 	position: absolute;
-
 }
-.IA__cube{
+.IA__cube {
 	color: white;
-	background: #FF3B3B;
+	background: #ff3b3b;
 }
 .MD__cube {
 	animation-delay: 5s;
 	color: white;
-	background-color: #00B7C4;
+	background-color: #00b7c4;
 }
-.ML__cube{
-	color:white;
-	background: #FF8800 ;
-}
-.BD__cube{
+.ML__cube {
 	color: white;
-	background-color: #004FC4;
+	background: #ff8800;
 }
-.R5__cube{
+.BD__cube {
 	color: white;
-	background: #E5B800;
+	background-color: #004fc4;
 }
-.BC__cube{
+.R5__cube {
 	color: white;
-	background: #6600CC;
+	background: #e5b800;
 }
-.I4__cube{
+.BC__cube {
 	color: white;
-	background: #06C270;
+	background: #6600cc;
 }
-.CD__cube{
+.I4__cube {
 	color: white;
-	background: #28293D;
+	background: #06c270;
+}
+.CD__cube {
+	color: white;
+	background: #28293d;
 }
 
-@keyframes animate{
-
-	 0%{
+@keyframes animate {
+	0% {
 		transform: rotateX(45deg) rotateY(-45deg);
-	 }
-	 25%{
+	}
+	25% {
 		transform: rotateX(-45deg) rotateY(-45deg);
-	 }
-	 50%{
+	}
+	50% {
 		transform: rotateX(45deg) rotateY(45deg);
-	 }
-	 75%{
+	}
+	75% {
 		transform: rotateX(-45deg) rotateY(45deg);
-	 }
-	 100%{
+	}
+	100% {
 		transform: rotateX(45deg) rotateY(-45deg);
-	 }
+	}
 }
 
-
-#front{
+#front {
 	transform: translateZ(20px);
 }
-#back{
+#back {
 	transform: translateZ(-125x);
 }
 
-#left{
+#left {
 	right: 20px;
 	transform: rotateY(-90deg);
 }
-#right{
+#right {
 	left: 20px;
 	transform: rotateY(90deg);
 }
-#top{
+#top {
 	bottom: 20px;
 	transform: rotateX(90deg);
 }
-#bottom{
+#bottom {
 	top: 20px;
 	transform: rotateX(-90deg);
 }
-
