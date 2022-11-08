@@ -249,14 +249,15 @@
 	font-size: 1.375rem;
 	color: var(--blanco);
 	padding: 10px;
-	background-color: var(--negro1);
+	background-color: var(--azul-1);
 	border-radius: 10px;
 }
 .finan__card {
-	background-color: var(--negro2);
+	background-color: var(--azul-2);
 	width: 30%;
 	border-radius: 0 0 5% 5%;
 	box-sizing: content-box;
+	height: min-content;
 }
 .finan__subtitle {
 	margin-top: 1rem;
@@ -334,23 +335,28 @@
 	display: grid;
 	gap: 1rem;
 	grid-auto-rows: 200px;
-	grid-template-columns: (repeat(auto-fill,minmax(270px, 1fr)));
+	grid-template-columns: (repeat(auto-fill, minmax(300px, 1fr)));
 }
 
 .sponsor__card {
-
 	width: 270px;
 	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
 	height: 200px;
 	border-radius: 3%;
 	border-top: 4px solid var(--azul-2);
 	box-shadow: 2px 2px 10px 3px rgba(212, 212, 212, 0.9),
 		-2px -2px 10px 3px rgba(212, 212, 212, 0.9);
 	overflow: hidden;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .sponsor__card img {
-	width: 100%;
+	width: unset;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 /* ========== CONTACTO INSTAGRAM ======== */
@@ -376,6 +382,14 @@
 
 /* MEDIA QUERIES MAX-425PX */
 @media screen and (max-width: 425px) {
+	.finan__group {
+		flex-direction: column;
+		align-items: center;
+	}
+	.finan__card {
+		width: 80%;
+		margin-bottom: 5rem;
+	}
 	.descp_tet {
 		padding: 1rem;
 		width: 100%;
@@ -473,11 +487,18 @@
 		font-size: 2rem;
 		line-height: 2.37rem;
 	}
-
 }
 
 /* MEDIA QUERIES MAX-768PX */
 @media screen and (min-width: 426px) and (max-width: 768px) {
+	.finan__group {
+		flex-direction: column;
+		align-items: center;
+	}
+	.finan__card {
+		width: 70%;
+		margin-bottom: 5rem;
+	}
 	.banner__titulo {
 		font-size: 4rem;
 		text-align: center;
@@ -653,7 +674,6 @@
 	.costo__img {
 		display: none;
 	}
-
 }
 
 /* ANIMACION DE BOTONES */
@@ -738,7 +758,6 @@
 .box {
 	height: 40px;
 	width: 40px;
-	// transform: rotate(-90deg);
 	transform-style: preserve-3d;
 	// NOTE COMENTARIO PARA VERIFICAR UBICACION DE CARAS LATERALES
 	// transform: rotateY(180deg);
@@ -758,34 +777,57 @@
 	color: white;
 	background: #ff3b3b;
 }
+#IA__cube {
+	animation-delay: 1s;
+}
 .MD__cube {
-	animation-delay: 5s;
 	color: white;
 	background-color: #00b7c4;
+}
+#MD__cube {
+	animation-delay: 2s;
 }
 .ML__cube {
 	color: white;
 	background: #ff8800;
 }
+#ML__cube {
+	animation-delay: 3s;
+}
 .BD__cube {
 	color: white;
 	background-color: #004fc4;
+}
+#BD__cube {
+	animation-delay: 4s;
 }
 .R5__cube {
 	color: white;
 	background: #e5b800;
 }
+#R5__cube {
+	animation-delay: 5s;
+}
 .BC__cube {
 	color: white;
 	background: #6600cc;
+}
+#BC__cube {
+	animation-delay: 6s;
 }
 .I4__cube {
 	color: white;
 	background: #06c270;
 }
+#I4__cube {
+	animation-delay: 7s;
+}
 .CD__cube {
 	color: white;
 	background: #28293d;
+}
+#CD__cube {
+	animation-delay: 8s;
 }
 
 @keyframes animate {
