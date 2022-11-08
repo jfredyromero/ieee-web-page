@@ -481,33 +481,26 @@
 					Nuestros Patrocinadores
 				</div>
 				<div class="sponsor__group">
-
-					<div class="sponsor__card">
-						<img src="" class="sponsor-img" alt="">
+					<div class="sponsor__card sponsor__item1">
+						<img src="" alt="" class="sponsor-img">
 					</div>
-					<div class="sponsor__card">
-						<img src="" class="sponsor-img" alt="">
+					<div class="sponsor__card sponsor__item2">
+						<img src="" alt="" class="sponsor-img">
 					</div>
-					<div class="sponsor__card">
-						<img src="" class="sponsor-img" alt="">
+					<div class="sponsor__card sponsor__item3">
+						<img src="" alt="" class="sponsor-img">
 					</div>
-					<div class="sponsor__card">
-						<img src="" class="sponsor-img" alt="">
+					<div class="sponsor__card sponsor__item4">
+						<img src="" alt="" class="sponsor-img">
 					</div>
-				</div>
-				<div class="sponsor__group">
-
-					<div class="sponsor__card">
-						<img src="" class="sponsor-img" alt="">
+					<div class="sponsor__card sponsor__item5">
+						<img src="" alt="" class="sponsor-img">
 					</div>
-					<div class="sponsor__card">
-						<img src="" class="sponsor-img" alt="">
+					<div class="sponsor__card sponsor__item6">
+						<img src="" alt="" class="sponsor-img">
 					</div>
-					<div class="sponsor__card">
-						<img src="" class="sponsor-img" alt="">
-					</div>
-					<div class="sponsor__card">
-						<img src="" class="sponsor-img" alt="">
+					<div class="sponsor__card sponsor__item6">
+						<img src="" alt="" class="sponsor-img">
 					</div>
 				</div>
 

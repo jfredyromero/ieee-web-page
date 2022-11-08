@@ -331,28 +331,26 @@
 	margin-bottom: 2em;
 }
 .sponsor__group {
-	margin-bottom: 2em;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	display: grid;
+	gap: 1rem;
+	grid-auto-rows: 200px;
+	grid-template-columns: (repeat(auto-fill,minmax(270px, 1fr)));
 }
+
 .sponsor__card {
-	// background-color: var(--azul-2);
+
 	width: 270px;
 	text-align: center;
 	height: 200px;
 	border-radius: 3%;
-	padding: 20px;
 	border-top: 4px solid var(--azul-2);
 	box-shadow: 2px 2px 10px 3px rgba(212, 212, 212, 0.9),
 		-2px -2px 10px 3px rgba(212, 212, 212, 0.9);
 	overflow: hidden;
-	display: flex;
-	align-items: center;
+
 }
 .sponsor__card img {
 	width: 100%;
-	margin: 0 auto;
 }
 
 /* ========== CONTACTO INSTAGRAM ======== */
@@ -475,9 +473,7 @@
 		font-size: 2rem;
 		line-height: 2.37rem;
 	}
-	.sponsor__group {
-		margin-bottom: 0em;
-	}
+
 }
 
 /* MEDIA QUERIES MAX-768PX */
@@ -657,14 +653,7 @@
 	.costo__img {
 		display: none;
 	}
-	// SPONSOR CARD
-	.sponsor__group {
-		justify-content: center;
-	}
-	.sponsor__card {
-		margin-top: 1.5em;
-		margin: 10px;
-	}
+
 }
 
 /* ANIMACION DE BOTONES */
