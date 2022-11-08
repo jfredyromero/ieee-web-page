@@ -1,0 +1,66 @@
+.error-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background: linear-gradient(272deg, var(--azul-1), var(--azul-2), var(--azul-3));
+	background-size: 600% 600%;
+	animation: gradient-animation 10s ease infinite;
+	&__caption {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		z-index: 10;
+	}
+	&__img {
+		width: 30%;
+	}
+	&__text {
+		line-height: 5rem;
+		text-transform: uppercase;
+		color: white;
+		font-size: 40px;
+		font-weight: 300;
+		a {
+			transition: all 200ms ease;
+			font-size: 25px;
+			font-weight: 500;
+			&:hover {
+				transform: scale(1.1);
+			}
+			i{
+				margin: 20px;
+			}
+		}
+	}
+}
+.background {
+	position: relative;
+	&__wave {
+		position: absolute;
+		width: 2500px;
+		height: 1500px;
+		top: -250%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(0);
+		border-radius: 42.5%;
+		background: var(--azul-3);
+		opacity: 0.5;
+		animation: waves 25s infinite linear;
+		&--second {
+			background: var(--azul-2);
+			animation: waves 19s infinite linear;
+		}
+		&--third {
+			background: var(--azul-1);
+			animation: waves 30s infinite linear;
+		}
+	}
+}

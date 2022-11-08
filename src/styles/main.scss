@@ -1,0 +1,24 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./base/animations";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/typography";
+
+@import "./layout/banner";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/sidebar";
+
+@import "./pages/404";
+@import "./pages/events";
+@import "./pages/galery";
+@import "./pages/home";
+@import "./pages/organization";
+@import "./pages/tet";
+@import "./pages/yearbook";
+
+@import "./vendors/animate";
+
+@import "./shame";

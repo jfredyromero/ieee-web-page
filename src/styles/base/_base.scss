@@ -1,0 +1,71 @@
+/* Configuramos la tipografía para toda la web */
+body {
+	min-height: 100vh;
+	font-size: 100%;
+	font-family: var(--tipo-principal);
+	color: var(--negro);
+	/* opcional */
+	line-height: 1.4em;
+	/* opcional */
+	hyphens: auto;
+	/* opcional */
+	font-smooth: always;
+	/* opcional */
+	-webkit-font-smoothing: antialiased;
+	/* opcional */
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.waves {
+	position: relative;
+	top: -18vh;
+	width: 100%;
+	height: 18vh;
+}
+
+.animated-wave {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("../assets/img/global/white-wave.svg");
+	background-repeat: repeat-x;
+	background-size: 100%;
+}
+
+.white-wave1 {
+	animation: animate 30s ease-in infinite;
+	animation-direction: alternate;
+	z-index: 999;
+}
+
+.white-wave2 {
+	animation: animate 20s ease-in infinite;
+	animation-direction: alternate;
+	animation-delay: -5s;
+	opacity: 0.5;
+	z-index: 998;
+}
+
+.white-wave3 {
+	animation: animate 10s ease-in infinite;
+	animation-direction: alternate;
+	animation-delay: -10s;
+	opacity: 0.2;
+	z-index: 997;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.principal {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background-image: linear-gradient(90deg, #000000ec, transparent),
+		url("../assets/img/global/bg-miembros-rama.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}

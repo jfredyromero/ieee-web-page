@@ -1,0 +1,67 @@
+:root {
+	--blanco: #fcfaf3;
+	--blanco-difuminado: #fcfaf386;
+	--hueso: #fffef7;
+	--azul-1: #0e2e53;
+	--azul-2: #123f72;
+	--azul-2-difuminado: rgba(18, 63, 114, 0.5);
+	--azul-3: #195497;
+	--rojo: #e02020;
+	--gris: #4e4e4e;
+	--negro: #000000;
+	--gris-t: rgba(41, 41, 41, 1);
+	--plata: #c0c0c0;
+	--dorado: #eee8aa;
+
+	/* Tipografía */
+	--tipo-principal: "Montserrat";
+	--tipo-secundaria: "lato";
+
+	$hamburger-padding-x: 20px;
+	$hamburger-padding-y: 15px;
+	$hamburger-types: (collapse);
+}
+$breakpoints: (
+	"xs": (
+		max-width: 599px,
+		// lower is mobile
+	),
+	"sm": (
+		min-width: 600px,
+		// greater is tablet portrait-up
+	),
+	"md": (
+		min-width: 768px,
+		// greater is tablet landscape-up
+	),
+	"lg": (
+		min-width: 992px,
+		// greater is desktop
+	),
+	"xl": (
+		min-width: 1200px,
+		// greater is big desktop
+	),
+);
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* --negro         : #ececec; */
+	}
+}
+
+/* Opcional */
+/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+@media (prefers-contrast: high) {
+	:root {
+	}
+}
+
+/* Opcional */
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+	}
+}
