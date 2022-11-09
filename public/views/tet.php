@@ -516,9 +516,12 @@
 			<div class="insta__text">
 				<span class="item__bold">Para más informacion puedes <br>contactarnos vía instagram</span>
 			</div>
-			<a href="https://www.instagram.com/ieeeunicauca/" class="insta__contact" target="_blank">
-				<i class="fa-brands fa-instagram insta__log"></i>
-				Contáctanos
+			<a href="https://www.instagram.com/ieeeunicauca/" target="_blank">
+				<button class="insta-contact__button">
+					<i class="fa-brands fa-instagram insta__log"></i>
+					Contáctanos
+					<i class="fa-solid fa-angle-right"></i>
+				</button>
 			</a>
 		</div>
 	</section>
